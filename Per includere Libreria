@@ -1,1 +1,10 @@
+Istruzioni per Creare una Libreria Personale (UNIX): “libreria” •  Compilare libreria.c per ottenere il file (.o)
+
+• gcc –c libreria.c
+–	Generare la libreria con estensione (.a)
+• ar ruv libreria.a libreria.o
+•	Includere libreria.h in conversione.c (#include “libreria.h”) e compilare per ottenere l’eseguibile • gcc conversione.c –o conversione libreria.a •	Eseguire conversione
+-----------
+Istruzioni per importare libreria su Code:blocks
+
 http://www.learncpp.com/cpp-tutorial/a3-using-libraries-with-codeblocks/
