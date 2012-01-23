@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1327339595 source:/home/andrea/Scrivania/PORKMI/EB/AcquisizionePSL/main.cpp
+	<iostream>
+	"../../libpmk-2.5/libpmk2/point_set/point.h"
+
+1273030162 /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/point_set/point.h
+	<iostream>
+	<vector>
+
