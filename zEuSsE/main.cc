@@ -24,15 +24,19 @@
 #include <pyramids/global-vg-pyramid-maker.h>
 #include <pyramids/input-specific-vg-pyramid-maker.h>
 
+#include <point_set/on-disk-point-set-list.h>
+
 using namespace libpmk;
 using namespace std;
 
 vector<MultiResolutionHistogram *> vectorMRH;
-PointSetList pointSetList;
+PointSetList * pointSetList;
 
+//~/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/testdata/testpointsets.psl
 
 void loadPSL(){
-
+	pointSetList=new OnDiskPointSetList("~/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/testdata/testpointsets.psl");
+	cout << pointSetList;
 }
 
 void makePyramids(){
@@ -40,7 +44,7 @@ void makePyramids(){
 	pyramidMaker=new UniformPyramidMaker();	
 //	pyramidMaker=new InputSpecificVGPyramidMaker(); da mettere apposto 
 //	pyramidMaker=new GlobalVGPyramidMaker(); 
-	vectorMRH=pyramidMaker.MakePyramids(pointSetList);
+//	vectorMRH=pyramidMaker.MakePyramids(pointSetList);
 
 
 
