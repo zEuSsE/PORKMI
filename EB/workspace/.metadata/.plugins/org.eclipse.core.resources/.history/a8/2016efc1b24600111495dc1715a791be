@@ -1,0 +1,39 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CC_SRCS += \
+../libpmk-2.5/spatial_pmk/tools/channelize-point-set-list.cc \
+../libpmk-2.5/spatial_pmk/tools/pointsets-to-normalized-spatial-pyramids.cc \
+../libpmk-2.5/spatial_pmk/tools/pointsets-to-spatial-pyramids.cc \
+../libpmk-2.5/spatial_pmk/tools/pyramids-to-kernel.cc \
+../libpmk-2.5/spatial_pmk/tools/simple-pointsets-to-spatial-pyramid.cc \
+../libpmk-2.5/spatial_pmk/tools/split-into-channels.cc 
+
+OBJS += \
+./libpmk-2.5/spatial_pmk/tools/channelize-point-set-list.o \
+./libpmk-2.5/spatial_pmk/tools/pointsets-to-normalized-spatial-pyramids.o \
+./libpmk-2.5/spatial_pmk/tools/pointsets-to-spatial-pyramids.o \
+./libpmk-2.5/spatial_pmk/tools/pyramids-to-kernel.o \
+./libpmk-2.5/spatial_pmk/tools/simple-pointsets-to-spatial-pyramid.o \
+./libpmk-2.5/spatial_pmk/tools/split-into-channels.o 
+
+CC_DEPS += \
+./libpmk-2.5/spatial_pmk/tools/channelize-point-set-list.d \
+./libpmk-2.5/spatial_pmk/tools/pointsets-to-normalized-spatial-pyramids.d \
+./libpmk-2.5/spatial_pmk/tools/pointsets-to-spatial-pyramids.d \
+./libpmk-2.5/spatial_pmk/tools/pyramids-to-kernel.d \
+./libpmk-2.5/spatial_pmk/tools/simple-pointsets-to-spatial-pyramid.d \
+./libpmk-2.5/spatial_pmk/tools/split-into-channels.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk-2.5/spatial_pmk/tools/%.o: ../libpmk-2.5/spatial_pmk/tools/%.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

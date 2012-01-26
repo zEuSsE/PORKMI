@@ -1,0 +1,113 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/input-specific-vg-pyramid-maker.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/normalized-uniform-pyramid-maker.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/pyramid-maker.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/pyramid-matcher.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/uniform-pyramid-maker.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/vg-pyramid-maker.o 
+
+CC_SRCS += \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/input-specific-vg-pyramid-maker.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/normalized-uniform-pyramid-maker.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/pyramid-maker.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/pyramid-matcher.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/pyramid-matcher_unittest.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/uniform-pyramid-maker.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/uniform-pyramid-maker_unittest.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/vg-pyramid-maker.cc 
+
+OBJS += \
+./libpmk2/pyramids/global-vg-pyramid-maker.o \
+./libpmk2/pyramids/input-specific-vg-pyramid-maker.o \
+./libpmk2/pyramids/normalized-uniform-pyramid-maker.o \
+./libpmk2/pyramids/pyramid-maker.o \
+./libpmk2/pyramids/pyramid-matcher.o \
+./libpmk2/pyramids/pyramid-matcher_unittest.o \
+./libpmk2/pyramids/uniform-pyramid-maker.o \
+./libpmk2/pyramids/uniform-pyramid-maker_unittest.o \
+./libpmk2/pyramids/vg-pyramid-maker.o 
+
+CC_DEPS += \
+./libpmk2/pyramids/global-vg-pyramid-maker.d \
+./libpmk2/pyramids/input-specific-vg-pyramid-maker.d \
+./libpmk2/pyramids/normalized-uniform-pyramid-maker.d \
+./libpmk2/pyramids/pyramid-maker.d \
+./libpmk2/pyramids/pyramid-matcher.d \
+./libpmk2/pyramids/pyramid-matcher_unittest.d \
+./libpmk2/pyramids/uniform-pyramid-maker.d \
+./libpmk2/pyramids/uniform-pyramid-maker_unittest.d \
+./libpmk2/pyramids/vg-pyramid-maker.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk2/pyramids/global-vg-pyramid-maker.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/pyramids/input-specific-vg-pyramid-maker.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/input-specific-vg-pyramid-maker.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/pyramids/normalized-uniform-pyramid-maker.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/normalized-uniform-pyramid-maker.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/pyramids/pyramid-maker.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/pyramid-maker.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/pyramids/pyramid-matcher.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/pyramid-matcher.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/pyramids/pyramid-matcher_unittest.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/pyramid-matcher_unittest.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/pyramids/uniform-pyramid-maker.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/uniform-pyramid-maker.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/pyramids/uniform-pyramid-maker_unittest.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/uniform-pyramid-maker_unittest.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/pyramids/vg-pyramid-maker.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/vg-pyramid-maker.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

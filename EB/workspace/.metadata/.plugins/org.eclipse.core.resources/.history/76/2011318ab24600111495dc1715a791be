@@ -1,0 +1,39 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CC_SRCS += \
+../libpmk-2.5/spatial_pmk/spatial/channelizer.cc \
+../libpmk-2.5/spatial_pmk/spatial/channelizer_unittest.cc \
+../libpmk-2.5/spatial_pmk/spatial/normalized-spatial-pyramid-maker.cc \
+../libpmk-2.5/spatial_pmk/spatial/spatial-pyramid-maker.cc \
+../libpmk-2.5/spatial_pmk/spatial/spatial-pyramid-reader.cc \
+../libpmk-2.5/spatial_pmk/spatial/spatial-pyramid-writer.cc 
+
+OBJS += \
+./libpmk-2.5/spatial_pmk/spatial/channelizer.o \
+./libpmk-2.5/spatial_pmk/spatial/channelizer_unittest.o \
+./libpmk-2.5/spatial_pmk/spatial/normalized-spatial-pyramid-maker.o \
+./libpmk-2.5/spatial_pmk/spatial/spatial-pyramid-maker.o \
+./libpmk-2.5/spatial_pmk/spatial/spatial-pyramid-reader.o \
+./libpmk-2.5/spatial_pmk/spatial/spatial-pyramid-writer.o 
+
+CC_DEPS += \
+./libpmk-2.5/spatial_pmk/spatial/channelizer.d \
+./libpmk-2.5/spatial_pmk/spatial/channelizer_unittest.d \
+./libpmk-2.5/spatial_pmk/spatial/normalized-spatial-pyramid-maker.d \
+./libpmk-2.5/spatial_pmk/spatial/spatial-pyramid-maker.d \
+./libpmk-2.5/spatial_pmk/spatial/spatial-pyramid-reader.d \
+./libpmk-2.5/spatial_pmk/spatial/spatial-pyramid-writer.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk-2.5/spatial_pmk/spatial/%.o: ../libpmk-2.5/spatial_pmk/spatial/%.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

@@ -1,0 +1,90 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/clusterer.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/hierarchical-clusterer.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/k-means-clusterer.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/rnn-clusterer.o 
+
+CC_SRCS += \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/clusterer.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/hierarchical-clusterer.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/hierarchical-clusterer_unittest.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/k-means-clusterer.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/k-means-clusterer_unittest.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/rnn-clusterer.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/rnn-clusterer_unittest.cc 
+
+OBJS += \
+./libpmk2/clustering/clusterer.o \
+./libpmk2/clustering/hierarchical-clusterer.o \
+./libpmk2/clustering/hierarchical-clusterer_unittest.o \
+./libpmk2/clustering/k-means-clusterer.o \
+./libpmk2/clustering/k-means-clusterer_unittest.o \
+./libpmk2/clustering/rnn-clusterer.o \
+./libpmk2/clustering/rnn-clusterer_unittest.o 
+
+CC_DEPS += \
+./libpmk2/clustering/clusterer.d \
+./libpmk2/clustering/hierarchical-clusterer.d \
+./libpmk2/clustering/hierarchical-clusterer_unittest.d \
+./libpmk2/clustering/k-means-clusterer.d \
+./libpmk2/clustering/k-means-clusterer_unittest.d \
+./libpmk2/clustering/rnn-clusterer.d \
+./libpmk2/clustering/rnn-clusterer_unittest.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk2/clustering/clusterer.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/clusterer.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/clustering/hierarchical-clusterer.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/hierarchical-clusterer.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/clustering/hierarchical-clusterer_unittest.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/hierarchical-clusterer_unittest.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/clustering/k-means-clusterer.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/k-means-clusterer.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/clustering/k-means-clusterer_unittest.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/k-means-clusterer_unittest.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/clustering/rnn-clusterer.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/rnn-clusterer.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/clustering/rnn-clusterer_unittest.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/clustering/rnn-clusterer_unittest.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

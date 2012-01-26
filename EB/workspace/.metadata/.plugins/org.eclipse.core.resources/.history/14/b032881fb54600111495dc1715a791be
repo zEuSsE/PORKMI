@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CC_SRCS += \
+../libpmk-2.5/libpmk2/svm/svm.cc 
+
+OBJS += \
+./libpmk-2.5/libpmk2/svm/svm.o 
+
+CC_DEPS += \
+./libpmk-2.5/libpmk2/svm/svm.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk-2.5/libpmk2/svm/%.o: ../libpmk-2.5/libpmk2/svm/%.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

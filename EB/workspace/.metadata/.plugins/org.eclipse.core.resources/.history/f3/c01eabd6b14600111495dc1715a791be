@@ -1,0 +1,45 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CC_SRCS += \
+../libpmk-2.5/libpmk_features/extractor/extractor.cc \
+../libpmk-2.5/libpmk_features/extractor/image-extractor.cc \
+../libpmk-2.5/libpmk_features/extractor/location-extractor.cc \
+../libpmk-2.5/libpmk_features/extractor/oxford-vgg-extractor.cc \
+../libpmk-2.5/libpmk_features/extractor/shape-context-extractor.cc \
+../libpmk-2.5/libpmk_features/extractor/sift-extractor.cc \
+../libpmk-2.5/libpmk_features/extractor/steerable-filter-extractor.cc \
+../libpmk-2.5/libpmk_features/extractor/surf-extractor.cc 
+
+OBJS += \
+./libpmk-2.5/libpmk_features/extractor/extractor.o \
+./libpmk-2.5/libpmk_features/extractor/image-extractor.o \
+./libpmk-2.5/libpmk_features/extractor/location-extractor.o \
+./libpmk-2.5/libpmk_features/extractor/oxford-vgg-extractor.o \
+./libpmk-2.5/libpmk_features/extractor/shape-context-extractor.o \
+./libpmk-2.5/libpmk_features/extractor/sift-extractor.o \
+./libpmk-2.5/libpmk_features/extractor/steerable-filter-extractor.o \
+./libpmk-2.5/libpmk_features/extractor/surf-extractor.o 
+
+CC_DEPS += \
+./libpmk-2.5/libpmk_features/extractor/extractor.d \
+./libpmk-2.5/libpmk_features/extractor/image-extractor.d \
+./libpmk-2.5/libpmk_features/extractor/location-extractor.d \
+./libpmk-2.5/libpmk_features/extractor/oxford-vgg-extractor.d \
+./libpmk-2.5/libpmk_features/extractor/shape-context-extractor.d \
+./libpmk-2.5/libpmk_features/extractor/sift-extractor.d \
+./libpmk-2.5/libpmk_features/extractor/steerable-filter-extractor.d \
+./libpmk-2.5/libpmk_features/extractor/surf-extractor.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk-2.5/libpmk_features/extractor/%.o: ../libpmk-2.5/libpmk_features/extractor/%.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

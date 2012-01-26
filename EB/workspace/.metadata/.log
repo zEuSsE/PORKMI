@@ -1,0 +1,100 @@
+!SESSION 2012-01-24 17:19:04.455 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-01-24 17:31:05.502
+!MESSAGE Indexed 'AcquisizionePSL' (1 sources, 170 headers) in 6,71 sec: 10.395 declarations; 15.472 references; 0 unresolved inclusions; 7 syntax errors; 71 unresolved names (0,27%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-01-24 18:19:38.152
+!MESSAGE Indexed 'Prova' (0 sources, 98 headers) in 1,27 sec: 2.297 declarations; 2.450 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-01-24 18:28:05.976
+!MESSAGE Indexed 'Prova' (1 sources, 170 headers) in 3,15 sec: 10.395 declarations; 15.472 references; 0 unresolved inclusions; 7 syntax errors; 71 unresolved names (0,27%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-01-24 19:01:53.712
+!MESSAGE Indexed 'AcquisizionePSL' (1 sources, 170 headers) in 6,18 sec: 10.395 declarations; 15.472 references; 0 unresolved inclusions; 7 syntax errors; 71 unresolved names (0,27%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-01-24 20:42:18.659
+!MESSAGE Indexed 'AcquisizionePSL' (1 sources, 170 headers) in 4,53 sec: 10.031 declarations; 15.051 references; 2 unresolved inclusions; 6 syntax errors; 93 unresolved names (0,37%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-01-24 20:43:19.756
+!MESSAGE Indexed 'AcquisizionePSL' (1 sources, 170 headers) in 3,44 sec: 10.031 declarations; 15.051 references; 2 unresolved inclusions; 6 syntax errors; 93 unresolved names (0,37%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-01-24 20:45:21.607
+!MESSAGE Indexed 'AcquisizionePSL' (137 sources, 325 headers) in 10,53 sec: 26.916 declarations; 68.749 references; 38 unresolved inclusions; 11 syntax errors; 1.052 unresolved names (1,09%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-01-24 20:47:44.907
+!MESSAGE Indexed 'AcquisizionePSL' (81 sources, 278 headers) in 10,05 sec: 24.244 declarations; 57.941 references; 0 unresolved inclusions; 11 syntax errors; 139 unresolved names (0,17%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-01-24 20:51:50.299
+!MESSAGE Indexed 'AcquisizionePSL' (1 sources, 181 headers) in 2,94 sec: 11.486 declarations; 17.633 references; 0 unresolved inclusions; 7 syntax errors; 77 unresolved names (0,26%)
+!SESSION 2012-01-25 11:01:05.105 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-01-25 11:11:18.457
+!MESSAGE Indexed 'AcquisizionePSL' (1 sources, 181 headers) in 6,32 sec: 11.122 declarations; 17.204 references; 0 unresolved inclusions; 6 syntax errors; 98 unresolved names (0,34%)
+!SESSION 2012-01-25 15:29:51.709 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.debug.core 4 104 2012-01-25 18:07:35.837
+!MESSAGE The program file specified in the launch configuration does not exist
+!STACK 0
+java.io.FileNotFoundException: /home/andrea/workspace/AcquisizionePSL/Debug/AcquisizionePSL not found
+	at org.eclipse.cdt.debug.core.CDebugUtils.verifyProgramPath(CDebugUtils.java:653)
+	at org.eclipse.cdt.debug.core.CDebugUtils.verifyProgramPath(CDebugUtils.java:669)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:84)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2012-01-25 19:02:32.065
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIRunControl$9@2b556a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Context cannot be suspended. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2012-01-25 19:02:32.065
+!MESSAGE Context cannot be suspended.
+!SESSION 2012-01-26 09:14:33.708 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-01-26 09:14:40.831
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2012-01-26 10:34:32.701 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-01-26 10:34:38.099
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2012-01-26 10:48:28.441 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-01-26 10:48:34.003
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

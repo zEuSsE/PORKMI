@@ -1,0 +1,49 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/util/distance-computer.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/util/labeled-index.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/util/sparse-vector.o 
+
+CC_SRCS += \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/util/distance-computer.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/util/labeled-index.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/util/sparse-vector.cc 
+
+OBJS += \
+./libpmk2/util/distance-computer.o \
+./libpmk2/util/labeled-index.o \
+./libpmk2/util/sparse-vector.o 
+
+CC_DEPS += \
+./libpmk2/util/distance-computer.d \
+./libpmk2/util/labeled-index.d \
+./libpmk2/util/sparse-vector.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk2/util/distance-computer.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/util/distance-computer.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/util/labeled-index.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/util/labeled-index.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/util/sparse-vector.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/util/sparse-vector.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

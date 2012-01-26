@@ -1,0 +1,14 @@
+
+**** Build of configuration Debug for project Prova ****
+
+make all 
+Building file: ../src/Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp: In function ‘int main()’:
+../src/Main.cpp:20:35: error: expected type-specifier before ‘OnDiskPointSetList’
+../src/Main.cpp:20:35: error: cannot convert ‘int*’ to ‘libpmk::PointSetList*’ in initialization
+../src/Main.cpp:20:35: error: expected ‘,’ or ‘;’ before ‘OnDiskPointSetList’
+make: *** [src/Main.o] Error 1
+
+**** Build Finished ****

@@ -1,0 +1,36 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CC_SRCS += \
+../libpmk-2.5/avt/trees/incremental-vocabulary-tree.cc \
+../libpmk-2.5/avt/trees/inverted-file.cc \
+../libpmk-2.5/avt/trees/simple-pyramid-maker.cc \
+../libpmk-2.5/avt/trees/visual-word.cc \
+../libpmk-2.5/avt/trees/vocabulary-tree-retriever.cc 
+
+OBJS += \
+./libpmk-2.5/avt/trees/incremental-vocabulary-tree.o \
+./libpmk-2.5/avt/trees/inverted-file.o \
+./libpmk-2.5/avt/trees/simple-pyramid-maker.o \
+./libpmk-2.5/avt/trees/visual-word.o \
+./libpmk-2.5/avt/trees/vocabulary-tree-retriever.o 
+
+CC_DEPS += \
+./libpmk-2.5/avt/trees/incremental-vocabulary-tree.d \
+./libpmk-2.5/avt/trees/inverted-file.d \
+./libpmk-2.5/avt/trees/simple-pyramid-maker.d \
+./libpmk-2.5/avt/trees/visual-word.d \
+./libpmk-2.5/avt/trees/vocabulary-tree-retriever.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk-2.5/avt/trees/%.o: ../libpmk-2.5/avt/trees/%.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

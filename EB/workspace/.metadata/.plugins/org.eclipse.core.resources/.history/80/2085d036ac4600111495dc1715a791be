@@ -1,0 +1,244 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CC_SRCS += \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/clean-psl.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/clean-single-psl.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/clusters-to-pyramids.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/exponent-kernel.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/extract-classes-from-psl.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/extract-subset-from-psl.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/feature-value-discretizer.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/generate-random-psl.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/hierarchical-cluster-point-set.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/kernel-adder.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/large-upmk-example.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/normalize-kernel.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/partial-pyramid-match-kernel.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pointset-merger.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pointsets-to-uniform-pyramids.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/psl-sampler.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pyramid-match-chunk.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pyramid-match-kernel.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pyramid-match-self-similarity.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pyramid-match-split.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/random-sampler.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/random-sampling-merger.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/reverse-psl.cc 
+
+OBJS += \
+./libpmk2/tools/clean-psl.o \
+./libpmk2/tools/clean-single-psl.o \
+./libpmk2/tools/clusters-to-pyramids.o \
+./libpmk2/tools/exponent-kernel.o \
+./libpmk2/tools/extract-classes-from-psl.o \
+./libpmk2/tools/extract-subset-from-psl.o \
+./libpmk2/tools/feature-value-discretizer.o \
+./libpmk2/tools/generate-random-psl.o \
+./libpmk2/tools/hierarchical-cluster-point-set.o \
+./libpmk2/tools/kernel-adder.o \
+./libpmk2/tools/large-upmk-example.o \
+./libpmk2/tools/normalize-kernel.o \
+./libpmk2/tools/partial-pyramid-match-kernel.o \
+./libpmk2/tools/pointset-merger.o \
+./libpmk2/tools/pointsets-to-uniform-pyramids.o \
+./libpmk2/tools/psl-sampler.o \
+./libpmk2/tools/pyramid-match-chunk.o \
+./libpmk2/tools/pyramid-match-kernel.o \
+./libpmk2/tools/pyramid-match-self-similarity.o \
+./libpmk2/tools/pyramid-match-split.o \
+./libpmk2/tools/random-sampler.o \
+./libpmk2/tools/random-sampling-merger.o \
+./libpmk2/tools/reverse-psl.o 
+
+CC_DEPS += \
+./libpmk2/tools/clean-psl.d \
+./libpmk2/tools/clean-single-psl.d \
+./libpmk2/tools/clusters-to-pyramids.d \
+./libpmk2/tools/exponent-kernel.d \
+./libpmk2/tools/extract-classes-from-psl.d \
+./libpmk2/tools/extract-subset-from-psl.d \
+./libpmk2/tools/feature-value-discretizer.d \
+./libpmk2/tools/generate-random-psl.d \
+./libpmk2/tools/hierarchical-cluster-point-set.d \
+./libpmk2/tools/kernel-adder.d \
+./libpmk2/tools/large-upmk-example.d \
+./libpmk2/tools/normalize-kernel.d \
+./libpmk2/tools/partial-pyramid-match-kernel.d \
+./libpmk2/tools/pointset-merger.d \
+./libpmk2/tools/pointsets-to-uniform-pyramids.d \
+./libpmk2/tools/psl-sampler.d \
+./libpmk2/tools/pyramid-match-chunk.d \
+./libpmk2/tools/pyramid-match-kernel.d \
+./libpmk2/tools/pyramid-match-self-similarity.d \
+./libpmk2/tools/pyramid-match-split.d \
+./libpmk2/tools/random-sampler.d \
+./libpmk2/tools/random-sampling-merger.d \
+./libpmk2/tools/reverse-psl.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk2/tools/clean-psl.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/clean-psl.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/clean-single-psl.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/clean-single-psl.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/clusters-to-pyramids.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/clusters-to-pyramids.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/exponent-kernel.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/exponent-kernel.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/extract-classes-from-psl.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/extract-classes-from-psl.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/extract-subset-from-psl.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/extract-subset-from-psl.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/feature-value-discretizer.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/feature-value-discretizer.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/generate-random-psl.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/generate-random-psl.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/hierarchical-cluster-point-set.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/hierarchical-cluster-point-set.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/kernel-adder.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/kernel-adder.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/large-upmk-example.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/large-upmk-example.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/normalize-kernel.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/normalize-kernel.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/partial-pyramid-match-kernel.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/partial-pyramid-match-kernel.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/pointset-merger.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pointset-merger.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/pointsets-to-uniform-pyramids.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pointsets-to-uniform-pyramids.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/psl-sampler.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/psl-sampler.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/pyramid-match-chunk.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pyramid-match-chunk.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/pyramid-match-kernel.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pyramid-match-kernel.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/pyramid-match-self-similarity.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pyramid-match-self-similarity.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/pyramid-match-split.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/pyramid-match-split.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/random-sampler.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/random-sampler.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/random-sampling-merger.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/random-sampling-merger.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tools/reverse-psl.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tools/reverse-psl.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

@@ -1,0 +1,59 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../libpmk-2.5/libpmk2/point_set/mutable-point-set-list.o \
+../libpmk-2.5/libpmk2/point_set/on-disk-point-set-list.o \
+../libpmk-2.5/libpmk2/point_set/point-ref.o \
+../libpmk-2.5/libpmk2/point_set/point-set-list.o \
+../libpmk-2.5/libpmk2/point_set/point-set.o \
+../libpmk-2.5/libpmk2/point_set/point.o 
+
+CC_SRCS += \
+../libpmk-2.5/libpmk2/point_set/mutable-point-set-list.cc \
+../libpmk-2.5/libpmk2/point_set/mutable-point-set-list_unittest.cc \
+../libpmk-2.5/libpmk2/point_set/on-disk-point-set-list.cc \
+../libpmk-2.5/libpmk2/point_set/on-disk-point-set-list_unittest.cc \
+../libpmk-2.5/libpmk2/point_set/point-ref.cc \
+../libpmk-2.5/libpmk2/point_set/point-set-list.cc \
+../libpmk-2.5/libpmk2/point_set/point-set.cc \
+../libpmk-2.5/libpmk2/point_set/point-set_unittest.cc \
+../libpmk-2.5/libpmk2/point_set/point.cc \
+../libpmk-2.5/libpmk2/point_set/point_unittest.cc 
+
+OBJS += \
+./libpmk-2.5/libpmk2/point_set/mutable-point-set-list.o \
+./libpmk-2.5/libpmk2/point_set/mutable-point-set-list_unittest.o \
+./libpmk-2.5/libpmk2/point_set/on-disk-point-set-list.o \
+./libpmk-2.5/libpmk2/point_set/on-disk-point-set-list_unittest.o \
+./libpmk-2.5/libpmk2/point_set/point-ref.o \
+./libpmk-2.5/libpmk2/point_set/point-set-list.o \
+./libpmk-2.5/libpmk2/point_set/point-set.o \
+./libpmk-2.5/libpmk2/point_set/point-set_unittest.o \
+./libpmk-2.5/libpmk2/point_set/point.o \
+./libpmk-2.5/libpmk2/point_set/point_unittest.o 
+
+CC_DEPS += \
+./libpmk-2.5/libpmk2/point_set/mutable-point-set-list.d \
+./libpmk-2.5/libpmk2/point_set/mutable-point-set-list_unittest.d \
+./libpmk-2.5/libpmk2/point_set/on-disk-point-set-list.d \
+./libpmk-2.5/libpmk2/point_set/on-disk-point-set-list_unittest.d \
+./libpmk-2.5/libpmk2/point_set/point-ref.d \
+./libpmk-2.5/libpmk2/point_set/point-set-list.d \
+./libpmk-2.5/libpmk2/point_set/point-set.d \
+./libpmk-2.5/libpmk2/point_set/point-set_unittest.d \
+./libpmk-2.5/libpmk2/point_set/point.d \
+./libpmk-2.5/libpmk2/point_set/point_unittest.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk-2.5/libpmk2/point_set/%.o: ../libpmk-2.5/libpmk2/point_set/%.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

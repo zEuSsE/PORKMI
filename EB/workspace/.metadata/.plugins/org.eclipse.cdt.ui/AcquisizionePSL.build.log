@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:219:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****

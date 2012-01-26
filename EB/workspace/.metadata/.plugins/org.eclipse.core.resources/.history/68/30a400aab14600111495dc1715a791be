@@ -1,0 +1,35 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../libpmk-2.5/libpmk2/util/distance-computer.o \
+../libpmk-2.5/libpmk2/util/labeled-index.o \
+../libpmk-2.5/libpmk2/util/sparse-vector.o 
+
+CC_SRCS += \
+../libpmk-2.5/libpmk2/util/distance-computer.cc \
+../libpmk-2.5/libpmk2/util/labeled-index.cc \
+../libpmk-2.5/libpmk2/util/sparse-vector.cc 
+
+OBJS += \
+./libpmk-2.5/libpmk2/util/distance-computer.o \
+./libpmk-2.5/libpmk2/util/labeled-index.o \
+./libpmk-2.5/libpmk2/util/sparse-vector.o 
+
+CC_DEPS += \
+./libpmk-2.5/libpmk2/util/distance-computer.d \
+./libpmk-2.5/libpmk2/util/labeled-index.d \
+./libpmk-2.5/libpmk2/util/sparse-vector.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk-2.5/libpmk2/util/%.o: ../libpmk-2.5/libpmk2/util/%.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

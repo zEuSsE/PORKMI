@@ -1,0 +1,52 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+O_SRCS := 
+CPP_SRCS := 
+C_UPPER_SRCS := 
+C_SRCS := 
+S_UPPER_SRCS := 
+OBJ_SRCS := 
+ASM_SRCS := 
+CXX_SRCS := 
+C++_SRCS := 
+CC_SRCS := 
+C++_DEPS := 
+OBJS := 
+C_DEPS := 
+CC_DEPS := 
+CPP_DEPS := 
+EXECUTABLES := 
+CXX_DEPS := 
+C_UPPER_DEPS := 
+
+# Every subdirectory with source files must be described here
+SUBDIRS := \
+src \
+libpmk-2.5/spatial_pmk/tools \
+libpmk-2.5/spatial_pmk/spatial \
+libpmk-2.5/libpmk_ism/ui \
+libpmk-2.5/libpmk_ism/shape_model \
+libpmk-2.5/libpmk_ism/examples \
+libpmk-2.5/libpmk_features/tools \
+libpmk-2.5/libpmk_features/images \
+libpmk-2.5/libpmk_features/extractor \
+libpmk-2.5/libpmk_features/detector \
+libpmk-2.5/libpmk_features/core \
+libpmk-2.5/libpmk_eth \
+libpmk-2.5/libpmk2/util \
+libpmk-2.5/libpmk2/tree \
+libpmk-2.5/libpmk2/tools \
+libpmk-2.5/libpmk2/svm \
+libpmk-2.5/libpmk2/pyramids \
+libpmk-2.5/libpmk2/point_set \
+libpmk-2.5/libpmk2 \
+libpmk-2.5/libpmk2/kernel \
+libpmk-2.5/libpmk2/histograms \
+libpmk-2.5/libpmk2/experiment \
+libpmk-2.5/libpmk2/diagnostic \
+libpmk-2.5/libpmk2/clustering \
+libpmk-2.5/avt/trees \
+libpmk-2.5/avt/tools \
+

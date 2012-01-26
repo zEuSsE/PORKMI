@@ -1,0 +1,39 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CC_SRCS += \
+../libpmk-2.5/libpmk_ism/shape_model/codebook-entry.cc \
+../libpmk-2.5/libpmk_ism/shape_model/hough-accumulator-3d.cc \
+../libpmk-2.5/libpmk_ism/shape_model/implicit-shape-model.cc \
+../libpmk-2.5/libpmk_ism/shape_model/model-group.cc \
+../libpmk-2.5/libpmk_ism/shape_model/object-position-vote.cc \
+../libpmk-2.5/libpmk_ism/shape_model/uniform-balloon-density-estimator.cc 
+
+OBJS += \
+./libpmk-2.5/libpmk_ism/shape_model/codebook-entry.o \
+./libpmk-2.5/libpmk_ism/shape_model/hough-accumulator-3d.o \
+./libpmk-2.5/libpmk_ism/shape_model/implicit-shape-model.o \
+./libpmk-2.5/libpmk_ism/shape_model/model-group.o \
+./libpmk-2.5/libpmk_ism/shape_model/object-position-vote.o \
+./libpmk-2.5/libpmk_ism/shape_model/uniform-balloon-density-estimator.o 
+
+CC_DEPS += \
+./libpmk-2.5/libpmk_ism/shape_model/codebook-entry.d \
+./libpmk-2.5/libpmk_ism/shape_model/hough-accumulator-3d.d \
+./libpmk-2.5/libpmk_ism/shape_model/implicit-shape-model.d \
+./libpmk-2.5/libpmk_ism/shape_model/model-group.d \
+./libpmk-2.5/libpmk_ism/shape_model/object-position-vote.d \
+./libpmk-2.5/libpmk_ism/shape_model/uniform-balloon-density-estimator.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk-2.5/libpmk_ism/shape_model/%.o: ../libpmk-2.5/libpmk_ism/shape_model/%.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

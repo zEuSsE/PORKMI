@@ -1,0 +1,91 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/point-tree-node.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/sparse-tree-node.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/sparse-tree.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/tree-node.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/tree.o 
+
+CC_SRCS += \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/point-tree-node.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/sparse-tree-node.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/sparse-tree.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/sparse-tree_unittest.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/tree-node.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/tree.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/tree_unittest.cc 
+
+OBJS += \
+./libpmk2/tree/point-tree-node.o \
+./libpmk2/tree/sparse-tree-node.o \
+./libpmk2/tree/sparse-tree.o \
+./libpmk2/tree/sparse-tree_unittest.o \
+./libpmk2/tree/tree-node.o \
+./libpmk2/tree/tree.o \
+./libpmk2/tree/tree_unittest.o 
+
+CC_DEPS += \
+./libpmk2/tree/point-tree-node.d \
+./libpmk2/tree/sparse-tree-node.d \
+./libpmk2/tree/sparse-tree.d \
+./libpmk2/tree/sparse-tree_unittest.d \
+./libpmk2/tree/tree-node.d \
+./libpmk2/tree/tree.d \
+./libpmk2/tree/tree_unittest.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk2/tree/point-tree-node.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/point-tree-node.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tree/sparse-tree-node.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/sparse-tree-node.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tree/sparse-tree.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/sparse-tree.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tree/sparse-tree_unittest.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/sparse-tree_unittest.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tree/tree-node.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/tree-node.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tree/tree.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/tree.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/tree/tree_unittest.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/tree/tree_unittest.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

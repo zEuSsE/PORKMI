@@ -1,0 +1,58 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/kernel/kernel-matrix.o \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/kernel/matrix.o 
+
+CC_SRCS += \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/kernel/kernel-matrix.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/kernel/kernel-matrix_unittest.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/kernel/matrix.cc \
+/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/kernel/matrix_unittest.cc 
+
+OBJS += \
+./libpmk2/kernel/kernel-matrix.o \
+./libpmk2/kernel/kernel-matrix_unittest.o \
+./libpmk2/kernel/matrix.o \
+./libpmk2/kernel/matrix_unittest.o 
+
+CC_DEPS += \
+./libpmk2/kernel/kernel-matrix.d \
+./libpmk2/kernel/kernel-matrix_unittest.d \
+./libpmk2/kernel/matrix.d \
+./libpmk2/kernel/matrix_unittest.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk2/kernel/kernel-matrix.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/kernel/kernel-matrix.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/kernel/kernel-matrix_unittest.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/kernel/kernel-matrix_unittest.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/kernel/matrix.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/kernel/matrix.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+libpmk2/kernel/matrix_unittest.o: /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/kernel/matrix_unittest.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

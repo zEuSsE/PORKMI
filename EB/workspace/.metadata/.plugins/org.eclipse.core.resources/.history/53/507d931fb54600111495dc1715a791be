@@ -1,0 +1,45 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CC_SRCS += \
+../libpmk-2.5/libpmk2/experiment/eth-selector.cc \
+../libpmk-2.5/libpmk2/experiment/example-selector.cc \
+../libpmk-2.5/libpmk2/experiment/example-selector_unittest.cc \
+../libpmk-2.5/libpmk2/experiment/experiment.cc \
+../libpmk-2.5/libpmk2/experiment/nn-experiment.cc \
+../libpmk-2.5/libpmk2/experiment/prob-svm-experiment.cc \
+../libpmk-2.5/libpmk2/experiment/random-selector.cc \
+../libpmk-2.5/libpmk2/experiment/svm-experiment.cc 
+
+OBJS += \
+./libpmk-2.5/libpmk2/experiment/eth-selector.o \
+./libpmk-2.5/libpmk2/experiment/example-selector.o \
+./libpmk-2.5/libpmk2/experiment/example-selector_unittest.o \
+./libpmk-2.5/libpmk2/experiment/experiment.o \
+./libpmk-2.5/libpmk2/experiment/nn-experiment.o \
+./libpmk-2.5/libpmk2/experiment/prob-svm-experiment.o \
+./libpmk-2.5/libpmk2/experiment/random-selector.o \
+./libpmk-2.5/libpmk2/experiment/svm-experiment.o 
+
+CC_DEPS += \
+./libpmk-2.5/libpmk2/experiment/eth-selector.d \
+./libpmk-2.5/libpmk2/experiment/example-selector.d \
+./libpmk-2.5/libpmk2/experiment/example-selector_unittest.d \
+./libpmk-2.5/libpmk2/experiment/experiment.d \
+./libpmk-2.5/libpmk2/experiment/nn-experiment.d \
+./libpmk-2.5/libpmk2/experiment/prob-svm-experiment.d \
+./libpmk-2.5/libpmk2/experiment/random-selector.d \
+./libpmk-2.5/libpmk2/experiment/svm-experiment.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+libpmk-2.5/libpmk2/experiment/%.o: ../libpmk-2.5/libpmk2/experiment/%.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
