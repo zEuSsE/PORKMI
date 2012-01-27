@@ -206,3 +206,1764 @@ Finished building target: AcquisizionePSL
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:291:51: error: invalid conversion from ‘libpmk::PointSetList*’ to ‘libpmk::MutablePointSetList*’ [-fpermissive]
+../src/AcquisizionePSL.cpp:201:5: error:   initializing argument 1 of ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’ [-fpermissive]
+../src/AcquisizionePSL.cpp:292:36: error: no matching function for call to ‘std::vector<libpmk::PointSetList*>::push_back()’
+../src/AcquisizionePSL.cpp:292:36: note: candidate is:
+/usr/include/c++/4.6/bits/stl_vector.h:826:7: note: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = libpmk::PointSetList*, _Alloc = std::allocator<libpmk::PointSetList*>, std::vector<_Tp, _Alloc>::value_type = libpmk::PointSetList*]
+/usr/include/c++/4.6/bits/stl_vector.h:826:7: note:   candidate expects 1 argument, 0 provided
+../src/AcquisizionePSL.cpp:293:10: error: expected ‘;’ before ‘}’ token
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:290:56: error: cannot allocate an object of abstract type ‘libpmk::PointSetList’
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:51:7: note:   because the following virtual functions are pure within ‘libpmk::PointSetList’:
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:56:15: note: 	virtual int libpmk::PointSetList::point_set_size() const
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:63:15: note: 	virtual int libpmk::PointSetList::point_size() const
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:69:15: note: 	virtual int libpmk::PointSetList::point_dim() const
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:86:27: note: 	virtual const libpmk::PointSet& libpmk::PointSetList::point_set(int) const
+../src/AcquisizionePSL.cpp:290:24: error: cannot declare variable ‘tempPSL’ to be of abstract type ‘libpmk::PointSetList’
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:51:7: note:   since type ‘libpmk::PointSetList’ has pure virtual functions
+../src/AcquisizionePSL.cpp:291:51: error: cannot convert ‘libpmk::PointSetList’ to ‘libpmk::MutablePointSetList*’ for argument ‘1’ to ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’
+../src/AcquisizionePSL.cpp:292:43: error: no matching function for call to ‘std::vector<libpmk::PointSetList*>::push_back(libpmk::PointSetList&)’
+../src/AcquisizionePSL.cpp:292:43: note: candidate is:
+/usr/include/c++/4.6/bits/stl_vector.h:826:7: note: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = libpmk::PointSetList*, _Alloc = std::allocator<libpmk::PointSetList*>, std::vector<_Tp, _Alloc>::value_type = libpmk::PointSetList*]
+/usr/include/c++/4.6/bits/stl_vector.h:826:7: note:   no known conversion for argument 1 from ‘libpmk::PointSetList’ to ‘libpmk::PointSetList* const&’
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:291:51: error: invalid conversion from ‘libpmk::PointSetList*’ to ‘libpmk::MutablePointSetList*’ [-fpermissive]
+../src/AcquisizionePSL.cpp:201:5: error:   initializing argument 1 of ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’ [-fpermissive]
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/AcquisizionePSL.cpp:292:44: warning: ‘datasetVector’ may be used uninitialized in this function [-Wuninitialized]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:291:51: error: invalid conversion from ‘libpmk::PointSetList*’ to ‘libpmk::MutablePointSetList*’ [-fpermissive]
+../src/AcquisizionePSL.cpp:201:5: error:   initializing argument 1 of ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’ [-fpermissive]
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList&, std::string)’:
+../src/AcquisizionePSL.cpp:203:48: error: expected primary-expression before ‘;’ token
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:291:51: error: invalid conversion from ‘libpmk::PointSetList*’ to ‘libpmk::MutablePointSetList*’ [-fpermissive]
+../src/AcquisizionePSL.cpp:29:5: error:   initializing argument 1 of ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’ [-fpermissive]
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList&, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:291:51: error: invalid conversion from ‘libpmk::PointSetList*’ to ‘libpmk::MutablePointSetList*’ [-fpermissive]
+../src/AcquisizionePSL.cpp:29:5: error:   initializing argument 1 of ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’ [-fpermissive]
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList&, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:291:52: error: no matching function for call to ‘leggerePointSetList(libpmk::PointSetList&, std::string&)’
+../src/AcquisizionePSL.cpp:291:52: note: candidates are:
+../src/AcquisizionePSL.cpp:29:5: note: int leggerePointSetList(libpmk::MutablePointSetList*, std::string)
+../src/AcquisizionePSL.cpp:29:5: note:   no known conversion for argument 1 from ‘libpmk::PointSetList’ to ‘libpmk::MutablePointSetList*’
+../src/AcquisizionePSL.cpp:201:5: note: int leggerePointSetList(libpmk::MutablePointSetList&, std::string)
+../src/AcquisizionePSL.cpp:201:5: note:   no known conversion for argument 1 from ‘libpmk::PointSetList’ to ‘libpmk::MutablePointSetList&’
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:42:75: error: invalid initialization of non-const reference of type ‘libpmk::MutablePointSetList&’ from an rvalue of type ‘libpmk::MutablePointSetList*’
+../src/AcquisizionePSL.cpp:29:5: error: in passing argument 1 of ‘int leggerePointSetList(libpmk::MutablePointSetList&, std::string)’
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:291:52: error: invalid initialization of reference of type ‘libpmk::MutablePointSetList&’ from expression of type ‘libpmk::PointSetList’
+../src/AcquisizionePSL.cpp:201:5: error: in passing argument 1 of ‘int leggerePointSetList(libpmk::MutablePointSetList&, std::string)’
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList&, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:291:52: error: invalid initialization of reference of type ‘libpmk::MutablePointSetList&’ from expression of type ‘libpmk::PointSetList’
+../src/AcquisizionePSL.cpp:201:5: error: in passing argument 1 of ‘int leggerePointSetList(libpmk::MutablePointSetList&, std::string)’
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:291:51: error: invalid conversion from ‘libpmk::PointSetList*’ to ‘libpmk::MutablePointSetList*’ [-fpermissive]
+../src/AcquisizionePSL.cpp:201:5: error:   initializing argument 1 of ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’ [-fpermissive]
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList&, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:290:24: error: cannot declare variable ‘tempPSL’ to be of abstract type ‘libpmk::PointSetList’
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:51:7: note:   because the following virtual functions are pure within ‘libpmk::PointSetList’:
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:56:15: note: 	virtual int libpmk::PointSetList::point_set_size() const
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:63:15: note: 	virtual int libpmk::PointSetList::point_size() const
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:69:15: note: 	virtual int libpmk::PointSetList::point_dim() const
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:86:27: note: 	virtual const libpmk::PointSet& libpmk::PointSetList::point_set(int) const
+../src/AcquisizionePSL.cpp:291:51: error: invalid initialization of reference of type ‘libpmk::MutablePointSetList&’ from expression of type ‘libpmk::PointSetList’
+../src/AcquisizionePSL.cpp:201:5: error: in passing argument 1 of ‘int leggerePointSetList(libpmk::MutablePointSetList&, std::string)’
+../src/AcquisizionePSL.cpp:292:43: error: no matching function for call to ‘std::vector<libpmk::PointSetList*>::push_back(libpmk::PointSetList&)’
+../src/AcquisizionePSL.cpp:292:43: note: candidate is:
+/usr/include/c++/4.6/bits/stl_vector.h:826:7: note: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = libpmk::PointSetList*, _Alloc = std::allocator<libpmk::PointSetList*>, std::vector<_Tp, _Alloc>::value_type = libpmk::PointSetList*]
+/usr/include/c++/4.6/bits/stl_vector.h:826:7: note:   no known conversion for argument 1 from ‘libpmk::PointSetList’ to ‘libpmk::PointSetList* const&’
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList&, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/AcquisizionePSL.cpp:292:44: warning: ‘datasetVector’ may be used uninitialized in this function [-Wuninitialized]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:29:49: error: expected ‘,’ or ‘...’ before ‘*’ token
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<libpmk::PointSetList*>*)’:
+../src/AcquisizionePSL.cpp:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/AcquisizionePSL.cpp:292:44: warning: ‘datasetVector’ may be used uninitialized in this function [-Wuninitialized]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:30:1: error: expected ‘;’ after struct definition
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDataset(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:306:19: warning: unused variable ‘temp’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp:311:1: error: expected ‘}’ at end of input
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:30:1: error: expected ‘;’ after struct definition
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDataset(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:306:19: warning: unused variable ‘temp’ [-Wunused-variable]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:30:1: error: expected ‘;’ after struct definition
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDataset(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:306:19: warning: unused variable ‘temp’ [-Wunused-variable]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDataset(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:306:19: warning: unused variable ‘temp’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<PSLClass*>*)’:
+../src/AcquisizionePSL.cpp:294:45: warning: ‘datasetVector’ may be used uninitialized in this function [-Wuninitialized]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDataset(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:306:19: warning: unused variable ‘temp’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggereInteroDataset(std::string, std::vector<PSLClass*>*)’:
+../src/AcquisizionePSL.cpp:294:45: warning: ‘datasetVector’ may be used uninitialized in this function [-Wuninitialized]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDataset(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:306:19: warning: unused variable ‘temp’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:218:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:219:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:220:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:49:18: warning: missing terminating " character [enabled by default]
+../src/AcquisizionePSL.cpp:49:2: error: missing terminating " character
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:35: error: no matching function for call to ‘libpmk::PointSet::PointSet()’
+../src/AcquisizionePSL.cpp:47:35: note: candidates are:
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set.h:33:3: note: libpmk::PointSet::PointSet(const libpmk::PointSet&)
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set.h:33:3: note:   candidate expects 1 argument, 0 provided
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set.h:30:3: note: libpmk::PointSet::PointSet(int)
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set.h:30:3: note:   candidate expects 1 argument, 0 provided
+../src/AcquisizionePSL.cpp:56:2: error: expected primary-expression before ‘return’
+../src/AcquisizionePSL.cpp:46:21: warning: unused variable ‘dataSet’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:46:21: warning: unused variable ‘dataSet’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:227:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:46:21: warning: unused variable ‘dataSet’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:230:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:46:21: warning: unused variable ‘dataSet’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:230:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:46:21: warning: unused variable ‘dataSet’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:234:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:46:21: warning: unused variable ‘dataSet’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:234:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:46:21: warning: unused variable ‘dataSet’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int componiPointSet(std::string, libpmk::PointSet*)’:
+../src/AcquisizionePSL.cpp:85:27: error: no matching function for call to ‘std::basic_ifstream<char>::open(std::string&)’
+../src/AcquisizionePSL.cpp:85:27: note: candidate is:
+/usr/include/c++/4.6/fstream:531:7: note: void std::basic_ifstream<_CharT, _Traits>::open(const char*, std::ios_base::openmode) [with _CharT = char, _Traits = std::char_traits<char>, std::ios_base::openmode = std::_Ios_Openmode]
+/usr/include/c++/4.6/fstream:531:7: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘const char*’
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:46:21: warning: unused variable ‘dataSet’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:234:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:224:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:224:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:225:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:225:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:225:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:225:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:47:12: warning: unused variable ‘immProva’ [-Wunused-variable]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvarePointSetList(libpmk::PointSetList*, std::string, std::string)’:
+../src/AcquisizionePSL.cpp:276:29: error: cannot allocate an object of abstract type ‘libpmk::PointSetList’
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:51:7: note:   because the following virtual functions are pure within ‘libpmk::PointSetList’:
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:56:15: note: 	virtual int libpmk::PointSetList::point_set_size() const
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:63:15: note: 	virtual int libpmk::PointSetList::point_size() const
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:69:15: note: 	virtual int libpmk::PointSetList::point_dim() const
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:86:27: note: 	virtual const libpmk::PointSet& libpmk::PointSetList::point_set(int) const
+../src/AcquisizionePSL.cpp:276:15: error: cannot declare variable ‘pslReference’ to be of abstract type ‘libpmk::PointSetList’
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set-list.h:51:7: note:   since type ‘libpmk::PointSetList’ has pure virtual functions
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvarePointSetList(libpmk::PointSetList*, std::string, std::string)’:
+../src/AcquisizionePSL.cpp:276:57: error: no matching function for call to ‘libpmk::MutablePointSetList::MutablePointSetList(libpmk::PointSetList&)’
+../src/AcquisizionePSL.cpp:276:57: note: candidates are:
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/mutable-point-set-list.h:28:7: note: libpmk::MutablePointSetList::MutablePointSetList()
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/mutable-point-set-list.h:28:7: note:   candidate expects 0 arguments, 1 provided
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/mutable-point-set-list.h:28:7: note: libpmk::MutablePointSetList::MutablePointSetList(const libpmk::MutablePointSetList&)
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/mutable-point-set-list.h:28:7: note:   no known conversion for argument 1 from ‘libpmk::PointSetList’ to ‘const libpmk::MutablePointSetList&’
+../src/AcquisizionePSL.cpp:276:22: warning: unused variable ‘pslReference’ [-Wunused-variable]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvarePointSetList(libpmk::PointSetList*, std::string, std::string)’:
+../src/AcquisizionePSL.cpp:276:23: warning: unused variable ‘pslReference’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvarePointSetList(libpmk::PointSetList*, std::string, std::string)’:
+../src/AcquisizionePSL.cpp:278:44: error: no match for ‘operator<<’ in ‘std::operator<< [with _Traits = std::char_traits<char>]((* & std::cout), ((const char*)"\012\012---")) << (& PSL->libpmk::PointSetList::point_set(0))->libpmk::PointSet::point(0)’
+../src/AcquisizionePSL.cpp:278:44: note: candidates are:
+/usr/include/c++/4.6/ostream:110:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:110:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.6/ostream:119:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>, std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+/usr/include/c++/4.6/ostream:119:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.6/ostream:129:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:129:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.6/ostream:167:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:167:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long int’
+/usr/include/c++/4.6/ostream:171:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:171:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long unsigned int’
+/usr/include/c++/4.6/ostream:175:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:175:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘bool’
+/usr/include/c++/4.6/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char, _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:93:5: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘short int’
+/usr/include/c++/4.6/ostream:182:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:182:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘short unsigned int’
+/usr/include/c++/4.6/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char, _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:107:5: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘int’
+/usr/include/c++/4.6/ostream:193:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:193:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘unsigned int’
+/usr/include/c++/4.6/ostream:202:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:202:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long long int’
+/usr/include/c++/4.6/ostream:206:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:206:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long long unsigned int’
+/usr/include/c++/4.6/ostream:211:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:211:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘double’
+/usr/include/c++/4.6/ostream:215:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:215:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘float’
+/usr/include/c++/4.6/ostream:223:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:223:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long double’
+/usr/include/c++/4.6/ostream:227:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:227:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘const void*’
+/usr/include/c++/4.6/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+/usr/include/c++/4.6/bits/basic_string.h:2693:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/ostream:451:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+/usr/include/c++/4.6/ostream:456:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+/usr/include/c++/4.6/ostream:462:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+/usr/include/c++/4.6/ostream:468:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+/usr/include/c++/4.6/ostream:473:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+/usr/include/c++/4.6/ostream:493:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+/usr/include/c++/4.6/bits/ostream.tcc:323:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+/usr/include/c++/4.6/ostream:510:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+/usr/include/c++/4.6/ostream:523:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+/usr/include/c++/4.6/ostream:528:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvarePointSetList(libpmk::PointSetList*, std::string, std::string)’:
+../src/AcquisizionePSL.cpp:278:45: error: no match for ‘operator<<’ in ‘std::operator<< [with _Traits = std::char_traits<char>]((* & std::cout), ((const char*)"\012\012---")) << (& pslR->libpmk::MutablePointSetList::point_set(0))->libpmk::PointSet::point(0)’
+../src/AcquisizionePSL.cpp:278:45: note: candidates are:
+/usr/include/c++/4.6/ostream:110:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:110:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.6/ostream:119:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>, std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+/usr/include/c++/4.6/ostream:119:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.6/ostream:129:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:129:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.6/ostream:167:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:167:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long int’
+/usr/include/c++/4.6/ostream:171:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:171:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long unsigned int’
+/usr/include/c++/4.6/ostream:175:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:175:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘bool’
+/usr/include/c++/4.6/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char, _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:93:5: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘short int’
+/usr/include/c++/4.6/ostream:182:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:182:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘short unsigned int’
+/usr/include/c++/4.6/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char, _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:107:5: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘int’
+/usr/include/c++/4.6/ostream:193:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:193:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘unsigned int’
+/usr/include/c++/4.6/ostream:202:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:202:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long long int’
+/usr/include/c++/4.6/ostream:206:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:206:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long long unsigned int’
+/usr/include/c++/4.6/ostream:211:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:211:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘double’
+/usr/include/c++/4.6/ostream:215:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:215:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘float’
+/usr/include/c++/4.6/ostream:223:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:223:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long double’
+/usr/include/c++/4.6/ostream:227:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:227:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘const void*’
+/usr/include/c++/4.6/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+/usr/include/c++/4.6/bits/basic_string.h:2693:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/ostream:451:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+/usr/include/c++/4.6/ostream:456:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+/usr/include/c++/4.6/ostream:462:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+/usr/include/c++/4.6/ostream:468:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+/usr/include/c++/4.6/ostream:473:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+/usr/include/c++/4.6/ostream:493:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+/usr/include/c++/4.6/bits/ostream.tcc:323:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+/usr/include/c++/4.6/ostream:510:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+/usr/include/c++/4.6/ostream:523:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+/usr/include/c++/4.6/ostream:528:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvarePointSetList(libpmk::PointSetList*, std::string, std::string)’:
+../src/AcquisizionePSL.cpp:278:47: error: no match for ‘operator<<’ in ‘std::operator<< [with _Traits = std::char_traits<char>]((* & std::cout), ((const char*)"\012\012---")) << (& pslR->libpmk::MutablePointSetList::point_set(0))->libpmk::PointSet::point(0)’
+../src/AcquisizionePSL.cpp:278:47: note: candidates are:
+/usr/include/c++/4.6/ostream:110:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:110:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.6/ostream:119:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>, std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+/usr/include/c++/4.6/ostream:119:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.6/ostream:129:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:129:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.6/ostream:167:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:167:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long int’
+/usr/include/c++/4.6/ostream:171:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:171:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long unsigned int’
+/usr/include/c++/4.6/ostream:175:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:175:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘bool’
+/usr/include/c++/4.6/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char, _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:93:5: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘short int’
+/usr/include/c++/4.6/ostream:182:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:182:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘short unsigned int’
+/usr/include/c++/4.6/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char, _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:107:5: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘int’
+/usr/include/c++/4.6/ostream:193:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:193:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘unsigned int’
+/usr/include/c++/4.6/ostream:202:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:202:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long long int’
+/usr/include/c++/4.6/ostream:206:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:206:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long long unsigned int’
+/usr/include/c++/4.6/ostream:211:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:211:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘double’
+/usr/include/c++/4.6/ostream:215:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:215:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘float’
+/usr/include/c++/4.6/ostream:223:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:223:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘long double’
+/usr/include/c++/4.6/ostream:227:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:227:7: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘const void*’
+/usr/include/c++/4.6/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from ‘const libpmk::Point’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+/usr/include/c++/4.6/bits/basic_string.h:2693:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/ostream:451:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+/usr/include/c++/4.6/ostream:456:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+/usr/include/c++/4.6/ostream:462:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+/usr/include/c++/4.6/ostream:468:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+/usr/include/c++/4.6/ostream:473:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+/usr/include/c++/4.6/ostream:493:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+/usr/include/c++/4.6/bits/ostream.tcc:323:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+/usr/include/c++/4.6/ostream:510:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+/usr/include/c++/4.6/ostream:523:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+/usr/include/c++/4.6/ostream:528:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvarePointSetList(libpmk::PointSetList*, std::string, std::string)’:
+../src/AcquisizionePSL.cpp:278:35: error: cannot convert ‘const libpmk::Point’ to ‘float’ in initialization
+../src/AcquisizionePSL.cpp:279:2: error: expected ‘,’ or ‘;’ before ‘cout’
+../src/AcquisizionePSL.cpp:278:8: warning: unused variable ‘a’ [-Wunused-variable]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvarePointSetList(libpmk::PointSetList*, std::string, std::string)’:
+../src/AcquisizionePSL.cpp:278:35: error: cannot convert ‘const libpmk::Point’ to ‘float’ in initialization
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:226:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:228:9: error: expected ‘;’ before ‘int’
+../src/AcquisizionePSL.cpp:232:13: error: ‘numPuntiLetti’ was not declared in this scope
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:228:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:228:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:228:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:228:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:228:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:228:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****

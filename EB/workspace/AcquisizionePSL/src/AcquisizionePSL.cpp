@@ -16,12 +16,18 @@
 #include <dirent.h>
 #include <errno.h>
 
-string const _FileFeatures="features.mat";
+string const _FileFeatures="features128.mat";
 
 
 
 using namespace std;
 using namespace libpmk;
+
+struct PSLClass{
+public:
+	PointSetList* PSL;
+	string nomeClasse;
+};
 
 void captureVector(vector<float>* vettoreAppoggio, char* vettoreStringa);
 void stampaPointSet(PointSet* immagine);
@@ -29,24 +35,21 @@ int componiPointSet(string address,PointSet* immagineInsiemePunti); //ritorna il
 int leggerePointSetList(MutablePointSetList* PSL,string directorySource); //ritorna il numero di pointSet letti (cioè il numero di immagini, cioè il numero di "*.features.mat" files)
 void stampaPSL(PointSetList* PSL);
 void salvarePointSetList(PointSetList* PSL, string destinationDir, string nomeClasse);
-
+int leggereInteroDataset(string directoryPrincipale,vector<PSLClass*>* dataSetVector); //ritorna il numero di PSL letti (cioè il numero di sotto-Directory)
+void salvareInteroDataset(vector<PSLClass*>* dataSetVector, string directoryDestination);
 
 int main() {
 
-	int numImmagini=0;
-	string subDirectory="/home/andrea/Scrivania";
+
+	string directoryPrincipale="/home/andrea/Scrivania/ContenitoreClassiEsempio";
 	string directoryDestination="/home/andrea/Scrivania/DestinationDirectoryPSLExample";
-	 PointSetList* PSL=new MutablePointSetList();
+	vector<PSLClass*>* dataSet= new vector<PSLClass*>();
 
-	 numImmagini=  leggerePointSetList((MutablePointSetList*)PSL,subDirectory);
-	 cout<<"\n Numero immagini lette: "<<numImmagini;
-	 //stampaPSL(PSL);
 
-	salvarePointSetList(PSL,directoryDestination, "classeProva");
 
-	MutablePointSetList* prova= new MutablePointSetList();
-	prova->ReadFromFile("/home/andrea/Scrivania/DestinationDirectoryPSLExample/classeProva.psl");
-	stampaPSL(prova);
+	leggereInteroDataset(directoryPrincipale,dataSet);
+	salvareInteroDataset(dataSet,directoryDestination);
+
 
 	return 0;
 
@@ -69,12 +72,13 @@ int componiPointSet(string address,PointSet* immagineInsiemePunti){
 	Point* puntoAppoggio= new Point(128);
 
 		 ifstream myReadFile;
-		 myReadFile.open("/home/andrea/Scrivania/Esempio.jpg.features.mat");
+		 myReadFile.open(address.c_str());
 		 char vettoreStringa[2048];
 		 int j=0;
 		 char stringaProssimoPasso[2048];
 
 		 if (myReadFile.is_open()) {
+
 			 if(!myReadFile.eof())  myReadFile>>stringaProssimoPasso;
 		 while (!myReadFile.eof()) {
 
@@ -98,6 +102,7 @@ int componiPointSet(string address,PointSet* immagineInsiemePunti){
 		    	float temp=*it;
 		        puntoAppoggio->set_feature(i,temp); //fine lettura della singola feature---
 		       // cout<<puntoAppoggio->feature(i)<<";";
+		        //cout.flush();
 
 
 		        i++;
@@ -199,7 +204,8 @@ void captureVector(vector<float>* vettoreAppoggio, char* vettoreStringa){
 
 int leggerePointSetList(MutablePointSetList* PSL,string directoryPSL){
 	int numImmaginiLette=0;
-
+	PointSet* immagineInsiemePunti;
+//	MutablePointSetList* PSL= &PSL1;
 	DIR *dp;
 	    struct dirent *dirp;
 	    if((dp  = opendir(directoryPSL.c_str())) == NULL) {
@@ -209,18 +215,23 @@ int leggerePointSetList(MutablePointSetList* PSL,string directoryPSL){
 
 	    while ((dirp = readdir(dp)) != NULL) {
 	    	string name=dirp->d_name;
-	        cout<<name<<"\n";
+	    	cout<<"subdir..readingFile: "<<name<<"   ...\n";
+
 	       if( dirp->d_type ==DT_REG){    //d_type=DT_REG       file.   DT_DIR directory
 
 
 	    	   if(name.find(_FileFeatures,0)!=string::npos){//E' un file Features.mat
+	    		   cout<<"OK...\n";
 
 
+	    		 //  cout<<"\nSONO ENTRATO..\n";
 	    		 int numPuntiLetti=0;
 
-	    		   	 PointSet* immagineInsiemePunti= new PointSet(128);
+	    		   	 immagineInsiemePunti = new PointSet(128);
 	    		   	 string directoryTotale=directoryPSL+"/"+name;
 	    		   	 numPuntiLetti=componiPointSet(directoryTotale,immagineInsiemePunti);
+	    		   	// cout<<"\nimmagineInsiemePuntiAddress:"<<immagineInsiemePunti<<"\n";
+	    		   	 //cout<<"\n-----PATH: "<<directoryTotale<<"\n";
 	    		   	// stampaPointSet(immagineInsiemePunti);
 	    		   	 PSL->add_point_set(*immagineInsiemePunti);
 	    		   	 numImmaginiLette++;
@@ -264,9 +275,64 @@ void stampaPSL(PointSetList* PSL){
 void salvarePointSetList(PointSetList* PSL, string destinationDir,string nomeClasse){
 
 	string totalDirectory= destinationDir+"/"+nomeClasse+".psl";
+	//stampaPSL(PSL);
 
 	PSL->WriteToFile(totalDirectory.c_str());
 
 
 
+}
+
+int leggereInteroDataset(string directoryPrincipale,vector<PSLClass*>* dataSetVector){
+
+	int numCartelleAnalizzate=0;
+	MutablePointSetList* tempPSL;
+	PSLClass* tempPSLC;
+
+	DIR *dp;
+		    struct dirent *dirp;
+		    if((dp  = opendir(directoryPrincipale.c_str())) == NULL) {
+		        cout << "Error(" << errno << ") opening " << directoryPrincipale << endl;
+		        return -1;
+		    }
+
+		    while ((dirp = readdir(dp)) != NULL) {
+		    	string name=dirp->d_name;
+		        cout<<"DIR..reading File or Dir: "<<name<<"\n";
+		       if( (dirp->d_type ==DT_DIR) && (name.find("..",0)==string::npos) && (name.find(".DS_Store",0)==string::npos)&& (name.compare(".")!=0)){    //d_type=DT_REG       file.   DT_DIR directory
+		    	   string subDirectory= directoryPrincipale+"/"+name;
+
+		    	   tempPSL =new MutablePointSetList();
+		    	   leggerePointSetList(tempPSL,subDirectory);
+		    	   tempPSLC= new PSLClass();
+		    	   tempPSLC->PSL=tempPSL;
+		    	   tempPSLC->nomeClasse=name;
+		    	   dataSetVector->push_back(tempPSLC);
+		    	   numCartelleAnalizzate++;
+		    	  // cout<<"\ntempPSLC->PSL: "<<tempPSLC->PSL<<"\n";
+		    	   cout.flush();
+		    	  // stampaPSL(tempPSLC->PSL); //FIN QUI FUNZIONA
+		    	   cout.flush();
+		       }
+		    }
+
+
+
+		    return numCartelleAnalizzate;
+}
+
+void salvareInteroDataset(vector<PSLClass*>* dataSetVector, string directoryDestination){
+	cout<<"\nSize: "<< dataSetVector->size();
+
+	for(vector<PSLClass*>::iterator it = dataSetVector->begin(); it!=dataSetVector->end(); ++it) {
+		cout.flush();
+
+			      //  cout << *it << "; ";
+			    	PSLClass* temp=*it;
+
+
+	salvarePointSetList((temp)->PSL,directoryDestination, (temp)->nomeClasse);
+	stampaPSL((temp)->PSL);
+
+	}
 }
