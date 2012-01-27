@@ -46,14 +46,10 @@ int leggereInteroDataset(string directoryPrincipale,vector<PSLClass*>* dataSetVe
 void salvareInteroDataset(vector<PSLClass*>* dataSetVector, string directoryDestination);
 void ConcatenaPSLs(MutablePointSetList* dataSetUnico,MutablePointSetList* PSLAggiuntivo);
 void salvareInteroDatasetInUnFile(vector<PSLClass*>* dataSetVector, string directoryDestination);
-int generaLeClassInfo(vector<PSLClass*>* dataSet,vector<LabeledIndex*>* labeledIndexList, vector<AssociationClass*>* associationClassList);
-void salvaClassInfo(int numImmaginiTotali,vector<LabeledIndex*>* labeledIndexList, vector<AssociationClass*>* associationClassList, string directoryDestination);
-
 
 int main() {
 	vector<LabeledIndex*>* labeledIndexList= new vector<LabeledIndex*>();
 	vector<AssociationClass*>* associationClassList= new vector<AssociationClass*>();
-	int numImmaginiTotali;
 
 
 	string directoryPrincipale="/home/andrea/Scrivania/Progetto/DATASET_101/sift";
@@ -61,8 +57,7 @@ int main() {
 	vector<PSLClass*>* dataSet= new vector<PSLClass*>();
 	leggereInteroDataset(directoryPrincipale,dataSet);
 	salvareInteroDatasetInUnFile(dataSet,directoryDestination);
-	numImmaginiTotali= generaLeClassInfo(dataSet,labeledIndexList, associationClassList);
-	salvaClassInfo(numImmaginiTotali,labeledIndexList, associationClassList, directoryDestination);
+	generaLeClassInfo(dataSet,labeledIndexList, associationClassList);
 
 
 
@@ -386,66 +381,7 @@ void ConcatenaPSLs(MutablePointSetList* dataSetUnico,MutablePointSetList* PSLAgg
 
 	}
 
-}
 
-int generaLeClassInfo(vector<PSLClass*>* dataSet,vector<LabeledIndex*>* labeledIndexList, vector<AssociationClass*>* associationClassList){
-
-PointSetList* PSLTemp;
-int numPSL=0;
-int numImmaginiTotali=0;
-LabeledIndex* labInd;
-AssociationClass* assCla;
-
-
-	for(vector<PSLClass*>::iterator it = dataSet->begin(); it!=dataSet->end(); ++it) {
-
-
-
-
-				    	PSLClass* temp=*it;
-				    	PSLTemp=(temp)->PSL;
-				    	for(int i=0;i<PSLTemp->point_set_size();i++){
-				    		labInd= new LabeledIndex();
-				    		labInd->index=numImmaginiTotali;
-				    		labInd->label=numPSL;
-
-				    		numImmaginiTotali++;
-				    	}
-				    	assCla= new AssociationClass();
-				    	assCla->indexClass=numPSL;
-				    	assCla->nomeClasse= temp->nomeClasse;
-
-				    	numPSL++;
-		}
-	return numImmaginiTotali;
-
-}
-
-void salvaClassInfo(int numImmaginiTotali, vector<LabeledIndex*>* labeledIndexList, vector<AssociationClass*>* associationClassList, string directoryDestination){
-
-
-		ofstream myFile;
-		string totalDirectory=directoryDestination+"Classi.txt";
-
-		myFile.open(totalDirectory.c_str());
-		 if (myFile.is_open()) {
-			 myFile<<numImmaginiTotali<<"\n";
-			 for(vector<LabeledIndex*>::iterator it = labeledIndexList->begin(); it!=labeledIndexList->end(); ++it) {
-				 myFile<< (*it)->label<<"\n";
-			 }
-		 }
-		myFile.close();
-
-		totalDirectory=directoryDestination+"AssociationClass.txt";
-
-				myFile.open(totalDirectory.c_str());
-				 if (myFile.is_open()) {
-
-					 for(vector<AssociationClass*>::iterator it = associationClassList->begin(); it!=associationClassList->end(); ++it) {
-						 myFile<< (*it)->indexClass<<" "<<(*it)->nomeClasse<<"\n";
-					 }
-				 }
-				myFile.close();
 
 
 }

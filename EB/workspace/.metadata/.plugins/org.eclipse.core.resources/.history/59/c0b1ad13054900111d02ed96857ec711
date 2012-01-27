@@ -47,8 +47,6 @@ void salvareInteroDataset(vector<PSLClass*>* dataSetVector, string directoryDest
 void ConcatenaPSLs(MutablePointSetList* dataSetUnico,MutablePointSetList* PSLAggiuntivo);
 void salvareInteroDatasetInUnFile(vector<PSLClass*>* dataSetVector, string directoryDestination);
 int generaLeClassInfo(vector<PSLClass*>* dataSet,vector<LabeledIndex*>* labeledIndexList, vector<AssociationClass*>* associationClassList);
-void salvaClassInfo(int numImmaginiTotali,vector<LabeledIndex*>* labeledIndexList, vector<AssociationClass*>* associationClassList, string directoryDestination);
-
 
 int main() {
 	vector<LabeledIndex*>* labeledIndexList= new vector<LabeledIndex*>();
@@ -62,7 +60,6 @@ int main() {
 	leggereInteroDataset(directoryPrincipale,dataSet);
 	salvareInteroDatasetInUnFile(dataSet,directoryDestination);
 	numImmaginiTotali= generaLeClassInfo(dataSet,labeledIndexList, associationClassList);
-	salvaClassInfo(numImmaginiTotali,labeledIndexList, associationClassList, directoryDestination);
 
 
 
@@ -401,7 +398,7 @@ AssociationClass* assCla;
 
 
 
-
+				      //  cout << *it << "; ";
 				    	PSLClass* temp=*it;
 				    	PSLTemp=(temp)->PSL;
 				    	for(int i=0;i<PSLTemp->point_set_size();i++){
@@ -416,36 +413,12 @@ AssociationClass* assCla;
 				    	assCla->nomeClasse= temp->nomeClasse;
 
 				    	numPSL++;
+				    	//Fare l'associazione-Classi
+
 		}
 	return numImmaginiTotali;
 
-}
 
-void salvaClassInfo(int numImmaginiTotali, vector<LabeledIndex*>* labeledIndexList, vector<AssociationClass*>* associationClassList, string directoryDestination){
-
-
-		ofstream myFile;
-		string totalDirectory=directoryDestination+"Classi.txt";
-
-		myFile.open(totalDirectory.c_str());
-		 if (myFile.is_open()) {
-			 myFile<<numImmaginiTotali<<"\n";
-			 for(vector<LabeledIndex*>::iterator it = labeledIndexList->begin(); it!=labeledIndexList->end(); ++it) {
-				 myFile<< (*it)->label<<"\n";
-			 }
-		 }
-		myFile.close();
-
-		totalDirectory=directoryDestination+"AssociationClass.txt";
-
-				myFile.open(totalDirectory.c_str());
-				 if (myFile.is_open()) {
-
-					 for(vector<AssociationClass*>::iterator it = associationClassList->begin(); it!=associationClassList->end(); ++it) {
-						 myFile<< (*it)->indexClass<<" "<<(*it)->nomeClasse<<"\n";
-					 }
-				 }
-				myFile.close();
 
 
 }

@@ -432,20 +432,14 @@ void salvaClassInfo(int numImmaginiTotali, vector<LabeledIndex*>* labeledIndexLi
 			 myFile<<numImmaginiTotali<<"\n";
 			 for(vector<LabeledIndex*>::iterator it = labeledIndexList->begin(); it!=labeledIndexList->end(); ++it) {
 				 myFile<< (*it)->label<<"\n";
+
 			 }
+
+
 		 }
-		myFile.close();
 
-		totalDirectory=directoryDestination+"AssociationClass.txt";
 
-				myFile.open(totalDirectory.c_str());
-				 if (myFile.is_open()) {
-
-					 for(vector<AssociationClass*>::iterator it = associationClassList->begin(); it!=associationClassList->end(); ++it) {
-						 myFile<< (*it)->indexClass<<" "<<(*it)->nomeClasse<<"\n";
-					 }
-				 }
-				myFile.close();
-
+		 myfile << "Writing this to a file.\n";
+			   myfile.close();
 
 }
