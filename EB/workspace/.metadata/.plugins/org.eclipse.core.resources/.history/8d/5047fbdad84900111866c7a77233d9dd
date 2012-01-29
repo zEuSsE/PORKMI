@@ -48,15 +48,25 @@ void ConcatenaPSLs(MutablePointSetList* dataSetUnico,MutablePointSetList* PSLAgg
 void salvareInteroDatasetInUnFile(vector<PSLClass*>* dataSetVector, string directoryDestination);
 int generaLeClassInfo(vector<PSLClass*>* dataSet,vector<LabeledIndex*>* labeledIndexList, vector<AssociationClass*>* associationClassList);
 void salvaClassInfo(int numImmaginiTotali,vector<LabeledIndex*>* labeledIndexList, vector<AssociationClass*>* associationClassList, string directoryDestination);
-int leggereLabeledIndexFile( vector<LabeledIndex*>* labeledIndexList,string pathENomeFile);
-int LeggiEScriviDatasetInUnPSL(string directoryPrincipale,string directoryDestination);
+void leggereLabeledIndexFile( vector<LabeledIndex*>* labeledIndexList,string pathENomeFile);
 
 
 int main() {
+	/*
+	 * Leggere il dataset e scriverlo in un unico psl con relativi info-files
+	vector<LabeledIndex*>* labeledIndexList= new vector<LabeledIndex*>();
+	vector<AssociationClass*>* associationClassList= new vector<AssociationClass*>();
+	int numImmaginiTotali;
 
 
-	//int numImmaginiTotali= LeggiEScriviDatasetInUnPSL("/home/andrea/Scrivania/Progetto/DATASET_101/sift","/home/andrea/Scrivania/Progetto/DATASET_101/PSL");
-
+	string directoryPrincipale="/home/andrea/Scrivania/Progetto/DATASET_101/sift";
+	string directoryDestination="/home/andrea/Scrivania/Progetto/DATASET_101/PSL";
+	vector<PSLClass*>* dataSet= new vector<PSLClass*>();
+	leggereInteroDataset(directoryPrincipale,dataSet);
+	salvareInteroDatasetInUnFile(dataSet,directoryDestination);
+	numImmaginiTotali= generaLeClassInfo(dataSet,labeledIndexList, associationClassList);
+	salvaClassInfo(numImmaginiTotali,labeledIndexList, associationClassList, directoryDestination);
+	*/
 	vector<LabeledIndex*>* labeledIndexList= new vector<LabeledIndex*>();
 	leggereLabeledIndexFile(labeledIndexList,"/home/andrea/Scrivania/Progetto/DATASET_101/PSL/Classi.txt");
 
@@ -453,7 +463,7 @@ void salvaClassInfo(int numImmaginiTotali, vector<LabeledIndex*>* labeledIndexLi
 }
 
 
-int leggereLabeledIndexFile( vector<LabeledIndex*>* labeledIndexList,string pathENomeFile){
+void leggereLabeledIndexFile( vector<LabeledIndex*>* labeledIndexList,string pathENomeFile){
 
 	LabeledIndex* labInd;
 	ifstream myFile;
@@ -477,26 +487,4 @@ int leggereLabeledIndexFile( vector<LabeledIndex*>* labeledIndexList,string path
 	}
 	else cerr<<"\nFILE NON TROVATO: "<<pathENomeFile<<"\n";
 	myFile.close();
-
-	return numImmagini;
-}
-
-
-int LeggiEScriviDatasetInUnPSL(string directoryPrincipale,string directoryDestination){
-
-	vector<LabeledIndex*>* labeledIndexList= new vector<LabeledIndex*>();
-		vector<AssociationClass*>* associationClassList= new vector<AssociationClass*>();
-		int numImmaginiTotali;
-
-
-
-		vector<PSLClass*>* dataSet= new vector<PSLClass*>();
-		leggereInteroDataset(directoryPrincipale,dataSet);
-		salvareInteroDatasetInUnFile(dataSet,directoryDestination);
-		numImmaginiTotali= generaLeClassInfo(dataSet,labeledIndexList, associationClassList);
-		salvaClassInfo(numImmaginiTotali,labeledIndexList, associationClassList, directoryDestination);
-
-		return numImmaginiTotali;
-
-
 }

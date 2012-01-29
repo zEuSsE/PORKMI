@@ -38,7 +38,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="AcquisizionePSL.cpp" partName="AcquisizionePSL.cpp" path="/home/andrea/workspace/AcquisizionePSL/src/AcquisizionePSL.cpp" title="AcquisizionePSL.cpp" tooltip="AcquisizionePSL/src/AcquisizionePSL.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AcquisizionePSL/src/AcquisizionePSL.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3022" selectionTopPixel="643"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2288" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="point.h" partName="point.h" title="point.h" tooltip="/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point.h" project="AcquisizionePSL"/>
@@ -81,9 +81,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
 <category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (2 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="698"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -324,36 +324,6 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/AcquisizionePSL/src/AcquisizionePSL.cpp"/>
 </editors>
 <item historyLabel="AcquisizionePSL.cpp" index="0">
-<position info="not_deleted" x="1724" y="0"/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="0">
-<position info="not_deleted" x="1835" y="0"/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="0">
-<position info="not_deleted" x="7981" y="0"/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="0">
-<position info="not_deleted" x="8066" y="0"/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="0">
-<position info="not_deleted" x="8066" y="0"/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="0">
-<position info="not_deleted" x="8040" y="0"/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="0">
-<position info="not_deleted" x="6140" y="0"/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="0">
 <position info="not_deleted" x="8631" y="0"/>
 </item>
 <item historyLabel="AcquisizionePSL.cpp" index="0">
@@ -470,8 +440,38 @@
 <item historyLabel="AcquisizionePSL.cpp" index="0">
 <position info="not_deleted" x="12547" y="0"/>
 </item>
-<item active="true" historyLabel="AcquisizionePSL.cpp" index="0">
+<item historyLabel="AcquisizionePSL.cpp" index="0">
 <position info="not_deleted" x="12531" y="0"/>
+</item>
+<item historyLabel="AcquisizionePSL.cpp" index="0">
+<position info="not_deleted" x="12433" y="0"/>
+</item>
+<item historyLabel="AcquisizionePSL.cpp" index="0">
+<position info="not_deleted" x="12609" y="0"/>
+</item>
+<item historyLabel="AcquisizionePSL.cpp" index="0">
+<position info="not_deleted" x="11699" y="0"/>
+</item>
+<item historyLabel="AcquisizionePSL.cpp" index="0">
+<position info="not_deleted" x="11627" y="0"/>
+</item>
+<item historyLabel="AcquisizionePSL.cpp" index="0">
+<position info="not_deleted" x="10305" y="0"/>
+</item>
+<item historyLabel="AcquisizionePSL.cpp" index="0">
+<position info="not_deleted" x="13297" y="0"/>
+</item>
+<item historyLabel="AcquisizionePSL.cpp" index="0">
+<position info="not_deleted" x="13209" y="0"/>
+</item>
+<item historyLabel="AcquisizionePSL.cpp" index="0">
+<position info="not_deleted" x="13903" y="0"/>
+</item>
+<item historyLabel="AcquisizionePSL.cpp" index="0">
+<position info="not_deleted" x="13396" y="0"/>
+</item>
+<item active="true" historyLabel="AcquisizionePSL.cpp" index="0">
+<position info="not_deleted" x="2267" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -485,7 +485,6 @@
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="bottom"/>
 <trimItem IMemento.internal.id="topRight"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
