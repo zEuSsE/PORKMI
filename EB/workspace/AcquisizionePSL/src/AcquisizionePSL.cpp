@@ -52,7 +52,7 @@ int leggereLabeledIndexFile( vector<LabeledIndex*>* labeledIndexList,string path
 int LeggiEScriviDatasetInUnPSL(string directoryPrincipale,string directoryDestination);
 
 
-int main() {
+/*int main() {
 
 
 	//int numImmaginiTotali= LeggiEScriviDatasetInUnPSL("/home/andrea/Scrivania/Progetto/DATASET_101/sift","/home/andrea/Scrivania/Progetto/DATASET_101/PSL");
@@ -65,7 +65,7 @@ int main() {
 
 	return 0;
 
-}
+}*/
 
 void stampaPointSet(PointSet* immagine){
 	for(int i=0;i<immagine->size();i++){

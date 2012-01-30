@@ -2,18 +2,16 @@
 **** Build of configuration Debug for project AcquisizionePSL ****
 
 make all 
-Building file: ../src/AcquisizionePSL.cpp
+Building file: ../src/provaEsecuzione.cpp
 Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
-../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
-../src/AcquisizionePSL.cpp:250:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
-../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
-../src/AcquisizionePSL.cpp:367:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
-Finished building: ../src/AcquisizionePSL.cpp
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘int main()’:
+../src/provaEsecuzione.cpp:37:6: warning: unused variable ‘numIm’ [-Wunused-variable]
+Finished building: ../src/provaEsecuzione.cpp
  
 Building target: AcquisizionePSL
 Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o   -lpmk -lpmk_util -lstdc++
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
 Finished building target: AcquisizionePSL
  
 

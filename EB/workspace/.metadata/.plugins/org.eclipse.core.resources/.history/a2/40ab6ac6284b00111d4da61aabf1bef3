@@ -1,0 +1,20 @@
+/*
+ * provaEsecuzione.cpp
+ *
+ *  Created on: 30/gen/2012
+ *      Author: andrea
+ */
+
+#include <kernel/kernel-matrix.h>
+#include <kernel/matrix.h>
+#include <util/labeled-index.h>
+
+//using namespace libpmk;
+using namespace std;
+
+int main() {
+
+
+
+
+}

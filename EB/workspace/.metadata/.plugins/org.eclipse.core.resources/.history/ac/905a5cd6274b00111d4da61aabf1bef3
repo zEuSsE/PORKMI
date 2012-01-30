@@ -1,0 +1,18 @@
+/*
+ * provaEsecuzione.cpp
+ *
+ *  Created on: 30/gen/2012
+ *      Author: andrea
+ */
+
+#include "provaEsecuzione.h"
+
+provaEsecuzione::provaEsecuzione() {
+	// TODO Auto-generated constructor stub
+
+}
+
+provaEsecuzione::~provaEsecuzione() {
+	// TODO Auto-generated destructor stub
+}
+
