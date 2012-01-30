@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ML3/src/ML2.cpp&apos; to &apos;pslToKernelMatrix.cpp&apos;" description="Rename resource &apos;ML2.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ML2.cpp" name="pslToKernelMatrix.cpp" stamp="1327913121539" updateReferences="true"/>
+</session>

@@ -1,0 +1,28 @@
+/*
+ * KernelMatrixCalculator.cpp
+ *
+ *  Created on: 26/gen/2012
+ *      Author: andrea
+ */
+
+#include "KernelMatrixCalculator.h"
+
+KernelMatrixCalculator::KernelMatrixCalculator() {
+	// TODO Auto-generated constructor stub
+
+}
+
+KernelMatrixCalculator::KernelMatrixCalculator(vector<MultiResolutionHistogram*> _vectorMRH)
+{
+}
+
+KernelMatrixCalculator::~KernelMatrixCalculator() {
+	// TODO Auto-generated destructor stub
+}
+
+KernelMatrix *KernelMatrixCalculator::getKernelMatrix()
+{
+}
+
+
+

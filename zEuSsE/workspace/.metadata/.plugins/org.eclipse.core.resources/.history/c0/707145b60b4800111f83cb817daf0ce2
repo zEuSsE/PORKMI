@@ -1,0 +1,107 @@
+//============================================================================
+// Name        : ML2.cpp
+// Author      : Andrea Mazzeschi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Prende in input un file .psl e calcola
+//				 il vettore di MultiResolution Histograms
+//============================================================================
+
+#include "point_set/on-disk-point-set-list.h"
+#include "point_set/point-set-list.h"
+#include "pyramids/pyramid-maker.h"
+#include "pyramids/uniform-pyramid-maker.h"
+#include "pyramids/global-vg-pyramid-maker.h"
+#include "pyramids/input-specific-vg-pyramid-maker.h"
+#include "histograms/multi-resolution-histogram.h"
+#include "clustering/clusterer.h"
+#include "util/distance-computer.h"
+#include <iostream>
+
+
+using namespace std;
+using namespace libpmk;
+
+
+//possibili tipi di caricamente file PSL
+#define ON_DISK_POINT_SET_LIST  1
+#define MUTABLE_POINT_SET_LIST  2
+
+
+//possibili tipi di PyramidMaker
+#define UNIFORM_PYRAMID_MAKER 1
+#define GLOBAL_VGP_PYRAMID_MAKER 2
+#define INPUT_SPECIFIC_VGP_PYRAMID_MAKER 3
+
+
+
+PyramidMaker *ptrPyramidMaker;
+PointSetList *ptrPSL;
+vector<MultiResolutionHistogram *> vectorMultiResolutionHistogram;
+int PSLTYPE  =  ON_DISK_POINT_SET_LIST;
+int MAKE_PYRAMID_TYPE  =  UNIFORM_PYRAMID_MAKER;
+
+
+
+
+
+
+
+void loadPSL(){
+	cout << "  ***  load PSL  ***"<< endl;
+	switch (PSLTYPE) {
+		case ON_DISK_POINT_SET_LIST:
+			ptrPSL=new OnDiskPointSetList("testpointsets.psl");
+			break;
+		case MUTABLE_POINT_SET_LIST:
+
+			break;
+	}
+/*	cout<< ((ptrPSL->point_set(4))).size() << endl;
+	cout<< ((ptrPSL->point_set(4))).point_dim() << endl;
+	cout << ((ptrPSL->point_set(2))).point(1).size() << endl;*/
+
+	cout <<"Numero di PointSet nel file PSL = "<< ptrPSL->point_set_size() << endl;
+
+}
+void makePyramids(){
+	cout <<"  ***  Make Pyramid Start   ***  "<< endl;
+	switch (MAKE_PYRAMID_TYPE) {
+		case UNIFORM_PYRAMID_MAKER:
+			cout << "		Uniform Pyramid Maker Selected";
+			//TODO deve essere inizializzato tutto per bene
+			ptrPyramidMaker=new UniformPyramidMaker();
+			((UniformPyramidMaker *)ptrPyramidMaker)->Preprocess(
+						*ptrPSL,10,20,0,true,true);//TODO
+			break;
+		case GLOBAL_VGP_PYRAMID_MAKER:
+			cout << "		Global VGP Pyramid Maker Selected";
+			//TODO deve essere inizializzato tutto per bene
+		/*	Clusterer *clusterer;
+			DistanceComputer *distance;
+			GlobalVGPyramidMaker gpm(
+					clusterer,distance);
+			break;
+		case INPUT_SPECIFIC_VGP_PYRAMID_MAKER:
+			cout << "Input Specific VGP Pyramid Maker Selected";
+			//TODO
+			Clusterer *clusterer;
+			DistanceComputer *distance;
+			InputSpecificVGPyramidMaker *ptrPyramidMaker(
+					clusterer,distance);
+			break;*/
+	}
+
+	vectorMultiResolutionHistogram=ptrPyramidMaker->MakePyramids(*ptrPSL);
+	cout << endl << "		Vector of MultiResolutionHistogram done";
+	cout << endl << "		Vector of MRH Size = "
+			<<vectorMultiResolutionHistogram.size();
+	MultiResolutionHistogram a=*(vectorMultiResolutionHistogram[1]);
+
+}
+
+int main(int argc,char *argv[]) {
+	loadPSL();
+	makePyramids();
+	return 0;
+}

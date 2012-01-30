@@ -1,0 +1,17 @@
+/*
+ * KernelMatrixCalculator.h
+ *
+ *  Created on: 26/gen/2012
+ *      Author: andrea
+ */
+
+#ifndef KERNELMATRIXCALCULATOR_H_
+#define KERNELMATRIXCALCULATOR_H_
+
+class KernelMatrixCalculator {
+public:
+	KernelMatrixCalculator();
+	virtual ~KernelMatrixCalculator();
+};
+
+#endif /* KERNELMATRIXCALCULATOR_H_ */

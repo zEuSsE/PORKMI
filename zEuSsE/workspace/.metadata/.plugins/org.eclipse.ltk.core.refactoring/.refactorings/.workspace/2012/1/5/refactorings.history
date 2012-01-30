@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ML3/src/ML3.cpp&apos;" deleteContents="false" description="Delete resource &apos;ML3/src/ML3.cpp&apos;" element1="/ML3/src/ML3.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1327913138159"/>
+</session>

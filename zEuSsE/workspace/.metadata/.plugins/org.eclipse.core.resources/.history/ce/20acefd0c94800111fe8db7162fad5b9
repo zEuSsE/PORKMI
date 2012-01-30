@@ -1,0 +1,41 @@
+/*
+ * KernelMatrixCalculator.cpp
+ *
+ *  Created on: 26/gen/2012
+ *      Author: andrea
+ */
+
+#include "KernelMatrixCalculator.h"
+
+
+
+KernelMatrixCalculator::KernelMatrixCalculator(vector<MultiResolutionHistogram*> multiResolutionHistograms)
+{
+	vectorMRH=multiResolutionHistograms;
+	kernelMatrixFileName="~/Scrivania/KernelMatrix.ker";
+}
+
+KernelMatrixCalculator::~KernelMatrixCalculator() {
+	// TODO Auto-generated destructor stub
+}
+
+void KernelMatrixCalculator::KernelCalculate(){
+	ofstream kernelMatrix ("Kernel.ker");
+	kernelMatrix << vectorMRH.size();
+	BinWeightScheme binWeightScheme; //TODO  capire che è sto BinWeightScheme
+	double similarity;
+	for (int i = 0; i < vectorMRH.size(); i++) {
+		for (int j = 0; j <= i; j++) {
+			similarity=PyramidMatcher::GetPyramidMatchSimilarity
+					(*(vectorMRH[i]),*(vectorMRH[j]),binWeightScheme);
+			kernelMatrix << similarity;
+		}
+	}
+	kernelMatrix.close();
+}
+
+
+
+
+
+
