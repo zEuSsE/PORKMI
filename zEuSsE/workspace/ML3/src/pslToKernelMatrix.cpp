@@ -22,7 +22,6 @@
 
 
 
-
 using namespace std;
 using namespace libpmk;
 
@@ -49,13 +48,13 @@ vector<MultiResolutionHistogram *> vectorMRH;
 int MAKE_PYRAMID_TYPE  =  UNIFORM_PYRAMID_MAKER;
 
 
-
+/*
 int main(int argc,char *argv[]) {
 	loadPSL("/home/andrea/Scaricati/ETH80_GridSIFT.psl");
 	makePyramids();
 	makeKernelMatrix();
 	return 0;
-}
+}*/
 
 
 

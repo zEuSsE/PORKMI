@@ -5,14 +5,17 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/KernelMatrixCalculator.cpp \
+../src/dataSetManager.cpp \
 ../src/pslToKernelMatrix.cpp 
 
 OBJS += \
 ./src/KernelMatrixCalculator.o \
+./src/dataSetManager.o \
 ./src/pslToKernelMatrix.o 
 
 CPP_DEPS += \
 ./src/KernelMatrixCalculator.d \
+./src/dataSetManager.d \
 ./src/pslToKernelMatrix.d 
 
 
