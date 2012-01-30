@@ -3,8 +3,8 @@
 // Author      : Andrea Mazzeschi
 // Version     :
 // Copyright   : Your copyright notice
-// Description : Prende in input un file .psl e calcola
-//				 la matrice di Kernel
+// Description : Prende in input un file .psl e ritorna
+//		la matrice di Kernel salvandola in /path/to/KernelMatrix.ker
 //============================================================================
 
 #include "point_set/on-disk-point-set-list.h"
@@ -35,10 +35,13 @@ using namespace libpmk;
 #define INPUT_SPECIFIC_VGP_PYRAMID_MAKER 3
 
 
-
+void loadPSL(string);
 void makePyramids();
 void makeKernelMatrix();
 int main(int, char* []);
+
+
+
 
 PyramidMaker *ptrPyramidMaker;
 PointSetList *ptrPSL;
