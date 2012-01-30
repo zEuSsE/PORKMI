@@ -37,7 +37,7 @@ void KernelMatrixCalculator::kernelMatrixGenerate(){
 		if (i%200==0) cout << "Finita riga: "<< i <<endl;
 	}
 	kernelMatrix.close();
-	cout << "Matrice di Kernel salvata in /path/to/workspace/kernelMatrix.ker" << endl;
+	cout << "Matrice di Kernel salvata in "<<pathTotale << endl;
 }
 
 

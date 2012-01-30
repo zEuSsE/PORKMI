@@ -4422,3 +4422,442 @@ make all
 make: Nothing to be done for `all'.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:31:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:59:16: error: expected ‘;’ before ‘fsl’
+../src/PslToKernelMatrix.cpp:54:10: warning: unused variable ‘sf’ [-Wunused-variable]
+../src/PslToKernelMatrix.cpp:54:13: warning: unused variable ‘df’ [-Wunused-variable]
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:54:10: warning: unused variable ‘sf’ [-Wunused-variable]
+../src/PslToKernelMatrix.cpp:54:13: warning: unused variable ‘df’ [-Wunused-variable]
+../src/PslToKernelMatrix.cpp:55:7: warning: variable ‘dt’ set but not used [-Wunused-but-set-variable]
+../src/PslToKernelMatrix.cpp:55:10: warning: variable ‘gt’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:59:2: error: ‘nomeFileDestinazione1’ was not declared in this scope
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:62:2: error: ‘nomeFileDestinazione1’ was not declared in this scope
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:55:7: warning: variable ‘dt’ set but not used [-Wunused-but-set-variable]
+../src/PslToKernelMatrix.cpp:55:10: warning: variable ‘gt’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:55:7: warning: variable ‘dt’ set but not used [-Wunused-but-set-variable]
+../src/PslToKernelMatrix.cpp:55:10: warning: variable ‘gt’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:54:10: warning: variable ‘sf’ set but not used [-Wunused-but-set-variable]
+../src/PslToKernelMatrix.cpp:54:13: warning: variable ‘df’ set but not used [-Wunused-but-set-variable]
+../src/PslToKernelMatrix.cpp:55:7: warning: variable ‘dt’ set but not used [-Wunused-but-set-variable]
+../src/PslToKernelMatrix.cpp:55:10: warning: variable ‘gt’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:63:38: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+/usr/include/c++/4.6/bits/basic_string.tcc:214:5: error:   initializing argument 1 of ‘std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char, _Traits = std::char_traits<char>, _Alloc = std::allocator<char>]’ [-fpermissive]
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:63:39: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+/usr/include/c++/4.6/bits/basic_string.tcc:214:5: error:   initializing argument 1 of ‘std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char, _Traits = std::char_traits<char>, _Alloc = std::allocator<char>]’ [-fpermissive]
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:56:7: warning: variable ‘dt’ set but not used [-Wunused-but-set-variable]
+../src/PslToKernelMatrix.cpp:56:10: warning: variable ‘gt’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:56:7: warning: variable ‘dt’ set but not used [-Wunused-but-set-variable]
+../src/PslToKernelMatrix.cpp:56:10: warning: variable ‘gt’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:70:26: warning: unused variable ‘kmc’ [-Wunused-variable]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘void makeKernelMatrix(int, int, int, bool, bool, std::string)’:
+../src/PslToKernelMatrix.cpp:168:27: warning: unused variable ‘kmc’ [-Wunused-variable]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****

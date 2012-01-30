@@ -2,6 +2,19 @@
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
 
 **** Build Finished ****

@@ -18,6 +18,7 @@
 #include "KernelMatrixCalculator.h"
 #include <iostream>
 #include <fstream>
+#include <sstream>
 
 
 
@@ -36,7 +37,7 @@ using namespace libpmk;
 
 void loadPSL(string);
 void makePyramids(double finest_side_length, double side_factor, int discretize_factor, bool do_translations, bool global_translation);
-void makeKernelMatrix();
+void makeKernelMatrix(int fsl, int sf, int df, bool dt, bool gt, string destinazionePath);
 int main(int, char* []);
 
 
@@ -51,41 +52,21 @@ int MAKE_PYRAMID_TYPE  =  UNIFORM_PYRAMID_MAKER;
 
 int main(int argc,char *argv[]) {
 
-	int fsl,sf,df;
-	bool dt,gt;
-	dt=true;
-	gt=true;
-	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_101/PSL/dataSetIntero.psl");
-	string nomeFileDest;
-	KernelMatrixCalculator *kmc;
 
-	//-----------------------------------------------
-	fsl=200;
-	sf=10;
-	df=0;
+	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
+	makeKernelMatrix(10,20,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
 
-	makePyramids(fsl,sf,df,dt,gt);
-	nomeFileDest="";
-	nomeFileDest="KM"+fsl;
-	nomeFileDest+="_"+sf;
-	nomeFileDest+="_"+df;
-	kmc=new KernelMatrixCalculator(vectorMRH,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix",nomeFileDest);
-	kmc->kernelMatrixGenerate();
-
-	//-----------------------------------------------
-
-
-	//-----------------------------------------------
+	/*//-----------------------------------------------
 	fsl=1000;
 	sf=20;
 	df=0;
 
 	makePyramids(fsl,sf,df,dt,gt);
-	nomeFileDest="";
-	nomeFileDest="KM"+fsl;
-	nomeFileDest+="_"+sf;
-	nomeFileDest+="_"+df;
-	kmc=new KernelMatrixCalculator(vectorMRH,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix",nomeFileDest);
+	nomeFileDestinazione1="";
+	nomeFileDestinazione1="KM"+fsl;
+	nomeFileDestinazione1+="_"+sf;
+	nomeFileDestinazione1+="_"+df;
+	kmc=new KernelMatrixCalculator(vectorMRH,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix",nomeFileDestinazione1);
 	kmc->kernelMatrixGenerate();
 
 	//-----------------------------------------------
@@ -97,11 +78,11 @@ int main(int argc,char *argv[]) {
 	df=2;
 
 	makePyramids(fsl,sf,df,dt,gt);
-	nomeFileDest="";
-	nomeFileDest="KM"+fsl;
-	nomeFileDest+="_"+sf;
-	nomeFileDest+="_"+df;
-	kmc=new KernelMatrixCalculator(vectorMRH,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix",nomeFileDest);
+	nomeFileDestinazione1="";
+	nomeFileDestinazione1="KM"+fsl;
+	nomeFileDestinazione1+="_"+sf;
+	nomeFileDestinazione1+="_"+df;
+	kmc=new KernelMatrixCalculator(vectorMRH,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix",nomeFileDestinazione1);
 	kmc->kernelMatrixGenerate();
 
 	//-----------------------------------------------
@@ -113,14 +94,14 @@ int main(int argc,char *argv[]) {
 	df=1;
 
 	makePyramids(fsl,sf,df,dt,gt);
-	nomeFileDest="";
-	nomeFileDest="KM"+fsl;
-	nomeFileDest+="_"+sf;
-	nomeFileDest+="_"+df;
-	kmc=new KernelMatrixCalculator(vectorMRH,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix",nomeFileDest);
+	nomeFileDestinazione1="";
+	nomeFileDestinazione1="KM"+fsl;
+	nomeFileDestinazione1+="_"+sf;
+	nomeFileDestinazione1+="_"+df;
+	kmc=new KernelMatrixCalculator(vectorMRH,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix",nomeFileDestinazione1);
 	kmc->kernelMatrixGenerate();
 
-	//-----------------------------------------------
+	//-----------------------------------------------*/
 
 
 	return 0;
@@ -167,7 +148,42 @@ void makePyramids(double finest_side_length, double side_factor, int discretize_
 }
 
 
-void makeKernelMatrix(){
+void makeKernelMatrix(int fsl, int sf, int df, bool dt, bool gt, string destinazionePath){
+
+
+
+		dt=true;
+		gt=true;
+		string s;
+		stringstream out;
+
+
+
+
+
+
+
+
+		string nomeFileDestinazione1;
+		KernelMatrixCalculator *kmc;
+
+
+		fsl=200;
+		sf=10;
+		df=0;
+		dt=true;
+		gt=true;
+
+		makePyramids(fsl,sf,df,dt,gt);
+		nomeFileDestinazione1="";
+		out <<"KM_"<< fsl<<"_"<<sf<<"_"<<df<<"_"<<dt<<"_"<<gt;
+		out.clear();
+		nomeFileDestinazione1 = out.str();
+		//cout<<"\nFileDestinazione1: "<<nomeFileDestinazione1<<"\n";
+
+		kmc=new KernelMatrixCalculator(vectorMRH,destinazionePath,nomeFileDestinazione1);
+		kmc->kernelMatrixGenerate();
+
 
 }
 
