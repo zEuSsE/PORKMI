@@ -1,4 +1,4 @@
-src/ML2.d: ../src/ML2.cpp \
+src/pslToKernelMatrix.d: ../src/pslToKernelMatrix.cpp \
  /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/point_set/on-disk-point-set-list.h \
  /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/point_set/point-set-list.h \
  /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/point_set/point-set.h \

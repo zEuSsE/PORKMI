@@ -5,18 +5,15 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/KernelMatrixCalculator.cpp \
-../src/ML2.cpp \
-../src/ML3.cpp 
+../src/pslToKernelMatrix.cpp 
 
 OBJS += \
 ./src/KernelMatrixCalculator.o \
-./src/ML2.o \
-./src/ML3.o 
+./src/pslToKernelMatrix.o 
 
 CPP_DEPS += \
 ./src/KernelMatrixCalculator.d \
-./src/ML2.d \
-./src/ML3.d 
+./src/pslToKernelMatrix.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

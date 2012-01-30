@@ -1,10 +1,10 @@
 //============================================================================
-// Name        : ML2.cpp
+// Name        : pslToKernelMatrix.cpp
 // Author      : Andrea Mazzeschi
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Prende in input un file .psl e calcola
-//				 il vettore di MultiResolution Histograms
+//				 la matrice di Kernel
 //============================================================================
 
 #include "point_set/on-disk-point-set-list.h"
@@ -20,23 +20,13 @@
 #include <iostream>
 #include <fstream>
 
-//libreria boost c++
-#include <boost/filesystem/operations.hpp>
-#include <boost/filesystem/path.hpp>
-#include <boost/filesystem/fstream.hpp>
-#include <boost/filesystem.hpp>
-
 
 
 
 using namespace std;
 using namespace libpmk;
-using namespace boost::filesystem;
 
 
-//possibili tipi di caricamente file PSL
-#define ON_DISK_POINT_SET_LIST  1
-#define MUTABLE_POINT_SET_LIST  2
 
 
 //possibili tipi di PyramidMaker
@@ -53,25 +43,22 @@ int main(int, char* []);
 PyramidMaker *ptrPyramidMaker;
 PointSetList *ptrPSL;
 vector<MultiResolutionHistogram *> vectorMRH;
-int PSLTYPE  =  ON_DISK_POINT_SET_LIST;
 int MAKE_PYRAMID_TYPE  =  UNIFORM_PYRAMID_MAKER;
 
 
 
-
+int main(int argc,char *argv[]) {
+	loadPSL("/home/andrea/Scaricati/ETH80_GridSIFT.psl");
+	makePyramids();
+	makeKernelMatrix();
+	return 0;
+}
 
 
 
 void loadPSL(string filePSL){
 		cout << "Carico file PSL: "<< filePSL << endl;
-			switch (PSLTYPE) { //TODO forse il mutable è eliminabile
-						case ON_DISK_POINT_SET_LIST:
-							ptrPSL=new OnDiskPointSetList(filePSL);
-						break;
-						case MUTABLE_POINT_SET_LIST:
-							//TODO
-						break;
-			}
+		ptrPSL=new OnDiskPointSetList(filePSL);
 }
 
 
@@ -112,28 +99,6 @@ void makeKernelMatrix(){
 	kmc->kernelMatrixGenerate();
 }
 
-/*void showFiles(const path &directoryPSL){
-	if (exists(directoryPSL)) {
-		directory_iterator iter(directoryPSL),end;
-		for (iter; iter!=end; ++iter) {
-			cout << (*iter).path().stem().string();
-			//string s=*iter;
-			//cout << s;
-			//std::ofstream s ();
-			//s << "Cicciapera" ;
-			//s.close();
-		}
-	}
-	else {
-		cout << "Directory Inesistente!" << endl;
-	}
 
-}*/
 
-int main(int argc,char *argv[]) {
-//	showFiles("/home/andrea/txt");
-	loadPSL("/home/andrea/Scaricati/ETH80_GridSIFT.psl");
-	makePyramids();
-	makeKernelMatrix();
-	return 0;
-}
+
