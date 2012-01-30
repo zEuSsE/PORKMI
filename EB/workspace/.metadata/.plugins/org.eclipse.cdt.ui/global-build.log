@@ -3161,3 +3161,1264 @@ Finished building target: AcquisizionePSL
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:240:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:357:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘int main()’:
+../src/provaEsecuzione.cpp:37:6: warning: unused variable ‘numIm’ [-Wunused-variable]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:244:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:361:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp:30:2: warning: "/*" within comment [-Wcomment]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:68:22: warning: integer constant is too large for its type [enabled by default]
+../src/AcquisizionePSL.cpp:27:17: error: ‘libpmk_util’ is not a namespace-name
+../src/AcquisizionePSL.cpp:27:28: error: expected namespace-name before ‘;’ token
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:377:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:68:22: warning: integer constant is too large for its type [enabled by default]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:260:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:377:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:71:22: warning: integer constant is too large for its type [enabled by default]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:266:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:383:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:71:22: warning: integer constant is too large for its type [enabled by default]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:266:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:383:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:71:22: warning: integer constant is too large for its type [enabled by default]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:266:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:383:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:71:22: warning: integer constant is too large for its type [enabled by default]
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:78:86: error: expected ‘;’ before ‘}’ token
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:383:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:71:22: warning: integer constant is too large for its type [enabled by default]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:266:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:383:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:71:22: warning: integer constant is too large for its type [enabled by default]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:266:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:383:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:74:78: error: expected ‘)’ before ‘;’ token
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:267:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:267:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:267:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:267:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:267:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:267:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:267:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:79:27: warning: integer overflow in expression [-Woverflow]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:267:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:79:27: warning: integer overflow in expression [-Woverflow]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:267:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:267:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:79:24: warning: integer overflow in expression [-Woverflow]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:267:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:384:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int main()’:
+../src/AcquisizionePSL.cpp:76:48: error: ‘j’ was not declared in this scope
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:385:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+make: *** [src/AcquisizionePSL.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:268:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:385:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:268:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:385:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:268:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:385:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:268:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:385:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:268:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:385:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:270:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:387:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:270:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:387:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:270:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:387:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:18:36: fatal error: KernelMatrixCalculator.h: No such file or directory
+compilation terminated.
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:17:10: error: #include expects "FILENAME" or <FILENAME>
+../src/PslToKernelMatrix.cpp:17:34: warning: missing terminating " character [enabled by default]
+../src/PslToKernelMatrix.cpp:18:36: fatal error: KernelMatrixCalculator.h: No such file or directory
+compilation terminated.
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:18:36: fatal error: KernelMatrixCalculator.h: No such file or directory
+compilation terminated.
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:28:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:28:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:38:7: error: expected unqualified-id before ‘double’
+../src/PslToKernelMatrix.cpp:38:7: error: expected ‘)’ before ‘double’
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:54:32: error: ‘makePyramids’ was not declared in this scope
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:30:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:57:131: error: invalid operands of types ‘const char [2]’ and ‘bool’ to binary ‘operator<<’
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:58:135: error: invalid operands of types ‘const char*’ and ‘const char [2]’ to binary ‘operator+’
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:58:135: error: invalid operands of types ‘const char*’ and ‘const char [2]’ to binary ‘operator+’
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:57:31: error: invalid operands of types ‘const char*’ and ‘const char [2]’ to binary ‘operator+’
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:58:24: error: invalid operands of types ‘const char*’ and ‘const char [2]’ to binary ‘operator+’
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:58:24: error: invalid operands of types ‘const char*’ and ‘const char [2]’ to binary ‘operator+’
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:58:24: error: invalid operands of types ‘const char*’ and ‘const char [2]’ to binary ‘operator+’
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:58:24: error: invalid operands of types ‘const char*’ and ‘const char [2]’ to binary ‘operator+’
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:60:2: error: ‘nomeDileDest’ was not declared in this scope
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:26:58: error: no matching function for call to ‘std::basic_ofstream<char>::basic_ofstream(std::string&, std::_Ios_Openmode)’
+../src/KernelMatrixCalculator.cpp:26:58: note: candidates are:
+/usr/include/c++/4.6/fstream:629:7: note: std::basic_ofstream<_CharT, _Traits>::basic_ofstream(const char*, std::ios_base::openmode) [with _CharT = char, _Traits = std::char_traits<char>, std::ios_base::openmode = std::_Ios_Openmode]
+/usr/include/c++/4.6/fstream:629:7: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘const char*’
+/usr/include/c++/4.6/fstream:614:7: note: std::basic_ofstream<_CharT, _Traits>::basic_ofstream() [with _CharT = char, _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/fstream:614:7: note:   candidate expects 0 arguments, 2 provided
+/usr/include/c++/4.6/fstream:588:11: note: std::basic_ofstream<char>::basic_ofstream(const std::basic_ofstream<char>&)
+/usr/include/c++/4.6/fstream:588:11: note:   candidate expects 1 argument, 2 provided
+../src/KernelMatrixCalculator.cpp:31:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+make: *** [src/KernelMatrixCalculator.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:31:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:82:9: error: redeclaration of ‘std::string nomeFileDest’
+../src/PslToKernelMatrix.cpp:66:9: error: ‘std::string nomeFileDest’ previously declared here
+../src/PslToKernelMatrix.cpp:86:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:70:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+../src/PslToKernelMatrix.cpp:98:9: error: redeclaration of ‘std::string nomeFileDest’
+../src/PslToKernelMatrix.cpp:66:9: error: ‘std::string nomeFileDest’ previously declared here
+../src/PslToKernelMatrix.cpp:102:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:70:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+../src/PslToKernelMatrix.cpp:114:9: error: redeclaration of ‘std::string nomeFileDest’
+../src/PslToKernelMatrix.cpp:66:9: error: ‘std::string nomeFileDest’ previously declared here
+../src/PslToKernelMatrix.cpp:118:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:70:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:87:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:71:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+../src/PslToKernelMatrix.cpp:103:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:71:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+../src/PslToKernelMatrix.cpp:115:9: error: redeclaration of ‘std::string nomeFileDest’
+../src/PslToKernelMatrix.cpp:59:9: error: ‘std::string nomeFileDest’ previously declared here
+../src/PslToKernelMatrix.cpp:119:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:71:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:87:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:71:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+../src/PslToKernelMatrix.cpp:103:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:71:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+../src/PslToKernelMatrix.cpp:115:9: error: redeclaration of ‘std::string nomeFileDest’
+../src/PslToKernelMatrix.cpp:59:9: error: ‘std::string nomeFileDest’ previously declared here
+../src/PslToKernelMatrix.cpp:119:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:71:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project AcquisizionePSL ****
+
+make clean 
+rm -rf  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o  ./src/AcquisizionePSL.d ./src/provaEsecuzione.d  AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project PslToKernelMatrix ****
+
+make clean 
+rm -rf  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o  ./src/KernelMatrixCalculator.d ./src/PslToKernelMatrix.d  PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:270:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:387:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp:30:2: warning: "/*" within comment [-Wcomment]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:31:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
+../src/PslToKernelMatrix.cpp:87:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:71:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+../src/PslToKernelMatrix.cpp:103:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:71:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+../src/PslToKernelMatrix.cpp:115:9: error: redeclaration of ‘std::string nomeFileDest’
+../src/PslToKernelMatrix.cpp:59:9: error: ‘std::string nomeFileDest’ previously declared here
+../src/PslToKernelMatrix.cpp:119:26: error: redeclaration of ‘KernelMatrixCalculator* kmc’
+../src/PslToKernelMatrix.cpp:71:26: error: ‘KernelMatrixCalculator* kmc’ previously declared here
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****

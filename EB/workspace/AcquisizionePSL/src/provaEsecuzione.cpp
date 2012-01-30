@@ -23,7 +23,7 @@ using namespace std;
 
 int leggereLabeledIndexFileI( vector<int>* labeledIndexList,string pathENomeFile);
 
-int main() {
+/*int main() {
 
 	KernelMatrix* matriceKernel= new KernelMatrix();
 	matriceKernel->ReadFromFile("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel/kernelMatrix_eth80.ker");
@@ -32,7 +32,7 @@ int main() {
 		cout<<matriceKernel->at(i,j)<<" ";
 		}
 		cout<<"\n";
-	}*/
+	}
 	vector<int>* labels= new vector<int>();
 	int numIm=leggereLabeledIndexFileI(labels,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/ETH80_labels.txt" );
 	//cout<<"\n\n" <<numIm;
@@ -49,7 +49,7 @@ int main() {
 	cout<<"numCorrect= "<<numCorrect<<";\n Accuratezza:"<<svme->GetAccuracy();
 
 
-}
+}*/
 
 
 int leggereLabeledIndexFileI( vector<int>* labeledIndexList,string pathENomeFile){
