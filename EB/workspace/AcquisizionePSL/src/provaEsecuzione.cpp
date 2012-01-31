@@ -14,6 +14,10 @@
 #include <vector>
 #include <svm/svm.h>
 #include <experiment/svm-experiment.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <dirent.h>
+#include <errno.h>
 
 
 
@@ -22,34 +26,19 @@ using namespace libpmk_util;
 using namespace std;
 
 int leggereLabeledIndexFileI( vector<int>* labeledIndexList,string pathENomeFile);
+vector<LabeledIndex > leggiFileSET(string dataSetPath);
+double faiProvaSvmTornaAccuracy(string kernelMatrix, string trainingSet, string testSet);
+void faiProveSvmSuCartella(string directoryDoveSonoIKernelMatrix, string pathTrainSet, string pathTestSet);
 
-/*int main() {
-
-	KernelMatrix* matriceKernel= new KernelMatrix();
-	matriceKernel->ReadFromFile("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel/kernelMatrix_eth80.ker");
-	/*for(int i=0;i<matriceKernel->size();i++){
-		for(int j=0; j<matriceKernel->size();j++){
-		cout<<matriceKernel->at(i,j)<<" ";
-		}
-		cout<<"\n";
-	}
-	vector<int>* labels= new vector<int>();
-	int numIm=leggereLabeledIndexFileI(labels,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/ETH80_labels.txt" );
-	//cout<<"\n\n" <<numIm;
-	RandomSelector rS(*labels, 40);
-	vector<LabeledIndex>* liv=new vector<LabeledIndex>();
-	*liv=rS.GetTrainingExamples();
-	for(vector<LabeledIndex>::iterator it = liv->begin(); it!=liv->end(); ++it) {
-		cout<<(*it).index<<" "<<(*it).label<<"\n";
-	}
-
-	SVMExperiment* svme=new SVMExperiment(rS.GetTrainingExamples(), rS.GetTestingExamples(),*matriceKernel,0.000000000001);
-	svme->Train();
-	int numCorrect=svme->Test();
-	cout<<"numCorrect= "<<numCorrect<<";\n Accuratezza:"<<svme->GetAccuracy();
+int main() {
 
 
-}*/
+	faiProveSvmSuCartella("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/trainingSetDS_101.set","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/finalTestSetDS_101.set");
+
+
+
+
+}
 
 
 int leggereLabeledIndexFileI( vector<int>* labeledIndexList,string pathENomeFile){
@@ -78,4 +67,118 @@ int leggereLabeledIndexFileI( vector<int>* labeledIndexList,string pathENomeFile
 	myFile.close();
 
 	return numImmagini;
+}
+
+
+
+vector<LabeledIndex > leggiFileSET(string dataSetPath){
+	vector<LabeledIndex > dataSet;
+	LabeledIndex labeledIndextmp;
+	ifstream dataSetFile (dataSetPath.c_str(), ios::in);
+	if (dataSetFile.is_open()){
+		int index;
+		int label;
+		dataSetFile >> index;
+		dataSetFile >> label;
+		while (dataSetFile.eof()!=true){
+			//cout << "Indice:"<<index<<" Label:"<<label<< endl;
+			labeledIndextmp.index=index;
+			labeledIndextmp.label=label;
+			dataSet.push_back(labeledIndextmp);
+			dataSetFile >> index;
+			dataSetFile >> label;
+		}
+	}
+
+	else cout<< endl <<"File non trovato"<< endl;
+
+
+	return dataSet;
+}
+
+double faiProvaSvmTornaAccuracy(string kernelMatrix, string trainingSet, string testingSet){
+
+
+	cout<<"\n"<<kernelMatrix<<"\n";
+	struct timeval start, end;
+
+		long mtime, seconds, useconds;
+
+
+
+	KernelMatrix* matriceKernel= new KernelMatrix();
+		matriceKernel->ReadFromFile(kernelMatrix.c_str());
+
+		/*
+		vector<int>* labels= new vector<int>();
+		int numIm=leggereLabeledIndexFileI(labels,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/ETH80_labels.txt" );
+		//cout<<"\n\n" <<numIm;
+		RandomSelector rS(*labels, 40);
+
+		vector<LabeledIndex>* liv=new vector<LabeledIndex>();
+		*liv=rS.GetTrainingExamples();
+		*/
+		vector<LabeledIndex > trainSet=leggiFileSET(trainingSet);
+		vector<LabeledIndex > testSet=leggiFileSET(testingSet);
+
+
+		SVMExperiment* svme=new SVMExperiment(trainSet, testSet,*matriceKernel,0.000000000001);
+		svme->Train();
+		gettimeofday(&start, NULL);
+		int numCorrect=svme->Test();
+		gettimeofday(&end, NULL);
+
+		cout<<"numCorrect= "<<numCorrect<<";\n Accuratezza:"<<svme->GetAccuracy();
+		seconds  = end.tv_sec  - start.tv_sec;
+		useconds = end.tv_usec - start.tv_usec;
+		mtime = ((seconds) * 1000 + useconds/1000.0) + 0.5;
+		cout<<endl;
+		printf("Elapsed time: %ld milliseconds ", mtime);
+		cout<<"\n microsecond: "<<useconds<<"\n";
+		cout<<"\n second: "<<seconds<<"\n";
+
+		return svme->GetAccuracy();
+
+}
+
+
+void faiProveSvmSuCartella(string directoryDoveSonoIKernelMatrix, string pathTrainSet, string pathTestSet){
+
+	string pathKer;
+	char* b=".ker";
+	DIR *dp;
+	struct dirent *dirp;
+
+			if((dp  = opendir(directoryDoveSonoIKernelMatrix.c_str())) == NULL) {
+		        cout << "Error(" << errno << ") opening " << directoryDoveSonoIKernelMatrix << endl;
+		        return;
+			}
+
+		    while ((dirp = readdir(dp)) != NULL) {
+		    	string name=dirp->d_name;
+		    	cout<<"\nreadingFile: "<<name<<"   ...\n";
+
+		       if( dirp->d_type ==DT_REG){    //d_type=DT_REG       file.   DT_DIR directory
+
+
+		    	   if(name.find(b,0)!=string::npos){//E' un file Features.mat
+		    		   cout<<"OK...\n";
+
+		    		   pathKer=directoryDoveSonoIKernelMatrix+"/"+name;
+
+		    		   faiProvaSvmTornaAccuracy(pathKer,
+		    		   							pathTrainSet,
+		    		   							pathTestSet);
+
+
+		    	   }
+		       }
+		    }
+
+
+
+
+
+
+
 }
