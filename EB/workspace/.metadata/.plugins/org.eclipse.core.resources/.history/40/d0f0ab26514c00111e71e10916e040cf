@@ -33,9 +33,9 @@ void faiProveSvmSuCartella(string directoryDoveSonoIKernelMatrix, string pathTra
 int main() {
 
 
-	faiProveSvmSuCartella("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/trainingSetDS_101.set","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/finalTestSetDS_101.set");
+	//faiProveSvmSuCartella("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/trainingSetDS_101.set","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/finalTestSetDS_101.set");
 
-//	faiProveSvmSuCartella("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/trainingSet_ETH80.set","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/finalTestSet_ETH80.set");
+	faiProveSvmSuCartella("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/trainingSet_ETH80.set","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/finalTestSet_ETH80.set");
 
 
 
@@ -136,7 +136,7 @@ double faiProvaSvmTornaAccuracy(string kernelMatrix, string trainingSet, string 
 		cout<<endl;
 		printf("Elapsed time: %ld milliseconds ", mtime);
 		cout<<"\n microsecond: "<<useconds<<"\n";
-		cout<<" second: "<<seconds<<"\n";
+		cout<<"\n second: "<<seconds<<"\n";
 
 		return svme->GetAccuracy();
 

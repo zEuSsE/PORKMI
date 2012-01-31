@@ -1,8 +1,0 @@
-################################################################################
-# Automatically-generated file. Do not edit!
-################################################################################
-
-USER_OBJS :=
-
-LIBS := -l/home/andrea/workspace/AcquisizionePSL/libpmk2/libpmk.a -l/home/andrea/workspace/AcquisizionePSL/libpmk2/libpmk_util.a
-
