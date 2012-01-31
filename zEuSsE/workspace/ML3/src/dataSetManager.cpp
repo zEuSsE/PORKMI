@@ -1,3 +1,24 @@
+/*
+ * KernelMatrixCalculator.cpp
+ *
+ *  Created on: 30/gen/2012
+ *      Author: andrea
+ *   Description: Preso un file nel formato:
+ *   			  (int) size
+ *   			  (int) label
+ *   			    .....
+ *   			  (int) label
+ *   			   rappresentante tutti gli esempi con relativa classe del nostro
+ *   			   dataset, fornisce le funzioni per:
+ *   			   + dividerlo in due parti di dimensione selezionabile -dataSetSplit()-
+ *   			   + creare i dataSet per il kFold -kFold()-
+ *   			   + leggere i file .set creati dalle funzioni precedenti -leggiFileSet()-
+ *
+ *   			   I file .set sono nel formato
+ *   			   (int) index (int) label
+ *   			   (int) index (int) label
+ *   			   ......................
+ */
 #include <string>
 #include <util/labeled-index.h>
 #include <vector>
@@ -9,28 +30,54 @@
 using namespace std;
 using namespace libpmk;
 
-
-void kFold(int);
 void dataSetSplit(string,int,int);
+void kFold(int);
+vector<LabeledIndex> leggiFileSET(string);  //passa da file.set a vector<labeledindex>
 vector<vector<LabeledIndex*> *>* separaEsempiPerClasse(string);
 
 
 
-vector<vector<LabeledIndex*> *> *dataSetDivisoPerClassi;
+vector<vector<LabeledIndex*> *> *dataSetDivisoPerClassi;	//viene riempito dalla funzione separaEsempiPerClasse
 
 
 
 
 
 int main(){
-	dataSetSplit("/home/andrea/Scaricati/ETH80_labels.txt",75,25);
-	kFold(10);
+//	dataSetSplit("/home/andrea/Scaricati/ETH80_labels.txt",75,25);
+//	kFold(10);
+	vector<LabeledIndex > dataSet=leggiFileSET("/home/andrea"
+			"/Scrivania/kFoldDataSet_6.set");
+
 }
 
 
 
 
+vector<LabeledIndex > leggiFileSET(string dataSetPath){
+	vector<LabeledIndex > dataSet;
+	LabeledIndex labeledIndextmp;
+	ifstream dataSetFile (dataSetPath.c_str(), ios::in);
+	if (dataSetFile.is_open()){
+		int index;
+		int label;
+		dataSetFile >> index;
+		dataSetFile >> label;
+		while (dataSetFile.eof()!=true){
+			cout << "Indice:"<<index<<" Label:"<<label<< endl;
+			labeledIndextmp.index=index;
+			labeledIndextmp.label=label;
+			dataSet.push_back(labeledIndextmp);
+			dataSetFile >> index;
+			dataSetFile >> label;
+		}
+	}
 
+	else cout<< endl <<"File non trovato"<< endl;
+
+
+	return dataSet;
+}
 
 
 

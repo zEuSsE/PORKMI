@@ -1,10 +1,15 @@
 /*
- * KernelMatrixCalculator.h
+ * KernelMatrixCalculator.cpp
  *
  *  Created on: 26/gen/2012
  *      Author: andrea
- *  Description: Una volta settato il vettore con i MRH di tutte le immagini,
- * 				 crea un file contenente la matrice di Kernel (utile per il backup)
+ *   Description: Fornito un vector<MultiResolutionHistogram*>, crea un file rappresentante
+ *   			  la matrice di Kernel, ovvero un file nel formato:
+ *   			  (int) Numero di righe (colonne) della matrice
+ *   			  (double) K[0][0]
+ *   			  (2xdouble) K[1][0] K[1][1] (row 1)
+ *   			  ......
+ *   			  (N x double) row N
  */
 
 #include "histograms/multi-resolution-histogram.h"
