@@ -44,10 +44,10 @@ vector<vector<LabeledIndex*> *> *dataSetDivisoPerClassi;	//viene riempito dalla 
 
 
 int main(){
-//	dataSetSplit("/home/andrea/Scaricati/ETH80_labels.txt",75,25);
+	dataSetSplit("/home/andrea/Scaricati/ETH80_labels.txt",75,25);
 //	kFold(10);
-	vector<LabeledIndex > dataSet=leggiFileSET("/home/andrea"
-			"/Scrivania/kFoldDataSet_6.set");
+/*	vector<LabeledIndex > dataSet=leggiFileSET("/home/andrea"
+			"/Scrivania/kFoldDataSet_6.set");*/
 
 }
 
@@ -86,6 +86,7 @@ void dataSetSplit(string labelsFile,int percentTrain,int percentTest){
 		dataSetDivisoPerClassi=separaEsempiPerClasse(labelsFile);
 		vector<LabeledIndex*> *classe;
 		ofstream testSet ("finalTestSet.set", ios::out);
+		//crea testSetFinale
 		for (int i = 0; i <((int) dataSetDivisoPerClassi->size()); i++) {
 			classe=dataSetDivisoPerClassi->at(i);
 			cout << endl << "Scelta dei vettori per la classe " << i<< endl;
@@ -111,6 +112,16 @@ void dataSetSplit(string labelsFile,int percentTrain,int percentTest){
 			}
 		}
 		testSet.close();
+		//crea TrainingSet con tutti gli esempi rimanenti
+		ofstream traingSet ("trainingSet.set", ios::out);
+		for (int i = 0; i <((int) dataSetDivisoPerClassi->size()); i++) {
+			cout << "Faccio il training set "<< i;
+			classe=dataSetDivisoPerClassi->at(i);
+			for (int j = 0; j < classe->size() ; j++) {
+				traingSet << classe->at(j)->index<< " "<<classe->at(j)->label<<endl;
+			}
+		}
+		traingSet.close();
 }
 
 void kFold(int k){
