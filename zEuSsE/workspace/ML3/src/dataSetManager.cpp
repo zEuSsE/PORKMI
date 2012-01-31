@@ -30,25 +30,36 @@
 using namespace std;
 using namespace libpmk;
 
-void dataSetSplit(string,int,int);
-void kFold(int);
+void dataSetSplit(string labelsFile,int percentTrain,int percentTest,string pathToSave,string dataSetName);
+void kFold(int k,string pathToSave,string dataSetName);
 vector<LabeledIndex> leggiFileSET(string);  //passa da file.set a vector<labeledindex>
-vector<vector<LabeledIndex*> *>* separaEsempiPerClasse(string);
+vector<vector<LabeledIndex*> > separaEsempiPerClasseDaFileTxt(string);
 
 
 
-vector<vector<LabeledIndex*> *> *dataSetDivisoPerClassi;	//viene riempito dalla funzione separaEsempiPerClasse
-
+vector<vector < LabeledIndex* > > dataSetDivisoPerClassi;	//viene riempito dalla funzione separaEsempiPerClasse
 
 
 
 
 int main(){
-	dataSetSplit("/home/andrea/Scaricati/ETH80_labels.txt",75,25);
-//	kFold(10);
-/*	vector<LabeledIndex > dataSet=leggiFileSET("/home/andrea"
-			"/Scrivania/kFoldDataSet_6.set");*/
+	//CREAZIONE DATASET PER ETH_80
+	string pathToDataSetFormatoTXT="/home/andrea/Scrivania/PORKMI/ETH_80/ETH80_labels.txt";
+	string saveDataSetAt="/home/andrea/Scrivania/PORKMI/ETH_80/";
+	string nomeDataSet="ETH_80";
+	dataSetSplit(pathToDataSetFormatoTXT,75,25,saveDataSetAt,nomeDataSet);
+	kFold(3,saveDataSetAt,nomeDataSet);
+	kFold(5,saveDataSetAt,nomeDataSet);
+	kFold(10,saveDataSetAt,nomeDataSet);
 
+	//CREAZIONE DATASET PER DS__101
+	pathToDataSetFormatoTXT="/home/andrea/Scrivania/PORKMI/DS_101/DS_101_labels.txt";
+	saveDataSetAt="/home/andrea/Scrivania/PORKMI/DS_101/";
+	nomeDataSet="DS_101";
+	dataSetSplit(pathToDataSetFormatoTXT,75,25,saveDataSetAt,nomeDataSet);
+	kFold(3,saveDataSetAt,nomeDataSet);
+	kFold(5,saveDataSetAt,nomeDataSet);
+	kFold(10,saveDataSetAt,nomeDataSet);
 }
 
 
@@ -81,23 +92,23 @@ vector<LabeledIndex > leggiFileSET(string dataSetPath){
 
 
 
-void dataSetSplit(string labelsFile,int percentTrain,int percentTest){
+void dataSetSplit(string labelsFile,int percentTrain,int percentTest,string pathToSave,string dataSetName){
 
-		dataSetDivisoPerClassi=separaEsempiPerClasse(labelsFile);
-		vector<LabeledIndex*> *classe;
-		ofstream testSet ("finalTestSet.set", ios::out);
+		dataSetDivisoPerClassi=separaEsempiPerClasseDaFileTxt(labelsFile);
+		vector<LabeledIndex*> classe;
+		ofstream testSet ((pathToSave+"finalTestSet"+dataSetName+".set").c_str(), ios::out);
 		//crea testSetFinale
-		for (int i = 0; i <((int) dataSetDivisoPerClassi->size()); i++) {
-			classe=dataSetDivisoPerClassi->at(i);
-			cout << endl << "Scelta dei vettori per la classe " << i<< endl;
-			int percentualeClasse =(int) ((classe->size())*percentTest)/100;
+		cout <<"Creo dataSet di Test Finale per "<<dataSetName<<endl;
+		for (int i = 0; i <((int) dataSetDivisoPerClassi.size()); i++) {
+			classe=dataSetDivisoPerClassi.at(i);
+			int percentualeClasse =(int) ((classe.size())*percentTest)/100;
 			int out[percentualeClasse];
 			int k;
 			bool foundEqual;
-			for (int j = 0; j < percentualeClasse ; j++) {
+			for (int j = 0; j < percentualeClasse ; ++j) {
 				do{
 					foundEqual=false;
-					k=(int) rand()%(classe->size());
+					k=(int) rand()%(classe.size());
 					int p=0;
 					while ((p<j) && (foundEqual==false) && (p<sizeof(out)) ) {
 						if (out[p]==k) foundEqual=true;
@@ -106,46 +117,50 @@ void dataSetSplit(string labelsFile,int percentTrain,int percentTest){
 				}while(foundEqual==true);
 				out[j]=k;
 				//Scrive nel file test.set e cancella gli elementi dal dataSet rimanente
-				cout << classe->at(k)->index<<" ";
-				testSet << classe->at(k)->index<< " "<<classe->at(k)->label<<endl;
-				classe->erase(classe->begin()+k);
+				testSet << classe.at(k)->index<< " "<<classe.at(k)->label<<endl;
+				classe.erase(classe.begin()+k);
 			}
 		}
 		testSet.close();
 		//crea TrainingSet con tutti gli esempi rimanenti
-		ofstream traingSet ("trainingSet.set", ios::out);
-		for (int i = 0; i <((int) dataSetDivisoPerClassi->size()); i++) {
-			cout << "Faccio il training set "<< i;
-			classe=dataSetDivisoPerClassi->at(i);
-			for (int j = 0; j < classe->size() ; j++) {
-				traingSet << classe->at(j)->index<< " "<<classe->at(j)->label<<endl;
+		cout  <<"Creo dataSet di Training Finale per "<<dataSetName<<endl;
+		ofstream traingSet ((pathToSave+"trainingSet"+dataSetName+".set").c_str(), ios::out);
+		for (int i = 0; i <((int) dataSetDivisoPerClassi.size()); ++i) {
+			classe=dataSetDivisoPerClassi.at(i);
+			for (int j = 0; j < classe.size() ; ++j) {
+				traingSet << classe.at(j)->index<< " "<<classe.at(j)->label<<endl;
 			}
 		}
 		traingSet.close();
+		cout <<"File salvati in "<<pathToSave<<endl;
 }
 
-void kFold(int k){
-	string kFoldDataSetName="kFoldDataSet_";
-	int numeroEsempiPerClasse[dataSetDivisoPerClassi->size()];
-	for (int i = 0; i < dataSetDivisoPerClassi->size(); ++i) {
-		numeroEsempiPerClasse[i]=(int) (dataSetDivisoPerClassi->at(i)->size())/10;
+void kFold(int k,string pathToSave,string dataSetName){
+	vector<vector < LabeledIndex* > > tmpDataSetDivisoPerClassi(dataSetDivisoPerClassi);
+	cout <<endl<< "Creo kFold del dataSet"<<dataSetName<<" con k="<<k<<endl;
+	int numeroEsempiPerClasse[tmpDataSetDivisoPerClassi.size()];
+	for (int i = 0; i < tmpDataSetDivisoPerClassi.size(); ++i) {
+		numeroEsempiPerClasse[i]=(int) ((tmpDataSetDivisoPerClassi.at(i).size())/k);
 	}
 	for (int i = 0; i < k; ++i) {
 		//crea un file kFold alla volta
 		char numstr[i];
 		sprintf(numstr,"%d",i);
-		ofstream kFoldDataSet((kFoldDataSetName+numstr+".set").c_str(),ios::out);
-		for (int j = 0; j <((int) dataSetDivisoPerClassi->size()); j++) {
-			vector<LabeledIndex*> *classe=dataSetDivisoPerClassi->at(j);
-			for (int n = 0; n < numeroEsempiPerClasse[n] ; ++n) {
-				int k=(int) rand()%(classe->size());
-				kFoldDataSet<<classe->at(k)->index<< " "<<classe->at(k)->label<<endl;
-				classe->erase(classe->begin()+k);
+		char numstr2[k];
+		sprintf(numstr2,"%d",k);
+		string nomeFile=pathToSave+ numstr2 + "Fold/" +numstr2+ "FoldDataSet_"+ numstr+".set";
+		ofstream kFoldDataSet(nomeFile.c_str(),ios::out);
+		for (int j = 0; j <((int) tmpDataSetDivisoPerClassi.size()); ++j) {
+			vector<LabeledIndex*> classe=tmpDataSetDivisoPerClassi.at(j);
+			if(i==k-1) numeroEsempiPerClasse[j]=classe.size();//l'ultimo fold prende tutti gli esempi rimanenti
+			for (int n = 0; n < numeroEsempiPerClasse[j] ; ++n) {
+				int v=(int) rand()%(classe.size());
+				kFoldDataSet<<classe.at(v)->index<< " "<<classe.at(v)->label<<endl;
+				classe.erase(classe.begin()+v);
 			}
 		}
-		kFoldDataSet.close();
 	}
-
+	cout << "File salvati in: "<<pathToSave<<endl;
 }
 
 
@@ -153,34 +168,34 @@ void kFold(int k){
 
 
 
-vector<vector<LabeledIndex*> *>* separaEsempiPerClasse(string pathENomeFile){
+vector<vector<LabeledIndex*> > separaEsempiPerClasseDaFileTxt(string pathENomeFile){
 
-	vector<vector<LabeledIndex*> *> *classVector=new vector<vector<LabeledIndex*> *>;
-	vector<LabeledIndex*> *classTmp=new vector<LabeledIndex *>;
+	vector<vector<LabeledIndex*> > classVector;
+	vector<LabeledIndex*> classTmp;
 	LabeledIndex* labIndtmp;
 	ifstream myFile;
 	int numImmagini;
 	myFile.open(pathENomeFile.c_str());
 	if (myFile.is_open()) {
-		cout<<"Reading the file: "<<pathENomeFile<<"\n";
+		cout<<"Reading the file: "<<pathENomeFile<<endl;
 		myFile>>numImmagini;
-		int oldLabel,newLabel;		//TODO occhio nel DB_101 oldLabel deve essere 0
+		int oldLabel,newLabel;
 		myFile>>newLabel;
-	//	cout << newLabel;
 		oldLabel=newLabel;
-		for(int i=0;i<numImmagini;i++){
+		for(int i=0;i<=numImmagini;++i){
+			if (myFile.eof()==true){
+				newLabel=-1;
+			}
 			labIndtmp=new LabeledIndex;
 			labIndtmp->index=i;
 			labIndtmp->label=newLabel;
-		//	cout << "index="<<labIndtmp->index<<" label="<<labIndtmp->label<<endl;
 			if(newLabel==oldLabel){
-				classTmp->push_back(labIndtmp);
-				//cout<< "Dimensione vettore classe:"<<classTmp->size();
+				classTmp.push_back(labIndtmp);
 			}
 			else{
-				classVector->push_back(classTmp);
-				classTmp=new vector<LabeledIndex *>;
-				classTmp->push_back(labIndtmp);
+				classVector.push_back(classTmp);
+				vector<LabeledIndex *> classTmp;
+				classTmp.push_back(labIndtmp);
 				oldLabel=newLabel;
 			}
 			myFile>>newLabel;
@@ -190,3 +205,5 @@ vector<vector<LabeledIndex*> *>* separaEsempiPerClasse(string pathENomeFile){
 	myFile.close();
 	return classVector;
 }
+
+
