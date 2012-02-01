@@ -237,7 +237,7 @@ double faiProvaSvmTornaAccuracyConArrayC(string kernelMatrix, string trainingSet
 			vector<LabeledIndex > testSet=leggiFileSET(testingSet);
 			SVMExperiment* svme;
 			double mediaAccuracy=0;
-			for(int kk=0; kk<(int) sizeof(c);++kk){
+			for(int kk=0; kk< sizeof(c);++kk){
 
 
 			gettimeofday(&start, NULL);
