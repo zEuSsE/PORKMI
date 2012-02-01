@@ -29,16 +29,18 @@ int leggereLabeledIndexFileI( vector<int>* labeledIndexList,string pathENomeFile
 vector<LabeledIndex > leggiFileSET(string dataSetPath);
 double faiProvaSvmTornaAccuracy(string kernelMatrix, string trainingSet, string testSet, double c);
 void faiProveSvmSuCartella(string directoryDoveSonoIKernelMatrix, string pathTrainSet, string pathTestSet, double c);
-void faiProveSvmSuCartellaConArrayC(string directoryDoveSonoIKernelMatrix, string pathTrainSet, string pathTestSet, double* c);
+void faiProveSvmSuCartellaConArrayC(string directoryDoveSonoIKernelMatrix, string pathTrainSet, string pathTestSet, double* c); // c del tipo: {...,-1}
 double faiProvaSvmTornaAccuracyConArrayC(string kernelMatrix, string trainingSet, string testingSet,double* c);
-
-
+void svmScorreKernelsEDatasetInKFold(string kernelMatrix, string pathKfold, double *c);
+string recuperareTrainingSet(string path);
+string recuperareTestSet(string path);
+void svmScorreFold(string kernelMatrix, string pathDoveSonoIFold, double *c);
 
 int main() {
 
-	double arrayC[7]={0.001, 0.01, 0.1, 1, 10, 100, 1000};
-
-	faiProveSvmSuCartellaConArrayC("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/trainingSet_ETH80.set","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/finalTestSet_ETH80.set", arrayC);
+	double arrayC[4]={0.001, 1, 1000, -1};
+	svmScorreFold("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet",arrayC);
+	//faiProveSvmSuCartellaConArrayC("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/3Fold/dataSet0/TrainingSet.set","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/3Fold/dataSet0/testSet.set", arrayC);
 //	faiProveSvmSuCartella("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/trainingSetDS_101.set","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/finalTestSetDS_101.set", 0.0000000000001);
 
 //	faiProveSvmSuCartella("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/trainingSet_ETH80.set","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/finalTestSet_ETH80.set", 0.0000000000001);
@@ -237,7 +239,7 @@ double faiProvaSvmTornaAccuracyConArrayC(string kernelMatrix, string trainingSet
 			vector<LabeledIndex > testSet=leggiFileSET(testingSet);
 			SVMExperiment* svme;
 			double mediaAccuracy=0;
-			for(int kk=0; kk<(int) sizeof(c);++kk){
+			for(int kk=0; c[kk]!=-1;kk++){
 
 
 			gettimeofday(&start, NULL);
@@ -249,7 +251,7 @@ double faiProvaSvmTornaAccuracyConArrayC(string kernelMatrix, string trainingSet
 
 			cout<<"\nC value: "<<c[kk];
 			cout<<"\nnumCorrect= "<<numCorrect<<";\nAccuratezza:"<<svme->GetAccuracy();
-			mediaAccuracy+=(svme->GetAccuracy())/sizeof(kk);
+			//mediaAccuracy+=(svme->GetAccuracy())/sizeof(kk);
 			seconds  = end.tv_sec  - start.tv_sec;
 			useconds = end.tv_usec - start.tv_usec;
 			mtime = ((seconds) * 1000 + useconds/1000.0) + 0.5;
@@ -263,9 +265,9 @@ double faiProvaSvmTornaAccuracyConArrayC(string kernelMatrix, string trainingSet
 			cout<<" second: "<<seconds<<"\n";
 	*/
 
-			cout<<"\n--MEDIA delle ACCURATEZZE: "<<mediaAccuracy<<"\n\n";
+			//cout<<"\n--MEDIA delle ACCURATEZZE: "<<mediaAccuracy<<"\n\n";
 			cout<<"------------------------------------------\n\n\n";
-			return mediaAccuracy;
+			return 0;
 
 
 }
@@ -286,13 +288,14 @@ void faiProveSvmSuCartellaConArrayC(string directoryDoveSonoIKernelMatrix, strin
 
 			    while ((dirp = readdir(dp)) != NULL) {
 			    	string name=dirp->d_name;
-			    	cout<<"\nreadingFile: "<<name<<"   ...\n";
+
 
 			       if( dirp->d_type ==DT_REG){    //d_type=DT_REG       file.   DT_DIR directory
 
 
 			    	   if(name.find(b,0)!=string::npos){//E' un file Features.mat
-			    		   cout<<"OK...\n";
+			    		   cout<<"\nreadingFile: "<<name<<"   ...\n";
+
 
 			    		   pathKer=directoryDoveSonoIKernelMatrix+"/"+name;
 
@@ -305,7 +308,134 @@ void faiProveSvmSuCartellaConArrayC(string directoryDoveSonoIKernelMatrix, strin
 			       }
 			    }
 
+}
+
+
+void svmScorreKernelsEDatasetInKFold(string kernelMatrix, string pathKfold, double *c){
+
+	char* b="dataSet";
+	DIR *dp;
+			struct dirent *dirp;
+
+					if((dp  = opendir(pathKfold.c_str())) == NULL) {
+				        cout << "Error(" << errno << ") opening " << pathKfold << endl;
+				        return;
+					}
+
+				    while ((dirp = readdir(dp)) != NULL) {
+				    	string name=dirp->d_name;
+
+
+				       if( dirp->d_type ==DT_DIR){    //d_type=DT_REG       file.   DT_DIR directory
+
+
+				    	   if(name.find(b,0)!=string::npos){
+				    		   cout<<"\n readingDataSet:------------------------------------------------"<<name<<"---------------------------\n";
+				    		   string path=pathKfold+"/"+name;
+				    		   string testSet = recuperareTestSet(path);
+				    		   string trainingSet= recuperareTrainingSet(path);
+				    		   faiProveSvmSuCartellaConArrayC(kernelMatrix,trainingSet,testSet,c);
+				    		   cout<<"\n---------------------------------------------------------------------------------------------------\n";
+				    	   }
+				       }
+				    }
+
+}
+
+
+string recuperareTrainingSet(string path){
+
+	char* b="TrainingSet.set";
+		DIR *dp;
+				struct dirent *dirp;
+
+						if((dp  = opendir(path.c_str())) == NULL) {
+					        cout << "Error(" << errno << ") opening " << path << endl;
+					        return "";
+						}
+
+					    while ((dirp = readdir(dp)) != NULL) {
+					    	string name=dirp->d_name;
+
+
+					       if( dirp->d_type ==DT_REG){    //d_type=DT_REG       file.   DT_DIR directory
+
+
+					    	   if(name.find(b,0)!=string::npos){
+					    		 //  cout<<"\nReading trainingset "<<name<<"   ...\n";
+					    		   string pathTrain=path+"/"+name;
+					    		   return pathTrain;
+					    	   }
+					       }
+					    }
+
+						return "";
+
+
+}
+string recuperareTestSet(string path){
+
+	char* b="testSet.set";
+			DIR *dp;
+					struct dirent *dirp;
+
+							if((dp  = opendir(path.c_str())) == NULL) {
+						        cout << "Error(" << errno << ") opening " << path << endl;
+						        return "";
+							}
+
+						    while ((dirp = readdir(dp)) != NULL) {
+						    	string name=dirp->d_name;
+
+
+						       if( dirp->d_type ==DT_REG){    //d_type=DT_REG       file.   DT_DIR directory
+
+
+						    	   if(name.find(b,0)!=string::npos){
+						    		  // cout<<"\nReading testset "<<name<<"   ...\n";
+						    		   string pathTest=path+"/"+name;
+						    		   return pathTest;
+						    	   }
+						       }
+						    }
+
+							return "";
+
+}
+
+void svmScorreFold(string kernelMatrix, string pathDoveSonoIFold, double *c){
+
+	char* b="Fold";
+				DIR *dp;
+						struct dirent *dirp;
+
+								if((dp  = opendir(pathDoveSonoIFold.c_str())) == NULL) {
+							        cout << "Error(" << errno << ") opening " << pathDoveSonoIFold << endl;
+							        return;
+								}
+
+							    while ((dirp = readdir(dp)) != NULL) {
+							    	string name=dirp->d_name;
+
+
+							       if( dirp->d_type ==DT_DIR){    //d_type=DT_REG       file.   DT_DIR directory
+
+
+							    	   if(name.find(b,0)!=string::npos){
+							    		   cout<<"\n=================================================="<<name<<"=================================================\n";
+							    		   cout<<"\nTesting in k-fold: "<<name<<"   ...\n";
+
+							    		  string pathFold= pathDoveSonoIFold+"/"+name;
+							    		   svmScorreKernelsEDatasetInKFold(kernelMatrix,pathFold,c);
+							    		   cout<<"\n==========================================================================================\n\n";
+
+
+
+							    	   }
+							       }
+							    }
 
 
 
 }
+

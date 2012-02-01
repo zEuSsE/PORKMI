@@ -1,8 +1,0 @@
-################################################################################
-# Automatically-generated file. Do not edit!
-################################################################################
-
-USER_OBJS :=
-
-LIBS := -l../libpmk2/libpmk.a -l/home/andrea/workspace/libpmk-2.5/libpmk2/libpmk.a -l/home/andrea/workspace/libpmk-2.5/libpmk2/libpmk_util.a
-

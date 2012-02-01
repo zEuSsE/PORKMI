@@ -525,3 +525,571 @@ make all
 make: Nothing to be done for `all'.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:13:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:240:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:240:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘int main()’:
+../src/provaEsecuzione.cpp:39:38: error: too many initializers for ‘double [3]’
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+make: *** [src/provaEsecuzione.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp:34:92: error: two or more data types in declaration of ‘c’
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: At global scope:
+../src/provaEsecuzione.cpp:311:92: error: two or more data types in declaration of ‘c’
+make: *** [src/provaEsecuzione.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:315:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
+../src/provaEsecuzione.cpp:345:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
+../src/provaEsecuzione.cpp:375:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:405:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:315:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
+../src/provaEsecuzione.cpp:345:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
+../src/provaEsecuzione.cpp:375:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:405:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:315:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
+../src/provaEsecuzione.cpp:345:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
+../src/provaEsecuzione.cpp:375:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:405:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:315:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
+../src/provaEsecuzione.cpp:345:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
+../src/provaEsecuzione.cpp:375:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:405:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:315:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
+../src/provaEsecuzione.cpp:346:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
+../src/provaEsecuzione.cpp:376:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:406:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
+../src/provaEsecuzione.cpp:347:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
+../src/provaEsecuzione.cpp:377:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:407:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
+../src/provaEsecuzione.cpp:347:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
+../src/provaEsecuzione.cpp:377:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:407:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:241:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
+../src/provaEsecuzione.cpp:347:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
+../src/provaEsecuzione.cpp:377:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:407:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:241:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
+../src/provaEsecuzione.cpp:348:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
+../src/provaEsecuzione.cpp:378:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:408:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****

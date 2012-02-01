@@ -52,9 +52,13 @@ int MAKE_PYRAMID_TYPE  =  UNIFORM_PYRAMID_MAKER;
 
 int main(int argc,char *argv[]) {
 
-
+/*
 	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_101/PSL/dataSetIntero.psl");
-	makeKernelMatrix(10,2,3,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
+	makeKernelMatrix(5,10,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
+	*/
+	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
+	makeKernelMatrix(5,10,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
+
 
 	return 0;
 }
