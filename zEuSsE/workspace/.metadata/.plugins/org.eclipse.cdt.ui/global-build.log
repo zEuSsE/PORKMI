@@ -2,18 +2,197 @@
 **** Build of configuration Debug for project ML3 ****
 
 make all 
-Building file: ../src/pslToKernelMatrix.cpp
+Building file: ../src/dataSetManager.cpp
 Invoking: GCC C++ Compiler
-g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pslToKernelMatrix.d" -MT"src/pslToKernelMatrix.d" -o "src/pslToKernelMatrix.o" "../src/pslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/pslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/pslToKernelMatrix.cpp
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:125:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:142:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:154:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:246:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:254:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:226:8: warning: unused variable ‘num’
+Finished building: ../src/dataSetManager.cpp
  
 Building target: ML3
 Invoking: GCC C++ Linker
-g++ -L/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/pslToKernelMatrix.o   -lpmk -lboost_system -lpmk_util -lstdc++ -lboost_filesystem
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:261:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:233:8: warning: unused variable ‘num’
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:252:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:260:36: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:252:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:260:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:274:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:252:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:260:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:274:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:252:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:260:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:274:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:252:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:260:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:274:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:261:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:274:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
 Finished building target: ML3
  
 
@@ -23,5 +202,255 @@ Finished building target: ML3
 
 make all 
 make: Nessuna operazione da eseguire per "all".
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:262:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:275:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:262:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:276:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:262:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:276:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:262:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:276:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:262:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:276:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:262:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:276:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:262:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:276:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:262:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:276:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:262:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:276:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ML3 ****
+
+make all 
+Building file: ../src/dataSetManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataSetManager.d" -MT"src/dataSetManager.d" -o "src/dataSetManager.o" "../src/dataSetManager.cpp"
+../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int, std::string, std::string)’:
+../src/dataSetManager.cpp:132:57: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:149:37: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void kFold(int, std::string, std::string)’:
+../src/dataSetManager.cpp:161:53: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp: In function ‘void creaTraingeTestSetDaKFold(std::string)’:
+../src/dataSetManager.cpp:253:35: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:262:36: warning: comparison between signed and unsigned integer expressions
+../src/dataSetManager.cpp:276:28: warning: comparison between signed and unsigned integer expressions
+Finished building: ../src/dataSetManager.cpp
+ 
+Building target: ML3
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/Scrivania/libpmk-2.5/libpmk2 -o "ML3"  ./src/KernelMatrixCalculator.o ./src/dataSetManager.o ./src/pslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: ML3
+ 
 
 **** Build Finished ****

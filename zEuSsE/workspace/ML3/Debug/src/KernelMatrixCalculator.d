@@ -1,5 +1,5 @@
-src/KernelMatrixCalculator.d: ../src/KernelMatrixCalculator.cpp \
- ../src/KernelMatrixCalculator.h \
+src/KernelMatrixCalculator.d src/KernelMatrixCalculator.o: \
+ ../src/KernelMatrixCalculator.cpp ../src/KernelMatrixCalculator.h \
  /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/histograms/multi-resolution-histogram.h \
  /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/histograms/bin.h \
  /home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2/util/sparse-vector.h \

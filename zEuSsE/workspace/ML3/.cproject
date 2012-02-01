@@ -39,13 +39,11 @@
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1626374854" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
 								<option id="gnu.cpp.link.option.libs.772292012" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="pmk"/>
-									<listOptionValue builtIn="false" value="boost_system"/>
 									<listOptionValue builtIn="false" value="pmk_util"/>
 									<listOptionValue builtIn="false" value="stdc++"/>
-									<listOptionValue builtIn="false" value="boost_filesystem"/>
 								</option>
 								<option id="gnu.cpp.link.option.paths.826414238" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="/home/andrea/Scrivania/PORKMI/libpmk-2.5/libpmk2"/>
+									<listOptionValue builtIn="false" value="/home/andrea/Scrivania/libpmk-2.5/libpmk2"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1532682628" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -131,5 +129,7 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/ML3"/>
+	</storageModule>
 </cproject>
