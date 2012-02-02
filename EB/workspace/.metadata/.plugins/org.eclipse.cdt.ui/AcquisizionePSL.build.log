@@ -2,29 +2,6 @@
 **** Build of configuration Debug for project AcquisizionePSL ****
 
 make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:241:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:348:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:378:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:408:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
+make: Nothing to be done for `all'.
 
 **** Build Finished ****

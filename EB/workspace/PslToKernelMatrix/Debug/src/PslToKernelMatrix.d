@@ -4,6 +4,7 @@ src/PslToKernelMatrix.d: ../src/PslToKernelMatrix.cpp \
  /home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-set.h \
  /home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point.h \
  /home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-ref.h \
+ /home/andrea/workspace/libpmk-2.5/libpmk2/point_set/mutable-point-set-list.h \
  /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/pyramid-maker.h \
  /home/andrea/workspace/libpmk-2.5/libpmk2/histograms/multi-resolution-histogram.h \
  /home/andrea/workspace/libpmk-2.5/libpmk2/histograms/bin.h \
@@ -36,6 +37,8 @@ src/PslToKernelMatrix.d: ../src/PslToKernelMatrix.cpp \
 /home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point.h:
 
 /home/andrea/workspace/libpmk-2.5/libpmk2/point_set/point-ref.h:
+
+/home/andrea/workspace/libpmk-2.5/libpmk2/point_set/mutable-point-set-list.h:
 
 /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/pyramid-maker.h:
 

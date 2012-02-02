@@ -1,0 +1,7 @@
+Carico file PSL: /home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl
+Stampa statistiche del ETH80_GridSIFT.psl...
+
+media Lunghezza vettori: 9.78477
+massima lunghezza vettori: 218
+minima lunghezza vettori: 0
+norma infinito di tutti i vettori: 255

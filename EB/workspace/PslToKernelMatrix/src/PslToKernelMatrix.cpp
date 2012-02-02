@@ -7,6 +7,7 @@
 //============================================================================
 
 #include "point_set/on-disk-point-set-list.h"
+#include <point_set/mutable-point-set-list.h>
 #include "point_set/point-set-list.h"
 #include "pyramids/pyramid-maker.h"
 #include "pyramids/uniform-pyramid-maker.h"
@@ -19,6 +20,8 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <math.h>
+
 
 
 
@@ -39,8 +42,8 @@ void loadPSL(string);
 void makePyramids(double finest_side_length, double side_factor, int discretize_factor, bool do_translations, bool global_translation);
 void makeKernelMatrix(int fsl, int sf, int df, bool dt, bool gt, string destinazionePath);
 int main(int, char* []);
-
-
+void stampaStatisticheFeatures(PointSetList* ptrPSL);
+double calcolaMinDistanzaTraPoints(string directoryDelPSL);
 
 
 PyramidMaker *ptrPyramidMaker;
@@ -52,13 +55,17 @@ int MAKE_PYRAMID_TYPE  =  UNIFORM_PYRAMID_MAKER;
 
 int main(int argc,char *argv[]) {
 
-/*
-	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_101/PSL/dataSetIntero.psl");
-	makeKernelMatrix(5,10,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
-	*/
-	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
-	makeKernelMatrix(5,10,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
 
+	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_101/PSL/dataSetIntero.psl");
+	makeKernelMatrix(20,3,1,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
+//	makeKernelMatrix(100,10,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
+
+/*	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
+	makeKernelMatrix(1,2,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
+*/
+
+/*	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_101/PSL/dataSetIntero.psl");
+	stampaStatisticheFeatures(ptrPSL);*/
 
 	return 0;
 }
@@ -121,6 +128,80 @@ void makeKernelMatrix(int fsl, int sf, int df, bool dt, bool gt, string destinaz
 
 		kmc=new KernelMatrixCalculator(vectorMRH,destinazionePath,nomeFileDestinazione1);
 		kmc->kernelMatrixGenerate();
+
+
+}
+
+
+void stampaStatisticheFeatures(PointSetList* ptrPSL){
+
+	cout<<"Stampa statistiche del PSL...";
+	double mediaLunghezza=0;
+	double lunghezzaMax=0;
+	double lunghezzaMin=INFINITY;
+	double normaInfinito=0;
+	double tempLunghezzaEuclidea;
+	for(int i=0; i<ptrPSL->point_size();i++){
+		tempLunghezzaEuclidea=0;
+		for(int j=0;j<ptrPSL->point_dim();j++){
+
+			if(fabs(ptrPSL->point(i).feature(j))>normaInfinito) normaInfinito=ptrPSL->point(i).feature(j);
+			tempLunghezzaEuclidea=pow(ptrPSL->point(i).feature(j),2);
+		}
+
+		tempLunghezzaEuclidea= sqrt(tempLunghezzaEuclidea);
+		mediaLunghezza=(mediaLunghezza*i+tempLunghezzaEuclidea)/(i+1);
+		if(lunghezzaMin>=tempLunghezzaEuclidea && tempLunghezzaEuclidea!=0) lunghezzaMin=tempLunghezzaEuclidea;
+		if(lunghezzaMax<=tempLunghezzaEuclidea) lunghezzaMax=tempLunghezzaEuclidea;
+		if(i%100==0){
+			if(fmod(floor(i/ptrPSL->point_size()*100),1)==0) cout <<fmod(floor(i/ptrPSL->point_size()*100),1)<<"% ";
+
+		cout<<"-------\n";
+		cout<<"\nmedia Lunghezza vettori: "<<mediaLunghezza;
+		cout<<"\nmassima lunghezza vettori: "<<lunghezzaMax;
+		cout<<"\nminima lunghezza vettori: "<<lunghezzaMin;
+		cout<<"\nnorma infinito di tutti i vettori: "<<normaInfinito<<"\n";
+		}
+	}
+
+	cout<<"\nfinal----\n";
+cout<<"\nmedia Lunghezza vettori: "<<mediaLunghezza;
+cout<<"\nmassima lunghezza vettori: "<<lunghezzaMax;
+cout<<"\nminima lunghezza vettori: "<<lunghezzaMin;
+cout<<"\nnorma infinito di tutti i vettori: "<<normaInfinito;
+
+}
+
+
+double calcolaMinDistanzaTraPoints(string directoryDelPSL){
+
+	PointSetList* psl= new MutablePointSetList();
+		((MutablePointSetList*) psl)->ReadFromFile(directoryDelPSL.c_str());
+		cout<<"PointSetSize: "<< psl->point_set_size()<<"\nPointDim: "<<psl->point_dim()<<"\nPointSize: "<<psl->point_size();
+		double minDistance;
+		double distanzaAttuale;
+
+		DistanceComputer* distanzaCalcolatore= new L1DistanceComputer();
+		minDistance=distanzaCalcolatore->ComputeDistance(psl->point(0),psl->point(1));
+		for(int i=psl->point_size()-2; i>=0;i--){
+			 cout.clear();cout<<"\n esecuzione"<<i<<", MIN DISTANZA: "<<minDistance;cout.flush();
+			for(int j=i+1;j<psl->point_size();j++){
+
+
+
+
+				distanzaAttuale=distanzaCalcolatore->ComputeDistance(psl->point(i),psl->point(j));
+
+				if (distanzaAttuale<minDistance && distanzaAttuale!=0) minDistance= distanzaAttuale;
+
+			}
+
+		}
+		cout<<"\n\n\n\n\nBABAAAAM....\n";
+		cerr<<"MIN DISTANZA: "<<minDistance;
+		cout<<"\n MIN DISTANZA: "<<minDistance;
+
+		return minDistance;
 
 
 }
