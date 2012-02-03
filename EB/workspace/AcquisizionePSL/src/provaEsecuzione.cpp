@@ -39,7 +39,7 @@ void svmScorreFold(string kernelMatrix, string pathDoveSonoIFold, double *c);
 int main() {
 
 	double arrayC[4]={0.001, 1, 1000, -1};
-	svmScorreFold("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet",arrayC);
+	svmScorreFold("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix","/home/andrea/Scrivania/PORKMI/DS_101",arrayC);
 	//faiProveSvmSuCartellaConArrayC("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/3Fold/dataSet0/TrainingSet.set","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/3Fold/dataSet0/testSet.set", arrayC);
 //	faiProveSvmSuCartella("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/trainingSetDS_101.set","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/finalTestSetDS_101.set", 0.0000000000001);
 

@@ -57,15 +57,15 @@ int main(int argc,char *argv[]) {
 
 
 	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_101/PSL/dataSetIntero.psl");
-	makeKernelMatrix(20,3,1,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
+/*	makeKernelMatrix(5,2,1,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
 //	makeKernelMatrix(100,10,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
 
 /*	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
 	makeKernelMatrix(1,2,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
 */
 
-/*	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_101/PSL/dataSetIntero.psl");
-	stampaStatisticheFeatures(ptrPSL);*/
+	//loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
+	stampaStatisticheFeatures(ptrPSL);
 
 	return 0;
 }
@@ -134,9 +134,10 @@ void makeKernelMatrix(int fsl, int sf, int df, bool dt, bool gt, string destinaz
 
 
 void stampaStatisticheFeatures(PointSetList* ptrPSL){
-
+	double numeroPointPerImmagine;
 	cout<<"Stampa statistiche del PSL...";
-	double mediaLunghezza=0;
+
+	/*double mediaLunghezza=0;
 	double lunghezzaMax=0;
 	double lunghezzaMin=INFINITY;
 	double normaInfinito=0;
@@ -148,20 +149,11 @@ void stampaStatisticheFeatures(PointSetList* ptrPSL){
 			if(fabs(ptrPSL->point(i).feature(j))>normaInfinito) normaInfinito=ptrPSL->point(i).feature(j);
 			tempLunghezzaEuclidea=pow(ptrPSL->point(i).feature(j),2);
 		}
-
+		numeroPointPerImmagine=(numeroPointPerImmagine*i+ptrPSL->point_set(i).size())/(i+1);
 		tempLunghezzaEuclidea= sqrt(tempLunghezzaEuclidea);
 		mediaLunghezza=(mediaLunghezza*i+tempLunghezzaEuclidea)/(i+1);
 		if(lunghezzaMin>=tempLunghezzaEuclidea && tempLunghezzaEuclidea!=0) lunghezzaMin=tempLunghezzaEuclidea;
 		if(lunghezzaMax<=tempLunghezzaEuclidea) lunghezzaMax=tempLunghezzaEuclidea;
-		if(i%100==0){
-			if(fmod(floor(i/ptrPSL->point_size()*100),1)==0) cout <<fmod(floor(i/ptrPSL->point_size()*100),1)<<"% ";
-
-		cout<<"-------\n";
-		cout<<"\nmedia Lunghezza vettori: "<<mediaLunghezza;
-		cout<<"\nmassima lunghezza vettori: "<<lunghezzaMax;
-		cout<<"\nminima lunghezza vettori: "<<lunghezzaMin;
-		cout<<"\nnorma infinito di tutti i vettori: "<<normaInfinito<<"\n";
-		}
 	}
 
 	cout<<"\nfinal----\n";
@@ -169,6 +161,21 @@ cout<<"\nmedia Lunghezza vettori: "<<mediaLunghezza;
 cout<<"\nmassima lunghezza vettori: "<<lunghezzaMax;
 cout<<"\nminima lunghezza vettori: "<<lunghezzaMin;
 cout<<"\nnorma infinito di tutti i vettori: "<<normaInfinito;
+
+*/	numeroPointPerImmagine=0;
+	for(int i=0; i<ptrPSL->point_set_size();i++){
+		int num=0;
+		for(int j=0; j<ptrPSL->point_set(i).size();j++){
+
+
+			//cout<<"\n---"<<ptrPSL->point_set(i).point(j).size();
+			num++;
+		}
+		numeroPointPerImmagine+=((double)num)/(double)ptrPSL->point_set_size();
+		cout<<"\n "<<num;
+	}
+	cout<<"\n "<<ptrPSL->point_set_size();
+	cout<<"\nnumPointPerImmagine: "<<numeroPointPerImmagine;
 
 }
 

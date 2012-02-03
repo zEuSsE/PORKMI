@@ -2,5 +2,9 @@ Statistiche sull'1%(a causa della grandezza del dataset) del psl:
 
 media Lunghezza vettori: 20.672
 massima lunghezza vettori: 230
-minima lunghezza vettori: 1
+minima lunghezza vettori: 0
 norma infinito di tutti i vettori: 255
+num medio di punti per immagini: 60.4521
+dimensione di ogni feature: 128
+stima sulla distanza minima tra vettori: 210
+

@@ -9,6 +9,7 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix
