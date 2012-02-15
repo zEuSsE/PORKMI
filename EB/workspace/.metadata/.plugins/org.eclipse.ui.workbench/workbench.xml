@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="33" version="2.0">
+<workbench progressCount="30" version="2.0">
 <workbenchAdvisor/>
-<window height="714" maximized="true" width="1014" x="14" y="24">
+<window height="715" maximized="true" width="1010" x="0" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="161"/>
@@ -32,21 +32,26 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="PslToKernelMatrix.cpp" partName="PslToKernelMatrix.cpp" path="/home/andrea/workspace/PslToKernelMatrix/src/PslToKernelMatrix.cpp" title="PslToKernelMatrix.cpp" tooltip="PslToKernelMatrix/src/PslToKernelMatrix.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/PslToKernelMatrix/src/PslToKernelMatrix.cpp"/>
-<editorState selectionHorizontalPixel="258" selectionLength="0" selectionOffset="4540" selectionTopPixel="2496"/>
+<editorState selectionHorizontalPixel="14" selectionLength="0" selectionOffset="5207" selectionTopPixel="2640"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="AcquisizionePSL.cpp" partName="AcquisizionePSL.cpp" path="/home/andrea/workspace/AcquisizionePSL/src/AcquisizionePSL.cpp" title="AcquisizionePSL.cpp" tooltip="AcquisizionePSL/src/AcquisizionePSL.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AcquisizionePSL/src/AcquisizionePSL.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="14370" selectionTopPixel="6106"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9910" selectionTopPixel="5882"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="provaEsecuzione.cpp" partName="provaEsecuzione.cpp" path="/home/andrea/workspace/AcquisizionePSL/src/provaEsecuzione.cpp" title="provaEsecuzione.cpp" tooltip="AcquisizionePSL/src/provaEsecuzione.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AcquisizionePSL/src/provaEsecuzione.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2452" selectionTopPixel="1048"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="KernelMatrixCalculator.cpp" partName="KernelMatrixCalculator.cpp" path="/home/andrea/workspace/PslToKernelMatrix/src/KernelMatrixCalculator.cpp" title="KernelMatrixCalculator.cpp" tooltip="PslToKernelMatrix/src/KernelMatrixCalculator.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/PslToKernelMatrix/src/KernelMatrixCalculator.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="754" selectionTopPixel="270"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="KernelMatrixCalculator.h" partName="KernelMatrixCalculator.h" path="/home/andrea/workspace/PslToKernelMatrix/src/KernelMatrixCalculator.h" title="KernelMatrixCalculator.h" tooltip="PslToKernelMatrix/src/KernelMatrixCalculator.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/PslToKernelMatrix/src/KernelMatrixCalculator.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="974" selectionTopPixel="274"/>
 </editor>
 </editors>
 <views>
@@ -74,16 +79,16 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
-<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.debug.ui.RegisterView" partName="Registers">
 <viewState/>
 </view>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings (8 items)"/>
-<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="698"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -153,26 +158,37 @@
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
-<view id="org.eclipse.ui.views.TaskList"/>
-<view id="org.eclipse.ui.views.PropertySheet"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
-<fastViewBars/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="topRight" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="1">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" ratio="0.3"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="topLeft" orientation="512" selectedTabId="org.eclipse.ui.navigator.ProjectExplorer" style="1">
+<fastViews>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
+<fastViews>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
+<view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
+<view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29738563"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@9aa95c" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
@@ -183,31 +199,22 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.2171767" ratioLeft="220" ratioRight="793" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.5816994" ratioLeft="356" ratioRight="256" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-</presentation>
+<info part="org.eclipse.ui.editorss" ratio="0.29588765" ratioLeft="295" ratioRight="702" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.5742251" ratioLeft="352" ratioRight="261" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="topRight" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
-<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="LabelNotFound"/>
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -264,18 +271,27 @@
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="711" ratioRight="237" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="711" ratioRight="237" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7589425" ratioLeft="488" ratioRight="155" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7589425" ratioLeft="488" ratioRight="155" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.cdt.debug.ui.executablesView" label="Executables"/>
@@ -283,7 +299,8 @@
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -292,20 +309,26 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.43505156" ratioLeft="211" ratioRight="274" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="711" ratioRight="237" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="711" ratioRight="237" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.2053307" ratioLeft="208" ratioRight="805" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.2053307" ratioLeft="208" ratioRight="805" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="Registers"/>
 <page content="org.eclipse.debug.ui.ModuleView" label="Modules"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -320,159 +343,161 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/PslToKernelMatrix/src/PslToKernelMatrix.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/AcquisizionePSL/src/provaEsecuzione.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/PslToKernelMatrix/src/KernelMatrixCalculator.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/PslToKernelMatrix/src/KernelMatrixCalculator.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/AcquisizionePSL/src/AcquisizionePSL.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/PslToKernelMatrix/src/KernelMatrixCalculator.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/PslToKernelMatrix/src/KernelMatrixCalculator.cpp"/>
 </editors>
-<item historyLabel="provaEsecuzione.cpp" index="1">
-<position info="not_deleted" x="2493" y="0"/>
+<item historyLabel="PslToKernelMatrix.cpp" index="0">
+<position info="not_deleted" x="5416" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.h" index="2">
+<position info="not_deleted" x="1008" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="1">
+<position info="not_deleted" x="680" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.h" index="2">
+<position info="not_deleted" x="744" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="1">
+<position info="not_deleted" x="680" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="1">
+<position info="not_deleted" x="3105" y="0"/>
+</item>
+<item historyLabel="AcquisizionePSL.cpp" index="3">
+<position info="not_deleted" x="9910" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="1648" y="0"/>
-</item>
-<item historyLabel="provaEsecuzione.cpp" index="1">
-<position info="not_deleted" x="2493" y="0"/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="2">
-<position info="not_deleted" x="14599" y="0"/>
-</item>
-<item historyLabel="provaEsecuzione.cpp" index="1">
-<position info="not_deleted" x="2493" y="0"/>
+<position info="not_deleted" x="5416" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="provaEsecuzione.cpp" index="1">
-<position info="not_deleted" x="2493" y="0"/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="2">
-<position info="not_deleted" x="14599" y="0"/>
-</item>
-<item historyLabel="provaEsecuzione.cpp" index="1">
-<position info="not_deleted" x="2493" y="0"/>
+<position info="not_deleted" x="5477" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="2068" y="0"/>
+<position info="not_deleted" x="2163" y="0"/>
 </item>
-<item historyLabel="AcquisizionePSL.cpp" index="2">
-<position info="not_deleted" x="14599" y="0"/>
-</item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="6626" y="0"/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="2">
-<position info="not_deleted" x="14599" y="0"/>
+<item historyLabel="KernelMatrixCalculator.cpp" index="1">
+<position info="not_deleted" x="2292" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="6626" y="0"/>
-</item>
-<item historyLabel="provaEsecuzione.cpp" index="1">
-<position info="not_deleted" x="2493" y="0"/>
+<position info="not_deleted" x="2163" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="6626" y="0"/>
+<position info="not_deleted" x="5181" y="0"/>
 </item>
-<item historyLabel="AcquisizionePSL.cpp" index="2">
-<position info="not_deleted" x="14804" y="0"/>
-</item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4228" y="0"/>
-</item>
-<item historyLabel="AcquisizionePSL.cpp" index="2">
-<position info="not_deleted" x="14804" y="0"/>
+<item historyLabel="KernelMatrixCalculator.h" index="4">
+<position info="not_deleted" x="432" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4228" y="0"/>
+<position info="not_deleted" x="5382" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="2604" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4233" y="0"/>
+<position info="not_deleted" x="5378" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="896" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4667" y="0"/>
+<position info="not_deleted" x="5378" y="0"/>
 </item>
-<item historyLabel="AcquisizionePSL.cpp" index="2">
-<position info="not_deleted" x="14804" y="0"/>
-</item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4667" y="0"/>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="896" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4302" y="0"/>
+<position info="not_deleted" x="5378" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="896" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4667" y="0"/>
+<position info="not_deleted" x="5378" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="896" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.h" index="4">
+<position info="not_deleted" x="1123" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="896" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4464" y="0"/>
+<position info="not_deleted" x="5379" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="2605" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.h" index="4">
+<position info="not_deleted" x="1123" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="2605" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="2497" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="855" y="0"/>
+<position info="not_deleted" x="5379" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="2497" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="2167" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="2167" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4055" y="0"/>
+<position info="not_deleted" x="5379" y="0"/>
 </item>
-<item historyLabel="AcquisizionePSL.cpp" index="2">
-<position info="not_deleted" x="14279" y="1007"/>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="2167" y="0"/>
 </item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4055" y="0"/>
-</item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4407" y="57"/>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="2271" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4359" y="0"/>
+<position info="not_deleted" x="5382" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="2498" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="2602" y="0"/>
+</item>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="684" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="5612" y="0"/>
+<position info="not_deleted" x="5382" y="0"/>
 </item>
 <item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position/>
+<position info="not_deleted" x="5109" y="0"/>
 </item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="415" y="26"/>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="613" y="0"/>
 </item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="5392" y="0"/>
+<item historyLabel="KernelMatrixCalculator.h" index="4">
+<position info="not_deleted" x="990" y="0"/>
 </item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="5126" y="0"/>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="754" y="0"/>
 </item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="1633" y="0"/>
+<item historyLabel="KernelMatrixCalculator.h" index="4">
+<position info="not_deleted" x="974" y="0"/>
 </item>
-<item historyLabel="AcquisizionePSL.cpp" index="2">
-<position info="not_deleted" x="14370" y="0"/>
-</item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="3709" y="0"/>
-</item>
-<item historyLabel="KernelMatrixCalculator.cpp" index="3">
-<position info="not_deleted" x="1002" y="0"/>
-</item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="1734" y="0"/>
-</item>
-<item historyLabel="KernelMatrixCalculator.cpp" index="3">
-<position info="not_deleted" x="949" y="0"/>
-</item>
-<item historyLabel="provaEsecuzione.cpp" index="1">
-<position info="not_deleted" x="2452" y="0"/>
-</item>
-<item historyLabel="KernelMatrixCalculator.cpp" index="3">
-<position info="not_deleted" x="949" y="0"/>
-</item>
-<item historyLabel="provaEsecuzione.cpp" index="1">
-<position info="not_deleted" x="2452" y="0"/>
-</item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="1734" y="0"/>
-</item>
-<item historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4907" y="0"/>
+<item historyLabel="KernelMatrixCalculator.cpp" index="5">
+<position info="not_deleted" x="754" y="0"/>
 </item>
 <item active="true" historyLabel="PslToKernelMatrix.cpp" index="0">
-<position info="not_deleted" x="4548" y="0"/>
+<position info="not_deleted" x="5109" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -484,8 +509,6 @@
 <trimItem IMemento.internal.id="topLeft"/>
 </trimArea>
 <trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-<trimItem IMemento.internal.id="bottom"/>
 <trimItem IMemento.internal.id="topRight"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
@@ -496,24 +519,25 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="provaEsecuzione.cpp" tooltip="AcquisizionePSL/src/provaEsecuzione.cpp">
-<persistable path="/AcquisizionePSL/src/provaEsecuzione.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="KernelMatrixCalculator.h" tooltip="PslToKernelMatrix/src/KernelMatrixCalculator.h">
+<persistable path="/PslToKernelMatrix/src/KernelMatrixCalculator.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="KernelMatrixCalculator.cpp" tooltip="PslToKernelMatrix/src/KernelMatrixCalculator.cpp">
 <persistable path="/PslToKernelMatrix/src/KernelMatrixCalculator.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="provaEsecuzione.cpp" tooltip="AcquisizionePSL/src/provaEsecuzione.cpp">
+<persistable path="/AcquisizionePSL/src/provaEsecuzione.cpp"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="AcquisizionePSL.cpp" tooltip="AcquisizionePSL/src/AcquisizionePSL.cpp">
 <persistable path="/AcquisizionePSL/src/AcquisizionePSL.cpp"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dataSetManager.cpp" tooltip="AcquisizionePSL/src/dataSetManager.cpp">
 <persistable path="/AcquisizionePSL/src/dataSetManager.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="KernelMatrixCalculator.h" tooltip="PslToKernelMatrix/src/KernelMatrixCalculator.h">
-<persistable path="/PslToKernelMatrix/src/KernelMatrixCalculator.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="PslToKernelMatrix.cpp" tooltip="PslToKernelMatrix/src/PslToKernelMatrix.cpp">
 <persistable path="/PslToKernelMatrix/src/PslToKernelMatrix.cpp"/>

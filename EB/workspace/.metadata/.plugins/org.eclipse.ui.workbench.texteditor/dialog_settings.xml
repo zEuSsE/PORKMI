@@ -3,25 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="312" key="DIALOG_WIDTH"/>
 		<item value="31" key="DIALOG_Y_ORIGIN"/>
-		<item value="438" key="DIALOG_HEIGHT"/>
 		<item value="584" key="DIALOG_X_ORIGIN"/>
+		<item value="438" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="fold" key="selection"/>
+		<item value="rand" key="selection"/>
 		<list key="findhistory">
+			<item value="rand"/>
+			<item value="pointRef"/>
+			<item value="computer"/>
 			<item value="Fold"/>
 			<item value="nomeFileDest"/>
 			<item value="File or Dir"/>
 			<item value="cout"/>
 			<item value="componiPoin"/>
-			<item value="PointSet"/>
-			<item value="reading"/>
 		</list>
 		<list key="replacehistory">
 			<item value="nomeFileDestinazione1"/>

@@ -21,7 +21,7 @@
 #include <fstream>
 #include <sstream>
 #include <math.h>
-
+#include <clustering/k-means-clusterer.h>
 
 
 
@@ -36,6 +36,7 @@ using namespace libpmk;
 #define UNIFORM_PYRAMID_MAKER 1
 #define GLOBAL_VGP_PYRAMID_MAKER 2
 #define INPUT_SPECIFIC_VGP_PYRAMID_MAKER 3
+#define fondoScalaD 255
 
 
 void loadPSL(string);
@@ -44,6 +45,7 @@ void makeKernelMatrix(int fsl, int sf, int df, bool dt, bool gt, string destinaz
 int main(int, char* []);
 void stampaStatisticheFeatures(PointSetList* ptrPSL);
 double calcolaMinDistanzaTraPoints(string directoryDelPSL);
+void makeKernelMatrixT(int t, int sf, int df, bool dt, bool gt, string destinazionePath);
 
 
 PyramidMaker *ptrPyramidMaker;
@@ -56,16 +58,17 @@ int MAKE_PYRAMID_TYPE  =  UNIFORM_PYRAMID_MAKER;
 int main(int argc,char *argv[]) {
 
 
-	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_101/PSL/dataSetIntero.psl");
+	//loadPSL("/home/andrea/Scrivania/Progetto/DATASET_101/PSL/dataSetIntero.psl");
 /*	makeKernelMatrix(5,2,1,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
 //	makeKernelMatrix(100,10,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
-
-/*	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
-	makeKernelMatrix(1,2,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
+*/
+	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT_PCA10/ETH80_GridSIFT_PCA10.psl");
+/*	makeKernelMatrix(1,2,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
 */
 
 	//loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
-	stampaStatisticheFeatures(ptrPSL);
+//	stampaStatisticheFeatures(ptrPSL);
+	makeKernelMatrixT(8,2,1,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
 
 	return 0;
 }
@@ -89,15 +92,26 @@ void makePyramids(double finest_side_length, double side_factor, int discretize_
 						*ptrPSL,finest_side_length,side_factor,discretize_factor,do_translations,global_translation);//TODO
 			break;
 		case GLOBAL_VGP_PYRAMID_MAKER:
+		{
 			cout << "		Global VGP Pyramid Maker Selected";
 
-		/*	Clusterer *clusterer;
-			DistanceComputer *distance;
-			GlobalVGPyramidMaker gpm(
-					clusterer,distance);
+			DistanceComputer* distanzaCalcolatore= new L1DistanceComputer();
+			HierarchicalClusterer* clusterer= new HierarchicalClusterer();
+			GlobalVGPyramidMaker* gpm=new GlobalVGPyramidMaker(*clusterer,*distanzaCalcolatore);
+			gpm->Preprocess(*ptrPSL);
+
+			/*L1DistanceComputer L1distance= (L1DistanceComputer) *distanzaCalcolatore;
+			KMeansClusterer clusterer= new KMeansClusterer(102,10, L1distance);
+			//KMeansClusterer cluster= new KMeansClusterer(102,10, );
+
+
+			GlobalVGPyramidMaker gpm
+				(&clusterer,&distance);
+			gpm.Preprocess(*ptrPSL);*/
 			break;
+		}
 		case INPUT_SPECIFIC_VGP_PYRAMID_MAKER:
-			cout << "Input Specific VGP Pyramid Maker Selected";
+		/*	cout << "Input Specific VGP Pyramid Maker Selected";
 			//TODO
 			Clusterer *clusterer;
 			DistanceComputer *distance;
@@ -128,6 +142,45 @@ void makeKernelMatrix(int fsl, int sf, int df, bool dt, bool gt, string destinaz
 
 		kmc=new KernelMatrixCalculator(vectorMRH,destinazionePath,nomeFileDestinazione1);
 		kmc->kernelMatrixGenerate();
+
+
+}
+
+void makeKernelMatrixT(int t, int sf, int df, bool dt, bool gt, string destinazionePath){
+
+	int valueOfbinIniziale;
+	string s;
+			stringstream out;
+			string nomeFileDestinazione1;
+	nomeFileDestinazione1="";
+			out <<"KM_"<< "variableCon"<<t<<"_"<<sf<<"_"<<df<<"_"<<dt<<"_"<<gt;
+			out.clear();
+			nomeFileDestinazione1 = out.str();
+
+	KernelMatrixCalculator *kmc=new KernelMatrixCalculator(destinazionePath,nomeFileDestinazione1,ptrPSL->point_set_size());
+	KernelMatrix* kernelMatrice;
+
+
+	for(int i=0; i<t; i++){
+		cout<<"Faccio matrice... "<<i<<"\n";
+		srand(time(NULL));
+		int dist=fondoScalaD/t;
+		valueOfbinIniziale= rand() %dist+dist*i;
+
+		makePyramids(valueOfbinIniziale,sf,df,dt,gt);
+
+		kmc->setPyramid(&vectorMRH);
+
+
+
+		kernelMatrice= kmc->kernelMatrixIncrementAndReturnKernel();
+
+
+
+	}
+	kernelMatrice->Normalize();
+	kmc->saveKernelMatrix();
+
 
 
 }

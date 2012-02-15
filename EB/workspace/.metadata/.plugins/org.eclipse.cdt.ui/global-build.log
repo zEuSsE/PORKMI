@@ -1,1216 +1,4 @@
 
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-In file included from ../src/provaEsecuzione.cpp:17:0:
-../src/dataSetManager.cpp:49:1: warning: "/*" within comment [-Wcomment]
-../src/dataSetManager.cpp: In function ‘void dataSetSplit(std::string, int, int)’:
-../src/dataSetManager.cpp:102:58: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/dataSetManager.cpp:120:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/dataSetManager.cpp: In function ‘void kFold(int)’:
-../src/dataSetManager.cpp:130:51: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/dataSetManager.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-./src/provaEsecuzione.o: In function `leggiFileSET(std::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
-/home/andrea/workspace/AcquisizionePSL/Debug/../src/dataSetManager.cpp:57: multiple definition of `dataSetDivisoPerClassi'
-./src/dataSetManager.o:/home/andrea/workspace/AcquisizionePSL/Debug/../src/dataSetManager.cpp:57: first defined here
-./src/provaEsecuzione.o: In function `leggiFileSET(std::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
-/home/andrea/workspace/AcquisizionePSL/Debug/../src/dataSetManager.cpp:57: multiple definition of `leggiFileSET(std::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
-./src/dataSetManager.o:/home/andrea/workspace/AcquisizionePSL/Debug/../src/dataSetManager.cpp:57: first defined here
-./src/provaEsecuzione.o: In function `dataSetSplit(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, int)':
-/home/andrea/workspace/AcquisizionePSL/Debug/../src/dataSetManager.cpp:84: multiple definition of `dataSetSplit(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, int)'
-./src/dataSetManager.o:/home/andrea/workspace/AcquisizionePSL/Debug/../src/dataSetManager.cpp:84: first defined here
-./src/provaEsecuzione.o: In function `separaEsempiPerClasse(std::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
-/home/andrea/workspace/AcquisizionePSL/Debug/../src/dataSetManager.cpp:156: multiple definition of `separaEsempiPerClasse(std::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
-./src/dataSetManager.o:/home/andrea/workspace/AcquisizionePSL/Debug/../src/dataSetManager.cpp:156: first defined here
-./src/provaEsecuzione.o: In function `kFold(int)':
-/home/andrea/workspace/AcquisizionePSL/Debug/../src/dataSetManager.cpp:127: multiple definition of `kFold(int)'
-./src/dataSetManager.o:/home/andrea/workspace/AcquisizionePSL/Debug/../src/dataSetManager.cpp:127: first defined here
-collect2: ld returned 1 exit status
-make: *** [AcquisizionePSL] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/dataSetManager.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-./src/provaEsecuzione.o: In function `leggiFileSET(std::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
-/home/andrea/workspace/AcquisizionePSL/Debug/../src/provaEsecuzione.cpp:85: multiple definition of `leggiFileSET(std::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
-./src/dataSetManager.o:/home/andrea/workspace/AcquisizionePSL/Debug/../src/dataSetManager.cpp:57: first defined here
-collect2: ld returned 1 exit status
-make: *** [AcquisizionePSL] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracy(std::string, std::string, std::string)’:
-../src/provaEsecuzione.cpp:171:3: error: expected ‘;’ before ‘return’
-../src/provaEsecuzione.cpp:175:1: warning: no return statement in function returning non-void [-Wreturn-type]
-make: *** [src/provaEsecuzione.o] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string)’:
-../src/provaEsecuzione.cpp:147:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string)’:
-../src/provaEsecuzione.cpp:149:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string)’:
-../src/provaEsecuzione.cpp:149:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-make: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:163:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:163:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:163:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘int main()’:
-../src/provaEsecuzione.cpp:39:46: error: scalar object ‘arrayC’ requires one element in initializer
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:240:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:276:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-make: *** [src/provaEsecuzione.o] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘int main()’:
-../src/provaEsecuzione.cpp:39:46: error: scalar object ‘arrayC’ requires one element in initializer
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:240:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:276:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-make: *** [src/provaEsecuzione.o] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘int main()’:
-../src/provaEsecuzione.cpp:39:52: error: scalar object ‘arrayC’ requires one element in initializer
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:240:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:276:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-make: *** [src/provaEsecuzione.o] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:240:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:276:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-make: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-make: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:240:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:276:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:240:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:240:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:13:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-make: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:13:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-make: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-make: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-make: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:240:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:240:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘int main()’:
-../src/provaEsecuzione.cpp:39:38: error: too many initializers for ‘double [3]’
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-make: *** [src/provaEsecuzione.o] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp:34:92: error: two or more data types in declaration of ‘c’
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: At global scope:
-../src/provaEsecuzione.cpp:311:92: error: two or more data types in declaration of ‘c’
-make: *** [src/provaEsecuzione.o] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-make: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:169:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:278:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-make: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:315:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:345:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:375:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:405:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:315:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:345:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:375:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:405:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:315:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:345:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:375:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:405:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:315:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:345:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:375:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:405:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:315:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:346:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:376:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:406:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:347:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:377:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:407:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:347:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:377:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:407:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:241:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:347:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:377:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:407:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:241:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:348:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:378:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:408:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:13:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:13:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:13:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:13:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-Building file: ../src/provaEsecuzione.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:241:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
-../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:348:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:378:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:408:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-Finished building: ../src/provaEsecuzione.cpp
- 
-Building target: AcquisizionePSL
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
-Finished building target: AcquisizionePSL
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project AcquisizionePSL ****
-
-make all 
-make: Nothing to be done for `all'.
-
-**** Build Finished ****
-
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
@@ -1221,8 +9,11 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp: In function ‘void stampaStatisticheFeatures(libpmk::PointSetList*)’:
-../src/PslToKernelMatrix.cpp:147:54: error: invalid operands of types ‘float’ and ‘int’ to binary ‘operator^’
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:105:8: error: jump to case label [-fpermissive]
+../src/PslToKernelMatrix.cpp:95:22: error:   crosses initialization of ‘libpmk::DistanceComputer* distanzaCalcolatore’
+../src/PslToKernelMatrix.cpp:95:22: warning: unused variable ‘distanzaCalcolatore’ [-Wunused-variable]
 make: *** [src/PslToKernelMatrix.o] Error 1
 
 **** Build Finished ****
@@ -1244,6 +35,37 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:14:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:95:8: warning: unused variable ‘MadonnaImpestata’ [-Wunused-variable]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix
@@ -1264,6 +86,9 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:96:22: warning: unused variable ‘distanzaCalcolatore’ [-Wunused-variable]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix
@@ -1271,6 +96,13 @@ Invoking: GCC C++ Linker
 g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
 Finished building target: PslToKernelMatrix
  
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
 
 **** Build Finished ****
 
@@ -1284,6 +116,9 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:96:22: warning: unused variable ‘distanzaCalcolatore’ [-Wunused-variable]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix
@@ -1291,6 +126,13 @@ Invoking: GCC C++ Linker
 g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
 Finished building target: PslToKernelMatrix
  
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
 
 **** Build Finished ****
 
@@ -1304,29 +146,9 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp: In function ‘void stampaStatisticheFeatures(libpmk::PointSetList*)’:
-../src/PslToKernelMatrix.cpp:151:40: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’
-../src/PslToKernelMatrix.cpp:151:87: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:97:78: error: conversion from ‘libpmk::KMeansClusterer*’ to non-scalar type ‘libpmk::KMeansClusterer’ requested
 make: *** [src/PslToKernelMatrix.o] Error 1
 
 **** Build Finished ****
@@ -1348,9 +170,41 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp: In function ‘void stampaStatisticheFeatures(libpmk::PointSetList*)’:
-../src/PslToKernelMatrix.cpp:151:47: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’
-../src/PslToKernelMatrix.cpp:151:94: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:97:21: warning: unused variable ‘cluster’ [-Wunused-variable]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:14:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:98:31: error: ‘clusterer’ was not declared in this scope
+../src/PslToKernelMatrix.cpp:98:43: error: overloaded function with no contextual type information
+../src/PslToKernelMatrix.cpp:97:21: warning: unused variable ‘cluster’ [-Wunused-variable]
 make: *** [src/PslToKernelMatrix.o] Error 1
 
 **** Build Finished ****
@@ -1372,17 +226,15 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:98:31: error: ‘clusterer’ was not declared in this scope
+../src/PslToKernelMatrix.cpp:97:21: warning: unused variable ‘cluster’ [-Wunused-variable]
+make: *** [src/PslToKernelMatrix.o] Error 1
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project PslToKernelMatrix ****
+**** Build of configuration Debug for project AcquisizionePSL ****
 
 make all 
 make: Nothing to be done for `all'.
@@ -1399,89 +251,22 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp: In function ‘int main(int, char**)’:
-../src/PslToKernelMatrix.cpp:69:2: error: ‘a’ was not declared in this scope
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:98:62: error: no matching function for call to ‘libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(libpmk::KMeansClusterer&, libpmk::DistanceComputer&)’
+../src/PslToKernelMatrix.cpp:98:62: note: candidates are:
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:34:3: note: libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(const libpmk::HierarchicalClusterer&, const libpmk::DistanceComputer&)
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:34:3: note:   no known conversion for argument 1 from ‘libpmk::KMeansClusterer’ to ‘const libpmk::HierarchicalClusterer&’
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:32:7: note: libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(const libpmk::GlobalVGPyramidMaker&)
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:32:7: note:   candidate expects 1 argument, 2 provided
 make: *** [src/PslToKernelMatrix.o] Error 1
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project PslToKernelMatrix ****
+**** Build of configuration Debug for project AcquisizionePSL ****
 
 make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
+make: Nothing to be done for `all'.
 
 **** Build Finished ****
 
@@ -1495,13 +280,22 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:98:88: error: no matching function for call to ‘libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(libpmk::KMeansClusterer&, libpmk::DistanceComputer&)’
+../src/PslToKernelMatrix.cpp:98:88: note: candidates are:
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:34:3: note: libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(const libpmk::HierarchicalClusterer&, const libpmk::DistanceComputer&)
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:34:3: note:   no known conversion for argument 1 from ‘libpmk::KMeansClusterer’ to ‘const libpmk::HierarchicalClusterer&’
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:32:7: note: libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(const libpmk::GlobalVGPyramidMaker&)
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:32:7: note:   candidate expects 1 argument, 2 provided
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
 
 **** Build Finished ****
 
@@ -1515,12 +309,31 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-Finished building: ../src/PslToKernelMatrix.cpp
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:98:89: error: no matching function for call to ‘libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(libpmk::KMeansClusterer&, libpmk::DistanceComputer&)’
+../src/PslToKernelMatrix.cpp:98:89: note: candidates are:
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:34:3: note: libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(const libpmk::HierarchicalClusterer&, const libpmk::DistanceComputer&)
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:34:3: note:   no known conversion for argument 1 from ‘libpmk::KMeansClusterer’ to ‘const libpmk::HierarchicalClusterer&’
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:32:7: note: libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(const libpmk::GlobalVGPyramidMaker&)
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:32:7: note:   candidate expects 1 argument, 2 provided
+../src/PslToKernelMatrix.cpp:99:11: error: request for member ‘Preprocess’ in ‘gpm’, which is of non-class type ‘libpmk::GlobalVGPyramidMaker*’
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project AcquisizionePSL ****
+
+make clean 
+rm -rf  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o  ./src/AcquisizionePSL.d ./src/provaEsecuzione.d  AcquisizionePSL
  
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project PslToKernelMatrix ****
+
+make clean 
+rm -rf  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o  ./src/KernelMatrixCalculator.d ./src/PslToKernelMatrix.d  PslToKernelMatrix
  
 
 **** Build Finished ****
@@ -1528,23 +341,33 @@ Finished building target: PslToKernelMatrix
 **** Build of configuration Debug for project AcquisizionePSL ****
 
 make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:65:1: warning: "/*" within comment [-Wcomment]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:247:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:364:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
 Building file: ../src/provaEsecuzione.cpp
 Invoking: GCC C++ Compiler
 g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
 ../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:179:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:241:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
+../src/provaEsecuzione.cpp:249:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
 ../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:288:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:324:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:348:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:356:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:378:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:386:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:408:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:416:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 Finished building: ../src/provaEsecuzione.cpp
  
 Building target: AcquisizionePSL
@@ -1555,26 +378,278 @@ Finished building target: AcquisizionePSL
 
 **** Build Finished ****
 
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:31:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:14:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:98:63: error: expression list treated as compound expression in initializer [-fpermissive]
+../src/PslToKernelMatrix.cpp:98:63: warning: value computed is not used [-Wunused-value]
+../src/PslToKernelMatrix.cpp:98:63: warning: left operand of comma operator has no effect [-Wunused-value]
+../src/PslToKernelMatrix.cpp:98:63: error: cannot convert ‘libpmk::DistanceComputer’ to ‘libpmk::GlobalVGPyramidMaker*’ in initialization
+../src/PslToKernelMatrix.cpp:99:8: error: request for member ‘Preprocess’ in ‘gpm’, which is of non-class type ‘libpmk::GlobalVGPyramidMaker*’
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
 **** Build of configuration Debug for project AcquisizionePSL ****
 
 make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:14:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:98:62: error: no matching function for call to ‘libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(libpmk::KMeansClusterer&, libpmk::DistanceComputer&)’
+../src/PslToKernelMatrix.cpp:98:62: note: candidates are:
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:34:3: note: libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(const libpmk::HierarchicalClusterer&, const libpmk::DistanceComputer&)
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:34:3: note:   no known conversion for argument 1 from ‘libpmk::KMeansClusterer’ to ‘const libpmk::HierarchicalClusterer&’
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:32:7: note: libpmk::GlobalVGPyramidMaker::GlobalVGPyramidMaker(const libpmk::GlobalVGPyramidMaker&)
+/home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:32:7: note:   candidate expects 1 argument, 2 provided
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:14:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makePyramids(double, double, int, bool, bool)’:
+../src/PslToKernelMatrix.cpp:99:8: error: request for member ‘Preprocess’ in ‘gpm’, which is of non-class type ‘libpmk::GlobalVGPyramidMaker*’
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:14:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:14:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:17:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:23:49: error: no matching function for call to ‘KernelMatrixCalculator::~KernelMatrixCalculator()’
+../src/KernelMatrixCalculator.cpp:23:49: note: candidate is:
+../src/KernelMatrixCalculator.h:34:10: note: virtual KernelMatrixCalculator::~KernelMatrixCalculator()
+../src/KernelMatrixCalculator.h:34:10: note:   candidate expects 1 argument, 0 provided
+../src/KernelMatrixCalculator.cpp:23:51: error: expected ‘;’ before ‘{’ token
+../src/KernelMatrixCalculator.cpp:27:52: error: a function-definition is not allowed here before ‘{’ token
+../src/KernelMatrixCalculator.cpp:72:1: error: expected ‘}’ at end of input
+../src/KernelMatrixCalculator.cpp:72:1: error: expected ‘}’ at end of input
+make: *** [src/KernelMatrixCalculator.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:17:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:36:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixGenerateAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:57:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:53:7: warning: unused variable ‘size’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:14:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:65:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makeKernelMatrixT(int, int, int, bool, bool, std::string)’:
+../src/PslToKernelMatrix.cpp:169:2: error: expected unqualified-id before ‘}’ token
+../src/PslToKernelMatrix.cpp:169:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/PslToKernelMatrix.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:17:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:28:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:49:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:70:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:66:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:97:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:95:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: At global scope:
+../src/KernelMatrixCalculator.cpp:110:6: error: prototype for ‘void KernelMatrixCalculator::setPyramid(std::vector<libpmk::MultiResolutionHistogram*>)’ does not match any in class ‘KernelMatrixCalculator’
+../src/KernelMatrixCalculator.h:36:7: error: candidate is: void KernelMatrixCalculator::setPyramid()
+make: *** [src/KernelMatrixCalculator.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project AcquisizionePSL ****
+
+make clean 
+rm -rf  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o  ./src/AcquisizionePSL.d ./src/provaEsecuzione.d  AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project PslToKernelMatrix ****
+
+make clean 
+rm -rf  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o  ./src/KernelMatrixCalculator.d ./src/PslToKernelMatrix.d  PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:65:1: warning: "/*" within comment [-Wcomment]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:247:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:364:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
 Building file: ../src/provaEsecuzione.cpp
 Invoking: GCC C++ Compiler
 g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
 ../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:171:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:179:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:241:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
+../src/provaEsecuzione.cpp:249:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
 ../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:280:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:288:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:316:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:324:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:348:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:356:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:378:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:386:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:408:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:416:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 Finished building: ../src/provaEsecuzione.cpp
  
 Building target: AcquisizionePSL
@@ -1585,6 +660,31 @@ Finished building target: AcquisizionePSL
 
 **** Build Finished ****
 
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:17:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:28:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:49:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:70:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:66:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:97:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:95:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: At global scope:
+../src/KernelMatrixCalculator.cpp:110:6: error: prototype for ‘void KernelMatrixCalculator::setPyramid(std::vector<libpmk::MultiResolutionHistogram*>)’ does not match any in class ‘KernelMatrixCalculator’
+../src/KernelMatrixCalculator.h:36:7: error: candidate is: void KernelMatrixCalculator::setPyramid()
+make: *** [src/KernelMatrixCalculator.o] Error 1
+
+**** Build Finished ****
+
 **** Build of configuration Debug for project AcquisizionePSL ****
 
 make all 
@@ -1592,6 +692,31 @@ make: Nothing to be done for `all'.
 
 **** Build Finished ****
 
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:17:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:28:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:49:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:70:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:66:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:97:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:95:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: At global scope:
+../src/KernelMatrixCalculator.cpp:110:6: error: prototype for ‘void KernelMatrixCalculator::setPyramid(std::vector<libpmk::MultiResolutionHistogram*>)’ does not match any in class ‘KernelMatrixCalculator’
+../src/KernelMatrixCalculator.h:36:7: error: candidate is: void KernelMatrixCalculator::setPyramid()
+make: *** [src/KernelMatrixCalculator.o] Error 1
+
+**** Build Finished ****
+
 **** Build of configuration Debug for project AcquisizionePSL ****
 
 make all 
@@ -1602,6 +727,23 @@ make: Nothing to be done for `all'.
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:17:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:28:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:49:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:70:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:66:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:97:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:95:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
 Building file: ../src/PslToKernelMatrix.cpp
 Invoking: GCC C++ Compiler
 g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
@@ -1609,7 +751,47 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp:65:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp: In function ‘void makeKernelMatrixT(int, int, int, bool, bool, std::string)’:
+../src/PslToKernelMatrix.cpp:161:16: warning: variable ‘kernelMatrice’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/PslToKernelMatrix.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:30:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:72:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:101:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:99:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building file: ../src/PslToKernelMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
+In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
+                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
+                 from ../src/PslToKernelMatrix.cpp:14:
+/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+../src/PslToKernelMatrix.cpp:65:1: warning: "/*" within comment [-Wcomment]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix
@@ -1630,7 +812,7 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
+../src/PslToKernelMatrix.cpp:65:1: warning: "/*" within comment [-Wcomment]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix
@@ -1651,7 +833,6 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix
@@ -1665,6 +846,23 @@ Finished building target: PslToKernelMatrix
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:30:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:72:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:101:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:99:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
 Building file: ../src/PslToKernelMatrix.cpp
 Invoking: GCC C++ Compiler
 g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
@@ -1672,7 +870,6 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix
@@ -1686,6 +883,28 @@ Finished building target: PslToKernelMatrix
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:72:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:101:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:99:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
 Building file: ../src/PslToKernelMatrix.cpp
 Invoking: GCC C++ Compiler
 g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
@@ -1693,7 +912,6 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix
@@ -1707,6 +925,21 @@ Finished building target: PslToKernelMatrix
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:72:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:101:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:99:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
 Building file: ../src/PslToKernelMatrix.cpp
 Invoking: GCC C++ Compiler
 g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
@@ -1714,7 +947,6 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix
@@ -1728,23 +960,227 @@ Finished building target: PslToKernelMatrix
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
-Building file: ../src/PslToKernelMatrix.cpp
+Building file: ../src/KernelMatrixCalculator.cpp
 Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
-../src/PslToKernelMatrix.cpp: In function ‘void stampaStatisticheFeatures(libpmk::PointSetList*)’:
-../src/PslToKernelMatrix.cpp:166:42: error: ‘ptrPSL->libpmk::PointSetList::point_set_size()’ cannot be used as a function
-make: *** [src/PslToKernelMatrix.o] Error 1
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:72:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:102:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:100:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
 
 **** Build Finished ****
 
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:73:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:103:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:101:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:74:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:103:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:101:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:103:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:101:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:104:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:102:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
+Building target: PslToKernelMatrix
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
+Finished building target: PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project AcquisizionePSL ****
+
+make clean 
+rm -rf  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o  ./src/AcquisizionePSL.d ./src/provaEsecuzione.d  AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project PslToKernelMatrix ****
+
+make clean 
+rm -rf  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o  ./src/KernelMatrixCalculator.d ./src/PslToKernelMatrix.d  PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project AcquisizionePSL ****
+
+make clean 
+rm -rf  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o  ./src/AcquisizionePSL.d ./src/provaEsecuzione.d  AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project PslToKernelMatrix ****
+
+make clean 
+rm -rf  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o  ./src/KernelMatrixCalculator.d ./src/PslToKernelMatrix.d  PslToKernelMatrix
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project AcquisizionePSL ****
+
+make all 
+Building file: ../src/AcquisizionePSL.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
+../src/AcquisizionePSL.cpp:65:1: warning: "/*" within comment [-Wcomment]
+../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
+../src/AcquisizionePSL.cpp:247:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
+../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
+../src/AcquisizionePSL.cpp:364:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
+Finished building: ../src/AcquisizionePSL.cpp
+ 
+Building file: ../src/provaEsecuzione.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
+../src/provaEsecuzione.cpp:179:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:249:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
+../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:288:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:324:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
+../src/provaEsecuzione.cpp:356:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
+../src/provaEsecuzione.cpp:386:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
+../src/provaEsecuzione.cpp:416:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/provaEsecuzione.cpp
+ 
+Building target: AcquisizionePSL
+Invoking: GCC C++ Linker
+g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "AcquisizionePSL"  ./src/AcquisizionePSL.o ./src/provaEsecuzione.o   -lpmk -lpmk_util -lstdc++
+Finished building target: AcquisizionePSL
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:104:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:102:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
 Building file: ../src/PslToKernelMatrix.cpp
 Invoking: GCC C++ Compiler
 g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
@@ -1752,7 +1188,6 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix
@@ -1766,15 +1201,26 @@ Finished building target: PslToKernelMatrix
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
-Building file: ../src/PslToKernelMatrix.cpp
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PslToKernelMatrix ****
+
+make all 
+Building file: ../src/KernelMatrixCalculator.cpp
 Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
-Finished building: ../src/PslToKernelMatrix.cpp
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:105:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:103:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
  
 Building target: PslToKernelMatrix
 Invoking: GCC C++ Linker
@@ -1787,15 +1233,19 @@ Finished building target: PslToKernelMatrix
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
-Building file: ../src/PslToKernelMatrix.cpp
+Building file: ../src/KernelMatrixCalculator.cpp
 Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
-Finished building: ../src/PslToKernelMatrix.cpp
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:106:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:104:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
  
 Building target: PslToKernelMatrix
 Invoking: GCC C++ Linker
@@ -1808,15 +1258,19 @@ Finished building target: PslToKernelMatrix
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
-Building file: ../src/PslToKernelMatrix.cpp
+Building file: ../src/KernelMatrixCalculator.cpp
 Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
-Finished building: ../src/PslToKernelMatrix.cpp
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:51:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:68:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:106:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:104:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
  
 Building target: PslToKernelMatrix
 Invoking: GCC C++ Linker
@@ -1829,15 +1283,19 @@ Finished building target: PslToKernelMatrix
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
-Building file: ../src/PslToKernelMatrix.cpp
+Building file: ../src/KernelMatrixCalculator.cpp
 Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
-Finished building: ../src/PslToKernelMatrix.cpp
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:52:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:69:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:107:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:105:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
  
 Building target: PslToKernelMatrix
 Invoking: GCC C++ Linker
@@ -1850,6 +1308,20 @@ Finished building target: PslToKernelMatrix
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:53:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:70:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:108:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:106:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
 Building file: ../src/PslToKernelMatrix.cpp
 Invoking: GCC C++ Compiler
 g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
@@ -1857,108 +1329,6 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
-../src/PslToKernelMatrix.cpp: In function ‘void stampaStatisticheFeatures(libpmk::PointSetList*)’:
-../src/PslToKernelMatrix.cpp:173:16: error: ‘num’ was not declared in this scope
-make: *** [src/PslToKernelMatrix.o] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
-Finished building: ../src/PslToKernelMatrix.cpp
- 
-Building target: PslToKernelMatrix
-Invoking: GCC C++ Linker
-g++ -L/home/andrea/workspace/libpmk-2.5/libpmk2 -o "PslToKernelMatrix"  ./src/KernelMatrixCalculator.o ./src/PslToKernelMatrix.o   -lpmk -lpmk_util -lstdc++
-Finished building target: PslToKernelMatrix
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project PslToKernelMatrix ****
-
-make all 
-Building file: ../src/PslToKernelMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
-In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
-                 from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
-                 from ../src/PslToKernelMatrix.cpp:14:
-/usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix

@@ -26,7 +26,8 @@ src/PslToKernelMatrix.d: ../src/PslToKernelMatrix.cpp \
  ../src/KernelMatrixCalculator.h \
  /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/pyramid-matcher.h \
  /home/andrea/workspace/libpmk-2.5/libpmk2/util/bin-weight-scheme.h \
- /home/andrea/workspace/libpmk-2.5/libpmk2/kernel/kernel-matrix.h
+ /home/andrea/workspace/libpmk-2.5/libpmk2/kernel/kernel-matrix.h \
+ /home/andrea/workspace/libpmk-2.5/libpmk2/clustering/k-means-clusterer.h
 
 /home/andrea/workspace/libpmk-2.5/libpmk2/point_set/on-disk-point-set-list.h:
 
@@ -83,3 +84,5 @@ src/PslToKernelMatrix.d: ../src/PslToKernelMatrix.cpp \
 /home/andrea/workspace/libpmk-2.5/libpmk2/util/bin-weight-scheme.h:
 
 /home/andrea/workspace/libpmk-2.5/libpmk2/kernel/kernel-matrix.h:
+
+/home/andrea/workspace/libpmk-2.5/libpmk2/clustering/k-means-clusterer.h:

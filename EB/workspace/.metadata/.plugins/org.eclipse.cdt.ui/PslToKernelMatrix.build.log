@@ -2,6 +2,20 @@
 **** Build of configuration Debug for project PslToKernelMatrix ****
 
 make all 
+Building file: ../src/KernelMatrixCalculator.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/KernelMatrixCalculator.d" -MT"src/KernelMatrixCalculator.d" -o "src/KernelMatrixCalculator.o" "../src/KernelMatrixCalculator.cpp"
+../src/KernelMatrixCalculator.cpp: In constructor ‘KernelMatrixCalculator::KernelMatrixCalculator(std::vector<libpmk::MultiResolutionHistogram*>, std::string, std::string)’:
+../src/KernelMatrixCalculator.cpp:18:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::kernelMatrixGenerate()’:
+../src/KernelMatrixCalculator.cpp:53:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp: In member function ‘libpmk_util::KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel()’:
+../src/KernelMatrixCalculator.cpp:70:7: warning: unused variable ‘size’ [-Wunused-variable]
+../src/KernelMatrixCalculator.cpp: In member function ‘void KernelMatrixCalculator::saveKernelMatrix()’:
+../src/KernelMatrixCalculator.cpp:108:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/KernelMatrixCalculator.cpp:106:19: warning: unused variable ‘binWeightScheme’ [-Wunused-variable]
+Finished building: ../src/KernelMatrixCalculator.cpp
+ 
 Building file: ../src/PslToKernelMatrix.cpp
 Invoking: GCC C++ Compiler
 g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PslToKernelMatrix.d" -MT"src/PslToKernelMatrix.d" -o "src/PslToKernelMatrix.o" "../src/PslToKernelMatrix.cpp"
@@ -9,7 +23,6 @@ In file included from /usr/include/c++/4.6/ext/hash_map:61:0,
                  from /home/andrea/workspace/libpmk-2.5/libpmk2/pyramids/global-vg-pyramid-maker.h:14,
                  from ../src/PslToKernelMatrix.cpp:14:
 /usr/include/c++/4.6/backward/backward_warning.h:33:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-../src/PslToKernelMatrix.cpp:63:1: warning: "/*" within comment [-Wcomment]
 Finished building: ../src/PslToKernelMatrix.cpp
  
 Building target: PslToKernelMatrix

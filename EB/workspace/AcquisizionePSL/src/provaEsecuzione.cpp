@@ -39,12 +39,17 @@ void svmScorreFold(string kernelMatrix, string pathDoveSonoIFold, double *c);
 int main() {
 
 	double arrayC[4]={0.001, 1, 1000, -1};
-	svmScorreFold("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix","/home/andrea/Scrivania/PORKMI/DS_101",arrayC);
+//	svmScorreFold("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix","/home/andrea/Scrivania/PORKMI/DS_101",arrayC);
 	//faiProveSvmSuCartellaConArrayC("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/3Fold/dataSet0/TrainingSet.set","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/3Fold/dataSet0/testSet.set", arrayC);
 //	faiProveSvmSuCartella("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/trainingSetDS_101.set","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/finalTestSetDS_101.set", 0.0000000000001);
 
 //	faiProveSvmSuCartella("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/trainingSet_ETH80.set","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/finalTestSet_ETH80.set", 0.0000000000001);
-
+/*
+	faiProvaSvmTornaAccuracy("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix/KM_20_3_1_1_1.ker",
+			"/home/andrea/Scrivania/PORKMI/DS_101/5Fold/dataSet3/TrainingSet.set",
+			"/home/andrea/Scrivania/PORKMI/DS_101/5Fold/dataSet3/testSet.set",1000);
+*/
+	svmScorreFold("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet",arrayC);
 
 
 }
@@ -118,6 +123,9 @@ double faiProvaSvmTornaAccuracy(string kernelMatrix, string trainingSet, string 
 	KernelMatrix* matriceKernel= new KernelMatrix();
 	gettimeofday(&start, NULL);
 		matriceKernel->ReadFromFile(kernelMatrix.c_str());
+		cout<<"\nnormalizing kernel...";
+		matriceKernel->Normalize(); //NEW
+		cout<<"Done!\n";
 		gettimeofday(&end, NULL);
 				seconds  = end.tv_sec  - start.tv_sec;
 				useconds = end.tv_usec - start.tv_usec;

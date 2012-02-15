@@ -1,0 +1,228 @@
+//============================================================================
+// Name        : PslToKernelMatrix.cpp
+// Author      : Andrea Zerbini
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include "point_set/on-disk-point-set-list.h"
+#include <point_set/mutable-point-set-list.h>
+#include "point_set/point-set-list.h"
+#include "pyramids/pyramid-maker.h"
+#include "pyramids/uniform-pyramid-maker.h"
+#include "pyramids/global-vg-pyramid-maker.h"
+#include "pyramids/input-specific-vg-pyramid-maker.h"
+#include "histograms/multi-resolution-histogram.h"
+#include "clustering/clusterer.h"
+#include "util/distance-computer.h"
+#include "KernelMatrixCalculator.h"
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <math.h>
+#include <clustering/k-means-clusterer.h>
+
+
+
+
+using namespace std;
+using namespace libpmk;
+
+
+
+
+//possibili tipi di PyramidMaker
+#define UNIFORM_PYRAMID_MAKER 1
+#define GLOBAL_VGP_PYRAMID_MAKER 2
+#define INPUT_SPECIFIC_VGP_PYRAMID_MAKER 3
+
+
+void loadPSL(string);
+void makePyramids(double finest_side_length, double side_factor, int discretize_factor, bool do_translations, bool global_translation);
+void makeKernelMatrix(int fsl, int sf, int df, bool dt, bool gt, string destinazionePath);
+int main(int, char* []);
+void stampaStatisticheFeatures(PointSetList* ptrPSL);
+double calcolaMinDistanzaTraPoints(string directoryDelPSL);
+
+
+PyramidMaker *ptrPyramidMaker;
+PointSetList *ptrPSL;
+vector<MultiResolutionHistogram *> vectorMRH;
+int MAKE_PYRAMID_TYPE  =  GLOBAL_VGP_PYRAMID_MAKER;//UNIFORM_PYRAMID_MAKER;
+
+
+
+int main(int argc,char *argv[]) {
+
+
+	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_101/PSL/dataSetIntero.psl");
+/*	makeKernelMatrix(5,2,1,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
+//	makeKernelMatrix(100,10,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
+
+/*	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
+	makeKernelMatrix(1,2,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
+*/
+
+	//loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
+//	stampaStatisticheFeatures(ptrPSL);
+	makeKernelMatrix(1000,1000,1000,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
+
+	return 0;
+}
+
+
+
+void loadPSL(string filePSL){
+		cout << "Carico file PSL: "<< filePSL << endl;
+		ptrPSL=new OnDiskPointSetList(filePSL);
+
+}
+
+
+void makePyramids(double finest_side_length, double side_factor, int discretize_factor, bool do_translations, bool global_translation){
+	switch (MAKE_PYRAMID_TYPE) {
+		case UNIFORM_PYRAMID_MAKER:
+		//	cout << "		Uniform Pyramid Maker Selected";
+
+			ptrPyramidMaker=new UniformPyramidMaker();
+			((UniformPyramidMaker *)ptrPyramidMaker)->Preprocess(
+						*ptrPSL,finest_side_length,side_factor,discretize_factor,do_translations,global_translation);//TODO
+			break;
+		case GLOBAL_VGP_PYRAMID_MAKER:
+		{
+			cout << "		Global VGP Pyramid Maker Selected";
+
+			DistanceComputer* distanzaCalcolatore= new L1DistanceComputer();
+			KMeansClusterer* clusterer= new KMeansClusterer(102, 10, *distanzaCalcolatore);
+			GlobalVGPyramidMaker gpm= new GlobalVGPyramidMaker( *clusterer, *distanzaCalcolatore);
+						gpm.Preprocess(*ptrPSL);
+
+			/*L1DistanceComputer L1distance= (L1DistanceComputer) *distanzaCalcolatore;
+			KMeansClusterer clusterer= new KMeansClusterer(102,10, L1distance);
+			//KMeansClusterer cluster= new KMeansClusterer(102,10, );
+
+
+			GlobalVGPyramidMaker gpm
+				(&clusterer,&distance);
+			gpm.Preprocess(*ptrPSL);*/
+			break;
+		}
+		case INPUT_SPECIFIC_VGP_PYRAMID_MAKER:
+		/*	cout << "Input Specific VGP Pyramid Maker Selected";
+			//TODO
+			Clusterer *clusterer;
+			DistanceComputer *distance;
+			InputSpecificVGPyramidMaker *ptrPyramidMaker(
+					clusterer,distance);*/
+			break;
+	}
+	vectorMRH=ptrPyramidMaker->MakePyramids(*ptrPSL);
+	cout <<  "vectorMRH Creato	" << endl;
+
+}
+
+
+void makeKernelMatrix(int fsl, int sf, int df, bool dt, bool gt, string destinazionePath){
+
+
+		string s;
+		stringstream out;
+		string nomeFileDestinazione1;
+		KernelMatrixCalculator *kmc;
+
+		makePyramids(fsl,sf,df,dt,gt);
+		nomeFileDestinazione1="";
+		out <<"KM_"<< fsl<<"_"<<sf<<"_"<<df<<"_"<<dt<<"_"<<gt;
+		out.clear();
+		nomeFileDestinazione1 = out.str();
+		//cout<<"\nFileDestinazione1: "<<nomeFileDestinazione1<<"\n";
+
+		kmc=new KernelMatrixCalculator(vectorMRH,destinazionePath,nomeFileDestinazione1);
+		kmc->kernelMatrixGenerate();
+
+
+}
+
+
+void stampaStatisticheFeatures(PointSetList* ptrPSL){
+	double numeroPointPerImmagine;
+	cout<<"Stampa statistiche del PSL...";
+
+	/*double mediaLunghezza=0;
+	double lunghezzaMax=0;
+	double lunghezzaMin=INFINITY;
+	double normaInfinito=0;
+	double tempLunghezzaEuclidea;
+	for(int i=0; i<ptrPSL->point_size();i++){
+		tempLunghezzaEuclidea=0;
+		for(int j=0;j<ptrPSL->point_dim();j++){
+
+			if(fabs(ptrPSL->point(i).feature(j))>normaInfinito) normaInfinito=ptrPSL->point(i).feature(j);
+			tempLunghezzaEuclidea=pow(ptrPSL->point(i).feature(j),2);
+		}
+		numeroPointPerImmagine=(numeroPointPerImmagine*i+ptrPSL->point_set(i).size())/(i+1);
+		tempLunghezzaEuclidea= sqrt(tempLunghezzaEuclidea);
+		mediaLunghezza=(mediaLunghezza*i+tempLunghezzaEuclidea)/(i+1);
+		if(lunghezzaMin>=tempLunghezzaEuclidea && tempLunghezzaEuclidea!=0) lunghezzaMin=tempLunghezzaEuclidea;
+		if(lunghezzaMax<=tempLunghezzaEuclidea) lunghezzaMax=tempLunghezzaEuclidea;
+	}
+
+	cout<<"\nfinal----\n";
+cout<<"\nmedia Lunghezza vettori: "<<mediaLunghezza;
+cout<<"\nmassima lunghezza vettori: "<<lunghezzaMax;
+cout<<"\nminima lunghezza vettori: "<<lunghezzaMin;
+cout<<"\nnorma infinito di tutti i vettori: "<<normaInfinito;
+
+*/	numeroPointPerImmagine=0;
+	for(int i=0; i<ptrPSL->point_set_size();i++){
+		int num=0;
+		for(int j=0; j<ptrPSL->point_set(i).size();j++){
+
+
+			//cout<<"\n---"<<ptrPSL->point_set(i).point(j).size();
+			num++;
+		}
+		numeroPointPerImmagine+=((double)num)/(double)ptrPSL->point_set_size();
+		cout<<"\n "<<num;
+	}
+	cout<<"\n "<<ptrPSL->point_set_size();
+	cout<<"\nnumPointPerImmagine: "<<numeroPointPerImmagine;
+
+}
+
+
+double calcolaMinDistanzaTraPoints(string directoryDelPSL){
+
+	PointSetList* psl= new MutablePointSetList();
+		((MutablePointSetList*) psl)->ReadFromFile(directoryDelPSL.c_str());
+		cout<<"PointSetSize: "<< psl->point_set_size()<<"\nPointDim: "<<psl->point_dim()<<"\nPointSize: "<<psl->point_size();
+		double minDistance;
+		double distanzaAttuale;
+
+		DistanceComputer* distanzaCalcolatore= new L1DistanceComputer();
+		minDistance=distanzaCalcolatore->ComputeDistance(psl->point(0),psl->point(1));
+		for(int i=psl->point_size()-2; i>=0;i--){
+			 cout.clear();cout<<"\n esecuzione"<<i<<", MIN DISTANZA: "<<minDistance;cout.flush();
+			for(int j=i+1;j<psl->point_size();j++){
+
+
+
+
+				distanzaAttuale=distanzaCalcolatore->ComputeDistance(psl->point(i),psl->point(j));
+
+				if (distanzaAttuale<minDistance && distanzaAttuale!=0) minDistance= distanzaAttuale;
+
+			}
+
+		}
+		cout<<"\n\n\n\n\nBABAAAAM....\n";
+		cerr<<"MIN DISTANZA: "<<minDistance;
+		cout<<"\n MIN DISTANZA: "<<minDistance;
+
+		return minDistance;
+
+
+}
+
+
