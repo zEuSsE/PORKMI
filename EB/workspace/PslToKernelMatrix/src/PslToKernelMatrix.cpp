@@ -58,17 +58,20 @@ int MAKE_PYRAMID_TYPE  =  UNIFORM_PYRAMID_MAKER;
 int main(int argc,char *argv[]) {
 
 
-	//loadPSL("/home/andrea/Scrivania/Progetto/DATASET_101/PSL/dataSetIntero.psl");
+	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT_PCA10/ETH80_GridSIFT_PCA10.psl");
 /*	makeKernelMatrix(5,2,1,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
 //	makeKernelMatrix(100,10,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
 */
-	loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT_PCA10/ETH80_GridSIFT_PCA10.psl");
+	//loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
 /*	makeKernelMatrix(1,2,0,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
 */
 
-	//loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/ETH80_GridSIFT.psl");
-//	stampaStatisticheFeatures(ptrPSL);
-	makeKernelMatrixT(8,2,1,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
+	//loadPSL("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT_PSA10/ETH80_GridSIFT.psl");
+//  stampaStatisticheFeatures(ptrPSL);
+//	makeKernelMatrixT(2,2,1,true,true,"/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix");
+	//makeKernelMatrixT(6,2,1,true,true,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel");
+
+  calcolaMinDistanzaTraPoints("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT_PCA10/ETH80_GridSIFT_PCA10.psl");
 
 	return 0;
 }
@@ -187,10 +190,46 @@ void makeKernelMatrixT(int t, int sf, int df, bool dt, bool gt, string destinazi
 
 
 void stampaStatisticheFeatures(PointSetList* ptrPSL){
-	double numeroPointPerImmagine;
+	double numeroMedioPointPerImmagine=0;  //---V
 	cout<<"Stampa statistiche del PSL...";
+	int numTotaleImmagini= ptrPSL->point_set_size(); //---V
+	int dimensioneFeatures= ptrPSL->point_dim(); //---V
+	double tempLunghezzaEuclidea=0;
+	double mediaLunghezzaEuclideaSIFT=0;  //---V
+	double minLunghezzaEuclideaSIFT=INFINITY;  //---V
+	double maxLunghezzaEuclideaSIFT=0;  //---V
+	double normaInfinitoDiTuttiIVettoriDiFeatures=0; //---V (Sarebbe il valore max (fondo scala?) di ogni elemento di ogni features)
+	for(int i=0; i<ptrPSL->point_size();i++){
+			tempLunghezzaEuclidea=0;
 
-	/*double mediaLunghezza=0;
+			for(int j=0;j<ptrPSL->point_dim();j++){
+				tempLunghezzaEuclidea+=pow(ptrPSL->point(i).feature(j),2);
+				if(ptrPSL->point(i).feature(j)>normaInfinitoDiTuttiIVettoriDiFeatures)normaInfinitoDiTuttiIVettoriDiFeatures=ptrPSL->point(i).feature(j);
+			}
+			tempLunghezzaEuclidea=sqrt(tempLunghezzaEuclidea);
+			mediaLunghezzaEuclideaSIFT=(mediaLunghezzaEuclideaSIFT*i+tempLunghezzaEuclidea)/(i+1);
+			if(minLunghezzaEuclideaSIFT>tempLunghezzaEuclidea) minLunghezzaEuclideaSIFT=tempLunghezzaEuclidea;
+			if(maxLunghezzaEuclideaSIFT<=tempLunghezzaEuclidea) maxLunghezzaEuclideaSIFT=tempLunghezzaEuclidea;
+
+
+	}
+	for(int i=0; i<ptrPSL->point_set_size();i++){
+
+			numeroMedioPointPerImmagine+=((double)ptrPSL->point_set(i).size())/(double)ptrPSL->point_set_size();
+	}
+	cout<<"\nNumero totale Immagini: "<<numTotaleImmagini;
+	cout<<"\nLunghezza media (Euclidea) dei vettori di features SIFT: "<<mediaLunghezzaEuclideaSIFT;
+	cout<<"\nLunghezza minima (Euclidea) dei vettori di features SIFT: "<<minLunghezzaEuclideaSIFT;
+	cout<<"\nLunghezza massima (Euclidea) dei vettori di features SIFT: "<<maxLunghezzaEuclideaSIFT;
+	cout<<"\nMassima norma a infinito di ogni vettore di features SIFT: "<<normaInfinitoDiTuttiIVettoriDiFeatures;
+	cout<<"\nNumero medio di keypoints per immagine: "<<numeroMedioPointPerImmagine;
+	cout<<"\nDimensione di ogni features: "<<dimensioneFeatures<<"\n";
+	cout<<"--------------------------\n";
+
+
+
+/*
+	double mediaLunghezza=0;
 	double lunghezzaMax=0;
 	double lunghezzaMin=INFINITY;
 	double normaInfinito=0;
@@ -207,6 +246,11 @@ void stampaStatisticheFeatures(PointSetList* ptrPSL){
 		mediaLunghezza=(mediaLunghezza*i+tempLunghezzaEuclidea)/(i+1);
 		if(lunghezzaMin>=tempLunghezzaEuclidea && tempLunghezzaEuclidea!=0) lunghezzaMin=tempLunghezzaEuclidea;
 		if(lunghezzaMax<=tempLunghezzaEuclidea) lunghezzaMax=tempLunghezzaEuclidea;
+		cout<<"\nfinal----\n";
+		cout<<"\nmedia Lunghezza vettori: "<<mediaLunghezza;
+		cout<<"\nmassima lunghezza vettori: "<<lunghezzaMax;
+		cout<<"\nminima lunghezza vettori: "<<lunghezzaMin;
+		cout<<"\nnorma infinito di tutti i vettori: "<<normaInfinito;
 	}
 
 	cout<<"\nfinal----\n";
@@ -215,7 +259,7 @@ cout<<"\nmassima lunghezza vettori: "<<lunghezzaMax;
 cout<<"\nminima lunghezza vettori: "<<lunghezzaMin;
 cout<<"\nnorma infinito di tutti i vettori: "<<normaInfinito;
 
-*/	numeroPointPerImmagine=0;
+	numeroPointPerImmagine=0;
 	for(int i=0; i<ptrPSL->point_set_size();i++){
 		int num=0;
 		for(int j=0; j<ptrPSL->point_set(i).size();j++){
@@ -229,6 +273,7 @@ cout<<"\nnorma infinito di tutti i vettori: "<<normaInfinito;
 	}
 	cout<<"\n "<<ptrPSL->point_set_size();
 	cout<<"\nnumPointPerImmagine: "<<numeroPointPerImmagine;
+	*/
 
 }
 
@@ -238,30 +283,33 @@ double calcolaMinDistanzaTraPoints(string directoryDelPSL){
 	PointSetList* psl= new MutablePointSetList();
 		((MutablePointSetList*) psl)->ReadFromFile(directoryDelPSL.c_str());
 		cout<<"PointSetSize: "<< psl->point_set_size()<<"\nPointDim: "<<psl->point_dim()<<"\nPointSize: "<<psl->point_size();
-		double minDistance;
-		double distanzaAttuale;
+		double minDistanceL1;
+		double distanzaAttualeL1;
+		double minDistanceL2;
+		double distanzaAttualeL2;
 
-		DistanceComputer* distanzaCalcolatore= new L1DistanceComputer();
-		minDistance=distanzaCalcolatore->ComputeDistance(psl->point(0),psl->point(1));
+		DistanceComputer* distanzaCalcolatoreL1= new L1DistanceComputer();
+		DistanceComputer* distanzaCalcolatoreL2= new L2DistanceComputer();
+		minDistanceL1=distanzaCalcolatoreL1->ComputeDistance(psl->point(0),psl->point(1));
+		minDistanceL2=distanzaCalcolatoreL2->ComputeDistance(psl->point(0),psl->point(1));
 		for(int i=psl->point_size()-2; i>=0;i--){
-			 cout.clear();cout<<"\n esecuzione"<<i<<", MIN DISTANZA: "<<minDistance;cout.flush();
+			 cout<<"\nEesecuzione "<<i<<"-esima, MIN DISTANZA L1: "<<minDistanceL1;
+			 cout<<", MIN DISTANZA L2: "<<minDistanceL2;cout.flush(); cout.flush();
 			for(int j=i+1;j<psl->point_size();j++){
 
+				distanzaAttualeL1=distanzaCalcolatoreL1->ComputeDistance(psl->point(i),psl->point(j));
+				distanzaAttualeL2=distanzaCalcolatoreL2->ComputeDistance(psl->point(i),psl->point(j));
 
-
-
-				distanzaAttuale=distanzaCalcolatore->ComputeDistance(psl->point(i),psl->point(j));
-
-				if (distanzaAttuale<minDistance && distanzaAttuale!=0) minDistance= distanzaAttuale;
-
+				if (distanzaAttualeL1<minDistanceL1 && distanzaAttualeL1!=0) minDistanceL1= distanzaAttualeL1;
+				if (distanzaAttualeL2<minDistanceL2 && distanzaAttualeL2!=0) minDistanceL2= distanzaAttualeL2;
 			}
 
 		}
 		cout<<"\n\n\n\n\nBABAAAAM....\n";
-		cerr<<"MIN DISTANZA: "<<minDistance;
-		cout<<"\n MIN DISTANZA: "<<minDistance;
+		cout<<"\nFINAAAAAL:\nMIN DISTANZA L1: "<<minDistanceL1;
+		 cout<<", MIN DISTANZA L2: "<<minDistanceL2;cout.flush(); cout.flush();
 
-		return minDistance;
+		return minDistanceL1;
 
 
 }

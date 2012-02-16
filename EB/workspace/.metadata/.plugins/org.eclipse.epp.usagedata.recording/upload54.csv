@@ -1,0 +1,276 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329407736773
+error,log,,,"Invalid breakpoint parameter(s)",1329407736938
+error,log,,,"Invalid breakpoint parameter(s)",1329407736952
+error,log,,,"Invalid breakpoint parameter(s)",1329407736954
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329407745480
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329407752503
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1329407765329
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329407766577
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329407779245
+error,log,,,"Invalid breakpoint parameter(s)",1329407780191
+error,log,,,"Invalid breakpoint parameter(s)",1329407780209
+error,log,,,"Invalid breakpoint parameter(s)",1329407780234
+error,log,,,"Invalid breakpoint parameter(s)",1329407780234
+error,log,,,"Invalid breakpoint parameter(s)",1329407780234
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329407780749
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329407786198
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329407786315
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329407819810
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329407826963
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329407833253
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329407854829
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329407863055
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329407863964
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1329407896096
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329407897916
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329407904734
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329407911343
+error,log,,,"Invalid breakpoint parameter(s)",1329407911458
+error,log,,,"Invalid breakpoint parameter(s)",1329407911490
+error,log,,,"Invalid breakpoint parameter(s)",1329407911493
+error,log,,,"Invalid breakpoint parameter(s)",1329407911516
+error,log,,,"Invalid breakpoint parameter(s)",1329407911518
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329407918220
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329407939271
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329407975493
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329407981292
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329407987758
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1329407989913
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329407993624
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329407997100
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329407999118
+error,log,,,"Invalid breakpoint parameter(s)",1329408005083
+error,log,,,"Invalid breakpoint parameter(s)",1329408005130
+error,log,,,"Invalid breakpoint parameter(s)",1329408005131
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408005133
+error,log,,,"Invalid breakpoint parameter(s)",1329408005151
+error,log,,,"Invalid breakpoint parameter(s)",1329408005154
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329408011160
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329408033558
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1329408050587
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329408053694
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408058868
+error,log,,,"Invalid breakpoint parameter(s)",1329408059899
+error,log,,,"Invalid breakpoint parameter(s)",1329408059918
+error,log,,,"Invalid breakpoint parameter(s)",1329408059958
+error,log,,,"Invalid breakpoint parameter(s)",1329408059958
+error,log,,,"Invalid breakpoint parameter(s)",1329408059959
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329408059975
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329408065656
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329408065880
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329408068537
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408073620
+error,log,,,"Invalid breakpoint parameter(s)",1329408074101
+error,log,,,"Invalid breakpoint parameter(s)",1329408074125
+error,log,,,"Invalid breakpoint parameter(s)",1329408074132
+error,log,,,"Invalid breakpoint parameter(s)",1329408074137
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1329408145923
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1329408147620
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1329408151419
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408158047
+error,log,,,"Invalid breakpoint parameter(s)",1329408158131
+error,log,,,"Invalid breakpoint parameter(s)",1329408158157
+error,log,,,"Invalid breakpoint parameter(s)",1329408158176
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329408164316
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329408186782
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329408306179
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329408312247
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1329408349050
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329408354466
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408369933
+error,log,,,"Invalid breakpoint parameter(s)",1329408370332
+error,log,,,"Invalid breakpoint parameter(s)",1329408370347
+error,log,,,"Invalid breakpoint parameter(s)",1329408370364
+error,log,,,"Invalid breakpoint parameter(s)",1329408370365
+error,log,,,"Invalid breakpoint parameter(s)",1329408370375
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408373354
+error,log,,,"Invalid breakpoint parameter(s)",1329408373510
+error,log,,,"Invalid breakpoint parameter(s)",1329408373523
+error,log,,,"Invalid breakpoint parameter(s)",1329408373527
+error,log,,,"Invalid breakpoint parameter(s)",1329408373540
+error,log,,,"Invalid breakpoint parameter(s)",1329408373554
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329408388534
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329408392960
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329408394793
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1329408419679
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1329408420845
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329408430856
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329408431112
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1329408465491
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329408466763
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408515671
+error,log,,,"Invalid breakpoint parameter(s)",1329408516033
+error,log,,,"Invalid breakpoint parameter(s)",1329408516038
+error,log,,,"Invalid breakpoint parameter(s)",1329408516067
+error,log,,,"Invalid breakpoint parameter(s)",1329408516067
+error,log,,,"Invalid breakpoint parameter(s)",1329408516068
+error,log,,,"Invalid breakpoint parameter(s)",1329408516078
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1329408518747
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329408522081
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408576668
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1329408594417
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1329408595676
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408603319
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329408610480
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329408667010
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408687355
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329408693635
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329408728123
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408737586
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1329408782013
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1329408786595
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329408798504
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408802497
+error,log,,,"Invalid breakpoint parameter(s)",1329408802620
+error,log,,,"Invalid breakpoint parameter(s)",1329408802626
+error,log,,,"Invalid breakpoint parameter(s)",1329408802651
+error,log,,,"Invalid breakpoint parameter(s)",1329408802652
+error,log,,,"Invalid breakpoint parameter(s)",1329408802652
+error,log,,,"Invalid breakpoint parameter(s)",1329408802653
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1329408827510
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1329408830288
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1329408837038
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1329408849523
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.cut",1329408871095
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329408874211
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408875914
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408890616
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329408896757
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329408903779
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408929926
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329408936925
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329408946353
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329408995473
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329409005453
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329409011415
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329409014746
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329409022913
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329409029960
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409081225
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329409116085
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1329409131523
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329409135425
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329409141659
+error,log,,,"Invalid breakpoint parameter(s)",1329409141693
+error,log,,,"Invalid breakpoint parameter(s)",1329409141703
+error,log,,,"Invalid breakpoint parameter(s)",1329409141730
+error,log,,,"Invalid breakpoint parameter(s)",1329409141730
+error,log,,,"Invalid breakpoint parameter(s)",1329409141730
+error,log,,,"Invalid breakpoint parameter(s)",1329409141758
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329409148997
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409169722
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329409174146
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329409185215
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409202709
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329409205882
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329409212329
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409231404
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329409236337
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329409243056
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409256549
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329409259673
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329409271779
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409346568
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329409372381
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329409555087
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329409556764
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329409557448
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329409558780
+activated,perspective,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.CPerspective",1329409578513
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1329409590922
+opened,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409591161
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409591259
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1329409591278
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329409594284
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409647650
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409670569
+closed,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409670569
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1329409674070
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409674173
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1329409674192
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409676484
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1329409676503
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409677747
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1329409677767
+opened,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409681345
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409681439
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1329409681460
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409692096
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1329409727563
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329409729327
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329409730965
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329409740553
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409753284
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329409878192
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329409886447
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329409895435
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410093540
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410187292
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329410415808
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1329410434647
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329410434750
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1329410434769
+opened,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329410436849
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329410436944
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1329410436966
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329410439392
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329410444841
+closed,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329410444841
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329410446310
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410477642
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410477971
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410479834
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410481264
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410484524
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410486936
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410488036
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410531377
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.paste",1329410541469
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410550698
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329410564887
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329410566727
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329410575528
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329411185622
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329411186468
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329411232936
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329411240521
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329411252935
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329411380465
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329411385353
+activated,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1329411396731
+activated,editor,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui.editor.CEditor",1329411796328
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1329411810647
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329411814791
+closed,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1329411829967
+started,bundle,org.eclipse.compare,3.5.201.R37x_v20110817-0800,"org.eclipse.compare",1329411845582
+stopped,bundle,org.eclipse.cdt.build.crossgcc,1.0.0.201109151620,"org.eclipse.cdt.build.crossgcc",1329411849779
+stopped,bundle,org.eclipse.cdt.codan.checkers.ui,1.0.0.201109151620,"org.eclipse.cdt.codan.checkers.ui",1329411849779
+stopped,bundle,org.eclipse.cdt.codan.checkers,1.0.0.201109151620,"org.eclipse.cdt.codan.checkers",1329411849779
+stopped,bundle,org.eclipse.cdt.codan.ui.cxx,2.0.0.201109151620,"org.eclipse.cdt.codan.ui.cxx",1329411849779
+stopped,bundle,org.eclipse.cdt.codan.core.cxx,1.0.0.201109151620,"org.eclipse.cdt.codan.core.cxx",1329411849779
+stopped,bundle,org.eclipse.cdt.launch.remote,2.3.0.201109151620,"org.eclipse.cdt.launch.remote",1329411850090
+stopped,bundle,org.eclipse.cdt.debug.mi.ui,6.1.0.201109151620,"org.eclipse.cdt.debug.mi.ui",1329411850090
+stopped,bundle,org.eclipse.cdt.debug.mi.core,7.1.1.201109151620,"org.eclipse.cdt.debug.mi.core",1329411850090
+stopped,bundle,org.eclipse.cdt.debug.ui.memory.memorybrowser,1.2.100.201109151620,"org.eclipse.cdt.debug.ui.memory.memorybrowser",1329411850901
+stopped,bundle,org.eclipse.cdt.debug.ui.memory.search,1.2.0.201109151620,"org.eclipse.cdt.debug.ui.memory.search",1329411851058
+stopped,bundle,org.eclipse.cdt.dsf.gdb.ui,2.2.1.201109151620,"org.eclipse.cdt.dsf.gdb.ui",1329411851270
+stopped,bundle,org.eclipse.cdt.dsf.ui,2.2.0.201109151620,"org.eclipse.cdt.dsf.ui",1329411851327
+stopped,bundle,org.eclipse.cdt.gdb.ui,7.0.0.201109151620,"org.eclipse.cdt.gdb.ui",1329411851382
+stopped,bundle,org.eclipse.cdt.dsf.gdb,4.0.1.201109151620,"org.eclipse.cdt.dsf.gdb",1329411855637
+stopped,bundle,org.eclipse.cdt.launch,7.0.0.201109151620,"org.eclipse.cdt.launch",1329411855637
+stopped,bundle,org.eclipse.cdt.debug.ui,7.1.1.201109151620,"org.eclipse.cdt.debug.ui",1329411855671
+stopped,bundle,org.eclipse.cdt.debug.ui.memory.traditional,1.2.0.201109151620,"org.eclipse.cdt.debug.ui.memory.traditional",1329411855762
+stopped,bundle,org.eclipse.cdt.dsf,2.2.0.201109151620,"org.eclipse.cdt.dsf",1329411855762
+stopped,bundle,org.eclipse.cdt.debug.core,7.1.0.201109151620,"org.eclipse.cdt.debug.core",1329411855763
+stopped,bundle,org.eclipse.linuxtools.cdt.autotools.ui,1.0.1.201108301805,"org.eclipse.linuxtools.cdt.autotools.ui",1329411855863
+stopped,bundle,org.eclipse.linuxtools.cdt.autotools.core,1.0.2.201108301805,"org.eclipse.linuxtools.cdt.autotools.core",1329411855863
+stopped,bundle,org.eclipse.cdt.managedbuilder.ui,8.0.0.201109151620,"org.eclipse.cdt.managedbuilder.ui",1329411855930
+stopped,bundle,org.eclipse.cdt.make.ui,7.1.1.201109151620,"org.eclipse.cdt.make.ui",1329411855930
+stopped,bundle,org.eclipse.cdt.managedbuilder.gnu.ui,8.0.1.201109151620,"org.eclipse.cdt.managedbuilder.gnu.ui",1329411855930
+stopped,bundle,org.eclipse.cdt.msw.build,1.0.0.201109151620,"org.eclipse.cdt.msw.build",1329411855930
+stopped,bundle,org.eclipse.cdt.managedbuilder.core,8.0.1.201109151620,"org.eclipse.cdt.managedbuilder.core",1329411856001
+stopped,bundle,org.eclipse.cdt.make.core,7.1.1.201109151620,"org.eclipse.cdt.make.core",1329411856002
+stopped,bundle,org.eclipse.cdt.mylyn.ui,3.6.0.v20110608-1400,"org.eclipse.cdt.mylyn.ui",1329411856027
+stopped,bundle,org.eclipse.cdt.codan.ui,2.0.0.201109151620,"org.eclipse.cdt.codan.ui",1329411856027
+stopped,bundle,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui",1329411856077

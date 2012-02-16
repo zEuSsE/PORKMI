@@ -18,6 +18,7 @@
 #include <unistd.h>
 #include <dirent.h>
 #include <errno.h>
+#include <experiment/eth-selector.h>
 
 
 
@@ -35,10 +36,11 @@ void svmScorreKernelsEDatasetInKFold(string kernelMatrix, string pathKfold, doub
 string recuperareTrainingSet(string path);
 string recuperareTestSet(string path);
 void svmScorreFold(string kernelMatrix, string pathDoveSonoIFold, double *c);
+void leaveOneOutEth80(double c,string pathToKernelMatrix,string pathToLabelETH80txt);
 
 int main() {
 
-	double arrayC[4]={0.001, 1, 1000, -1};
+	double arrayC[6]={0.000001, 0.001, 1, 1000, 1000000, -1};
 //	svmScorreFold("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix","/home/andrea/Scrivania/PORKMI/DS_101",arrayC);
 	//faiProveSvmSuCartellaConArrayC("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/3Fold/dataSet0/TrainingSet.set","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet/3Fold/dataSet0/testSet.set", arrayC);
 //	faiProveSvmSuCartella("/home/andrea/Scrivania/Progetto/DATASET_101/KernelMatrix","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/trainingSetDS_101.set","/home/andrea/Scrivania/Progetto/DATASET_101/suddivisioneDataset/finalTestSetDS_101.set", 0.0000000000001);
@@ -49,7 +51,12 @@ int main() {
 			"/home/andrea/Scrivania/PORKMI/DS_101/5Fold/dataSet3/TrainingSet.set",
 			"/home/andrea/Scrivania/PORKMI/DS_101/5Fold/dataSet3/testSet.set",1000);
 */
-	svmScorreFold("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/suddivisioneDataSet",arrayC);
+	//leaveOneOutEth80(0.001,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT_PCA10/Kernel/KM_variableCon8_2_1_1_1.ker","/home/andrea/Scrivania/Progetto/DATASET_ETH80/ETH80_labels.txt");
+
+	//THE BEST--WINNER!!!	//leaveOneOutEth80(0.001,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel/KM_variableCon6_2_1_1_1.ker","/home/andrea/Scrivania/Progetto/DATASET_ETH80/ETH80_labels.txt");
+	//leaveOneOutEth80(0.1,"/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT/Kernel/KM_variableCon6_2_1_1_1.ker","/home/andrea/Scrivania/Progetto/DATASET_ETH80/ETH80_labels.txt");
+
+	//svmScorreFold("/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT_PCA10/Kernel","/home/andrea/Scrivania/Progetto/DATASET_ETH80/GridSIFT_PCA10/suddivisioneDataSet",arrayC);
 
 
 }
@@ -57,23 +64,29 @@ int main() {
 
 int leggereLabeledIndexFileI( vector<int>* labeledIndexList,string pathENomeFile){
 
-	int* labInd;
+
+	int labInd;
 	ifstream myFile;
 	int numImmagini;
-	cout<<"Reading the file info: "<<pathENomeFile<<"\n";
+	cout<<"Reading the file info: "<<pathENomeFile<<"...";
 	myFile.open(pathENomeFile.c_str());
 
 	if (myFile.is_open()) {
 		myFile>>numImmagini;
-		//cout<< numImmagini<<"\n";
+		cout<< "num immagini: "<<numImmagini<<"\n";
 		for(int i=0;i<numImmagini;i++){
+		//	cout<<"da";
+			//cout.flush();
 
-			labInd=new int();
+			//labInd=new int();
 
-			myFile>>*labInd;
-			labeledIndexList->push_back(*labInd);
+			myFile>>labInd;
+			//cout<<labInd<<"\n";
+			//labeledIndexList->at(i)=labInd;
 
-					//	 cout<<*labInd<<"\n";
+			labeledIndexList->push_back(labInd);
+
+
 
 		}
 	}
@@ -444,6 +457,56 @@ void svmScorreFold(string kernelMatrix, string pathDoveSonoIFold, double *c){
 							    }
 
 
+
+}
+
+void leaveOneOutEth80(double c,string pathToKernelMatrix,string pathToLabelETH80txt){
+    //prove con leave one out per ETH80
+    double accuracyCrossValidation;
+    KernelMatrix* matriceKernel= new KernelMatrix();
+    matriceKernel->ReadFromFile(pathToKernelMatrix.c_str());
+   // cout<<"matrix at 2 5: "<<matriceKernel->at(2,5);
+    vector<int> *labelETH80= new vector<int>();
+    int numeroImmagini=leggereLabeledIndexFileI(labelETH80,pathToLabelETH80txt);
+ //   cerr<<"\n--debug. Num.Immagini: "<<numeroImmagini;
+  //  cout<<"\n labelETH80 in 20: "<<labelETH80->at(20)<<"\n";
+   // cout.flush();
+    ETHSelector* generatoreSet;
+    SVMExperiment* svme;
+    vector<LabeledIndex>* trainingSet= new vector<LabeledIndex>;
+    vector<LabeledIndex>* testSet= new vector<LabeledIndex>;
+   /* generatoreSet=new ETHSelector(*labelETH80,5);
+         //  faiProvaSvmTornaAccuracy(pathToKernelMatrix,)
+           *trainingSet=generatoreSet->GetTrainingExamples();
+           *testSet=generatoreSet->GetTestingExamples();
+           for(int i=0; i<trainingSet->size();i++){
+
+        	   cout<<"\n trainingSet("<<i<<"): "<< trainingSet->at(i).index<<" "<<trainingSet->at(i).label<<"\n";
+           }
+           for(int i=0; i<testSet->size();i++){
+
+                   	   cout<<"\n testSet("<<i<<"): "<< testSet->at(i).index<<" "<<testSet->at(i).label<<"\n";
+                      }
+           svme=new SVMExperiment(*trainingSet, *testSet, *matriceKernel,c);
+                   svme->Train();
+
+                   cout<< svme->Test()<<"*******MADONNA PUTTANA\n";*/
+    for (int i = 0; i < 80; i++) {
+        generatoreSet=new ETHSelector(*labelETH80,i);
+      //  faiProvaSvmTornaAccuracy(pathToKernelMatrix,)
+        *trainingSet=generatoreSet->GetTrainingExamples();
+        *testSet=generatoreSet->GetTestingExamples();
+  //      cout<< testSet->at(4).index<<" "<<testSet->at(4).label<<"\n";
+
+        svme=new SVMExperiment(*trainingSet, *testSet, *matriceKernel,c);
+        svme->Train();
+        svme->Test();
+      /*  cout <<"Leave Out Object:"<<i<<endl;
+        cout<<"        Accuracy:"<<svme->GetAccuracy()<<endl;*/
+        accuracyCrossValidation+=svme->GetAccuracy();
+        svme->~SVMExperiment();
+    }
+    cout<<"\n*****************\n Accuracy Media con C="<<c<<":"<<accuracyCrossValidation/80<<endl;
 
 }
 

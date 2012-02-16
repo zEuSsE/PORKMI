@@ -74,15 +74,17 @@ KernelMatrix* KernelMatrixCalculator::kernelMatrixIncrementAndReturnKernel(){
 		cout<<"\n vectorMRH size: "<<vectorMRH.size();
 		for ( int i = 0; i < ((int) vectorMRH.size()); i++) {
 			for (int j = 0; j <= i; j++) {
-				cout<<"\nprocesso: "<<i<<"; "<<j;
-				cout.flush();
+
 				similarity=PyramidMatcher::GetPyramidMatchSimilarity
 						(*(vectorMRH[i]),*(vectorMRH[j]),binWeightScheme);
-				cout<<" in debug_mode:similarity="<<similarity;
+				if(i==34 && j==17){ cout<<" in debug_mode:similarity di "<<i<<"; "<<j<<" ::"<<similarity<<"\n";}
+
 				cout.flush();
-				if(firsPiramidDone==0){this->kernelMatrix->at(i,j)=similarity; cout<<"kernel impostata"; cout.flush();}
+				if(firsPiramidDone==0){this->kernelMatrix->at(i,j)=similarity;}
 				else{	this->kernelMatrix->at(i,j)+=similarity;}
 			//			this->kernelMatrix->at(j,i)=similarity;}
+				if(i==34 && j==17) {cout<<"\n ----- similarity aggiornata: "<<this->kernelMatrix->at(i,j)<<"\n";}
+				cout.flush();
 
 			}
 			if (i%200==0) cout << "Finita riga: "<< i <<endl;

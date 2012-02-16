@@ -2,33 +2,27 @@
 **** Build of configuration Debug for project AcquisizionePSL ****
 
 make all 
-Building file: ../src/AcquisizionePSL.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AcquisizionePSL.d" -MT"src/AcquisizionePSL.d" -o "src/AcquisizionePSL.o" "../src/AcquisizionePSL.cpp"
-../src/AcquisizionePSL.cpp:65:1: warning: "/*" within comment [-Wcomment]
-../src/AcquisizionePSL.cpp: In function ‘int leggerePointSetList(libpmk::MutablePointSetList*, std::string)’:
-../src/AcquisizionePSL.cpp:247:13: warning: variable ‘numPuntiLetti’ set but not used [-Wunused-but-set-variable]
-../src/AcquisizionePSL.cpp: In function ‘void salvareInteroDatasetInUnFile(std::vector<PSLClass*>*, std::string)’:
-../src/AcquisizionePSL.cpp:364:6: warning: unused variable ‘indexClass’ [-Wunused-variable]
-Finished building: ../src/AcquisizionePSL.cpp
- 
 Building file: ../src/provaEsecuzione.cpp
 Invoking: GCC C++ Compiler
 g++ -I/home/andrea/workspace/libpmk-2.5/libpmk2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/provaEsecuzione.d" -MT"src/provaEsecuzione.d" -o "src/provaEsecuzione.o" "../src/provaEsecuzione.cpp"
+../src/provaEsecuzione.cpp: In function ‘int main()’:
+../src/provaEsecuzione.cpp:43:9: warning: unused variable ‘arrayC’ [-Wunused-variable]
 ../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartella(std::string, std::string, std::string, double)’:
-../src/provaEsecuzione.cpp:179:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:192:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘double faiProvaSvmTornaAccuracyConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:249:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
+../src/provaEsecuzione.cpp:262:11: warning: unused variable ‘mediaAccuracy’ [-Wunused-variable]
 ../src/provaEsecuzione.cpp: In function ‘void faiProveSvmSuCartellaConArrayC(std::string, std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:288:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:301:11: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘void svmScorreKernelsEDatasetInKFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:324:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:337:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘std::string recuperareTrainingSet(std::string)’:
-../src/provaEsecuzione.cpp:356:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:369:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘std::string recuperareTestSet(std::string)’:
-../src/provaEsecuzione.cpp:386:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:399:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 ../src/provaEsecuzione.cpp: In function ‘void svmScorreFold(std::string, std::string, double*)’:
-../src/provaEsecuzione.cpp:416:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp:429:10: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../src/provaEsecuzione.cpp: In function ‘void leaveOneOutEth80(double, std::string, std::string)’:
+../src/provaEsecuzione.cpp:470:9: warning: unused variable ‘numeroImmagini’ [-Wunused-variable]
 Finished building: ../src/provaEsecuzione.cpp
  
 Building target: AcquisizionePSL

@@ -6,7 +6,8 @@ src/provaEsecuzione.d: ../src/provaEsecuzione.cpp \
  /home/andrea/workspace/libpmk-2.5/libpmk2/experiment/example-selector.h \
  /home/andrea/workspace/libpmk-2.5/libpmk2/svm/svm.h \
  /home/andrea/workspace/libpmk-2.5/libpmk2/experiment/svm-experiment.h \
- /home/andrea/workspace/libpmk-2.5/libpmk2/experiment/experiment.h
+ /home/andrea/workspace/libpmk-2.5/libpmk2/experiment/experiment.h \
+ /home/andrea/workspace/libpmk-2.5/libpmk2/experiment/eth-selector.h
 
 /home/andrea/workspace/libpmk-2.5/libpmk2/kernel/kernel-matrix.h:
 
@@ -23,3 +24,5 @@ src/provaEsecuzione.d: ../src/provaEsecuzione.cpp \
 /home/andrea/workspace/libpmk-2.5/libpmk2/experiment/svm-experiment.h:
 
 /home/andrea/workspace/libpmk-2.5/libpmk2/experiment/experiment.h:
+
+/home/andrea/workspace/libpmk-2.5/libpmk2/experiment/eth-selector.h:
